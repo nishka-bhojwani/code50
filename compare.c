@@ -8,14 +8,14 @@ int a=get_int("Input a number ");
 int b=get_int("Input another number");
 
 if (a>b){
-    printf("%s>%s",a,b);
+    printf("%i>%i ",a,b);
 
 }
 else if(a<b){
-     printf("%s<%s",a,b);
+     printf("%i<%i",a,b);
      }
     else{
-        printf("%s=%s",a,b);
+        printf("%i=%i",a,b);
 
     }
     }
