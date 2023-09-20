@@ -3,11 +3,11 @@
 
 int main(void)
 {
-    int counter= get_int("Input a number ");
-    while (counter>0)
+    int i= get_int("Input a number ");
+    while (i>0)
     {
         printf("meow\n");
-        counter=counter-1;
+         i=i-1;
     }
 
 
