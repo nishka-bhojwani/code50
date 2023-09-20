@@ -5,7 +5,7 @@ int main(void)
 {
     int i= get_int("Input a number ");
 
-    for(int j=0;j++; j<i)
+    for(int j=0;j<i;j++)
     {
         printf("meow\n");
 
