@@ -3,9 +3,14 @@
 
 int main(void)
 {
-    int counter= 0 ;
-    counter= counter+1;
-    
+    int counter= get_int("Input a number ");
+    while (counter>0)
+    {
+        printf("meow\n");
+        counter=counter-1;
+    }
+
+
 }
 
 
