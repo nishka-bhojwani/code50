@@ -4,10 +4,11 @@
 int main(void)
 {
     int i= get_int("Input a number ");
-    while (i>0)
+    int j=0;
+    while (j<i)
     {
         printf("meow\n");
-         i=i-1;
+         j++;
     }
 
 
