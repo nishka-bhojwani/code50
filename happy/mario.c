@@ -3,7 +3,7 @@
 
 
 int main(void){
-    int n= get_int("Input a number");
+    const int n=4;
     for(int i=0; i<n;i++)
     {
      for(int j=0;j<n;j++)
