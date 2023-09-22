@@ -21,7 +21,7 @@ int main(void)
     while(p<n);
     int y=0;
 
-    while(n<=p)
+    while(n<p)
     {
         n= n+(n/3)-(n/4);
         y=y+1;
