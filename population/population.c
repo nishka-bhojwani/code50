@@ -25,10 +25,10 @@ int main(void)
     {
         n= n+(n/3)-(n/4);
         y=y+1;
-        printf("Years: %i \n",y);
+
 
     }
-
+    printf("Years: %i \n",y);
 
 
 
