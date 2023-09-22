@@ -8,14 +8,14 @@ int main(void)
     int p;
      do
      {
-        n=get_int("Start size: ");
+        n=get_int("Start size:");
 
      }
      while(n<9);
 
      do
      {
-        p=get_int("End size: ");
+        p=get_int("End size:");
 
      }
     while(p<n);
@@ -28,7 +28,7 @@ int main(void)
 
 
     }
-    printf("Years: %i \n",y);
+    printf("Years:%i\n",y);
 
 
 
