@@ -8,8 +8,8 @@ int main(void)
     string number = get_string("What's your phone number ? ");
 
     printf("\n" );
-    printf("Name: %s\n" , "Age: %i\n" , "Number: %s\n", name , age , number);
-    
+    printf(" Name: %s\n Age: %i\n Number: %s\n Thank you\n", name , age , number);
+
 
 
 
