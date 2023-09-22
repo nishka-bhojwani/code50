@@ -4,10 +4,34 @@
 int main(void)
 {
     // TODO: Prompt for start size
+    int n;
+    int p;
+     do
+     {
+        n=get_int("Start size: ");
 
-    // TODO: Prompt for end size
+     }
+     while(n<9);
 
-    // TODO: Calculate number of years until we reach threshold
+     do
+     {
+        p=get_int("End size: ");
 
-    // TODO: Print number of years
+     }
+    while(p<n);
+    int y=0;
+
+    while(n<=p)
+    {
+        n= n+(n/3)-(n/4);
+        y=y+1;
+        printf("Years: %i \n",y);
+
+    }
+
+
+
+
+
+
 }
