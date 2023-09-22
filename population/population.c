@@ -28,10 +28,8 @@ int main(void)
 
 
     }
+
     printf("Years: %i\n",y);
-
-
-
 
 
 }
