@@ -22,13 +22,14 @@ int main(void)
         }
         for(int m=1;m<=i; m++)
         {
-            printf("#"," "," ");
+            printf("#"" "" ");
         }
-        for(int n=1;)
+        for(int n=1;n<=i;n++)
+        {
+            printf("#");
+        }
             printf("\n");
-
-
-        }
+     }
     }
 
 
