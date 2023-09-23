@@ -15,13 +15,10 @@ int main(void)
 
     for(int i=1; i<h ;i++)
     {
-        for(int j=1;j<h;j++)
+        for(int j=1;j<h;j)
         {
-            string n= '';
-            printf(");
-            j=j+1;
-            i=i+1;
-
+            s=h
+        }
 
         }
     }
