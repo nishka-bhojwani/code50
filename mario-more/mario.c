@@ -3,11 +3,12 @@
 
 int main(void)
 {
-    int height;
+    int h;
     do
     {
-         height = get_int("Height of pyramid: /n");
+        h = get_int("Height: ");
+
     }
-    while(height<1,height>8);
+    while ( h );
 
 }
