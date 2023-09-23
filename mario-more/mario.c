@@ -4,9 +4,8 @@
 int main(void)
 {
     int h;
-    int i;
-    int j;
-    
+
+
     do
     {
         h = get_int("Height: ");
@@ -14,11 +13,11 @@ int main(void)
     }
     while ( h < 1 || h > 8);
 
-    for(i=1;i<=h,i++)
+    for(int i=1; i<h ;i++)
     {
-        for(j=1;j<=h;j++)
+        for(int j=1;j<h;j++)
         {
-            printf("(8-j)*'',#*j,2*'',#*j/n");
+            printf("(8-j)*'',#*j,2*'',#*j");
             j=j+1;
             i=i+1;
 
