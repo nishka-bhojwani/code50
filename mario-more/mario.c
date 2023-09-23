@@ -21,10 +21,10 @@ int main(void)
         }
         for(int m=1;m<=i; m++)
         {
-            printf("#");
+            printf("#"); //prints number of #'s required that is equal to the roq number i.e. i
         }
-             printf(" "" ");
-        for(int n=1;n<=i;n++)
+             printf(" "" ");// prints the gap in the middle
+        for(int n=1;n<=i;n++) // this for loop prints the hash triangle on the right hand side
         {
             printf("#");
         }
