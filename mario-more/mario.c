@@ -17,7 +17,8 @@ int main(void)
     {
         for(int j=1;j<h;j++)
         {
-            printf("(8-j)*'',#*j,2*'',#*j");
+            string n= '';
+            printf(");
             j=j+1;
             i=i+1;
 
