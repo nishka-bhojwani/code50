@@ -15,12 +15,15 @@ int main(void)
 
     for(int i=1; i<h ;i++)
     {
-        for(int j=i;j<h-1;j++)
+        for(int j=0;j<h-1;j++)
         {
             printf(" ");
         }
-        printf("\n");
-        for(int m=i;m<)
+        for(int m=1;m<=i; m++)
+        {
+            printf("#");
+        }
+            printf("\n");
 
 
         }
