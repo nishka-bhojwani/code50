@@ -17,7 +17,9 @@ int main(void)
     {
         for(int j=1;j<h;j)
         {
-            s=h
+            int s=h-i;
+            printf();
+
         }
 
         }
