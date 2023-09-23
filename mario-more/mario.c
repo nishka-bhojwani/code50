@@ -13,9 +13,9 @@ int main(void)
     }
     while ( h < 1 || h > 8);
 
-    for(int i=1; i<h ;i++)
+    for(int i=0; i<h ;i++)
     {
-        for(int j=0;j<h-1;j++)
+        for(int j=0;j<i-1;j++)
         {
             printf(" ");
         }
