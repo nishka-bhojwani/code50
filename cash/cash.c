@@ -34,13 +34,14 @@ int main(void)
     printf("%i\n", coins);
 }
 
-int get_cents(void)
-{
-    do {
+int get_cents()
+        {
+            int cents = get_int("Number of cents owed to customer:");
+         do{
         return cents;
-    }
+         }
     while (cents<1);
-}
+    }
 
 int calculate_quarters(int cents)
 {
