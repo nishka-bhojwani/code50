@@ -34,19 +34,19 @@ int main(void)
     printf("%i\n", coins);
 }
 
-int get_cents()
-        {
-            int cents = get_int("Number of cents owed to customer:");
+int get_cents(void)
+    {
          do{
-        return cents;
+            int cents = get_int("Number of cents owed to customer:");
+            return cents;
          }
-    while (cents<1);
+        while (cents<1);
     }
 
 int calculate_quarters(int cents)
 {
-    // TODO
-    return 0;
+    
+    return quaters;
 }
 
 int calculate_dimes(int cents)
