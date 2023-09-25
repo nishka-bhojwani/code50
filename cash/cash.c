@@ -35,24 +35,26 @@ int main(void)
 }
 
 int get_cents(void)
-    {
+    {   int cents;
          do{
             int cents = get_int("Number of cents owed to customer:");
-            return cents;
+
          }
         while (cents<1);
+        return cents
     }
 
 int calculate_quarters(int cents)
 {
-    int quaters=
+    int quaters= int (cents/4)
     return quaters;
 }
 
 int calculate_dimes(int cents)
 {
     // TODO
-    return 0;
+    int dimes = int ((cents-quaters)/5);
+
 }
 
 int calculate_nickels(int cents)
