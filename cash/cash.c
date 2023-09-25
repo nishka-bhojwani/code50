@@ -34,7 +34,7 @@ int main(void)
     printf("%i\n", coins);
 }
 
-int get_cents(int cents)
+int get_cents(void)
     {
          do{
             int cents = get_int("Number of cents owed to customer:");
@@ -45,7 +45,7 @@ int get_cents(int cents)
 
 int calculate_quarters(int cents)
 {
-
+    int quaters=
     return quaters;
 }
 
