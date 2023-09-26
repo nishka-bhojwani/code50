@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-float valid_traingle(float side1, float side2 , float side3);
+float valid_triangle(float side1, float side2 , float side3);
 
 int main(void)
 {
@@ -9,10 +9,20 @@ int main(void)
     int y = get_int("Side2 : ");
     int z = get_int("Side 3 : ");
 
-    int triangle= valid_traingle(x,y,z);
-
-    printf()
-
-
+    int triangle= valid_triangle(x,y,z);
+    if (triangle==true)
+    {
+        print("This triangle exists\n");
+    }
+    if (triangle==false)
+    {
+        printf("This triangle cannot exist/n");
+    }
 
 }
+float valid_triangle(x,y,z)
+{
+
+    
+}
+
