@@ -9,7 +9,9 @@ int main(void)
     int y = get_int("Side2 : ");
     int z = get_int("Side 3 : ");
 
-    
+    int triangle= valid_traingle(x,y,z);
+
+    printf()
 
 
 
