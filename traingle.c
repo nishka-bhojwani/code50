@@ -31,7 +31,7 @@ int main(void)
     }
     if (triangle==false)
     {
-        printf("This triangle cannot exist/n");
+        printf("This triangle cannot exist\n");
     }
 
 }
