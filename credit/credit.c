@@ -13,8 +13,8 @@ int main(void)
 
 
      card_number= get_long("Card Number: ");
-     int rem1= (int) (card_number/1e13);
-     printf("%i" , rem1 \n);
+     rem1= (int) (card_number/1e12);
+     printf("%i\n" , rem1);
 
 
 
