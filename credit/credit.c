@@ -13,7 +13,7 @@ int main(void)
     do {
      card_number= get_long("Card Number: ");
     }
-    while((card_number/(1e12))<0 || (card_number/(1e17))>0);
+    while(
 
     //int card_type = checksum(x);
     //if (x==true){
