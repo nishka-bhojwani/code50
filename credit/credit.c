@@ -28,7 +28,7 @@ int main(void)
             printf("INVALID");
         }
 }
-4003600000000014
+
 
 bool check_sum(long number)
 {
