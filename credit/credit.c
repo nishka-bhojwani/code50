@@ -10,15 +10,14 @@ int main(void)
     long card_number;
     do {
     long card_number= get_float("Card Number: ");
-    long 
+    string length = (string) card_number;
     }
-    while(card_number< && card_number>16);
+    while(strlen(card_number)<13 && strlen(card_number)>16);
 
-    int card_type = checksum(x);
-    if (x==true){
-        if ((card_number/2)==7){
-            if ()
-        }
+    //int card_type = checksum(x);
+    //if (x==true){
+      //  if ((card_number/2)==7){
+        //}
 
-    }
+    //}
 }
