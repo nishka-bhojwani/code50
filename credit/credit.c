@@ -25,13 +25,15 @@ int main(void)
 int check_sum(long number)
 {
     int sum=0;
-    int n;
-    string dig= (string) number;
 
-    for (int i = 1; n == strlen(); i < n; i+2)
+    string dig= (string) number;
+   int  n= strlen(dig);
+    for (int i = ; i < n; i=i+2)
     {
         sum = sum + ((int) dig[i])*2;
         i=i+2;
+        return sum;
 
-    }
+        }
+
 }
