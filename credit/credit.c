@@ -16,7 +16,7 @@ int main(void)
     int card_type = checksum(x);
     if (x==true){
         if ((card_number/2)==7){
-            if 
+            if ()
         }
 
     }
