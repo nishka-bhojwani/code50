@@ -15,6 +15,8 @@ int main(void)
     {card_number= get_long("Card Number: ");
 
      }
-     while(((int) (card_number/1e12)) <=
-     0 || ((int) (card_number/1e16)>0)) ;
+     while(((int) (card_number/1e12)) <=0 || ((int) (card_number/1e16)>0)) ;
+
+     int i;
+     remainders[i]
 }
