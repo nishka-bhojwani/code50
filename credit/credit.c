@@ -2,27 +2,18 @@
 #include <stdio.h>
 #include <string.h>
 
-int checksum(long number);
+
 
 int main(void)
 {
     //getting input from user
     int x;
     long card_number;
-    int rem1;
-    int rem2;
+    int i;
 
+    do
+    {card_number= get_long("Card Number: ");
 
-     card_number= get_long("Card Number: ");
-     rem1= (int) (card_number/1e12);
-     rem2= (int) (card_number/1e16);
-
-
-
-}
-
-int check_sum(long number)
-{
-  int remainders[]
-
+     }
+     while((int) (card_number/1e12)) <0|| ((int) (card_number/1e16))>0;
 }
