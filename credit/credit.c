@@ -25,10 +25,13 @@ int main(void)
 int check_sum(long number)
 {
     int sum=0;
+    int n;
     string dig= (string) number;
-    for (int i = 1, n = strlen(dig); i < n; i+2)
+
+    for (int i = 1; n == strlen(); i < n; i+2)
     {
         sum = sum + ((int) dig[i])*2;
-        i+
+        i=i+2;
+
     }
 }
