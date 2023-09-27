@@ -13,7 +13,7 @@ int main(void)
      card_number= get_long("Card Number: ");
     string length = (string) card_number;
     }
-    while(strlen.card_number<13 && strlen.card_number>16);
+    while(strlen(card_number)<13 && strlen(card_number)>16);
 
     //int card_type = checksum(x);
     //if (x==true){
