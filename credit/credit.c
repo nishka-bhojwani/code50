@@ -10,10 +10,12 @@ int main(void)
     int x;
     long card_number;
 
-    do {
+
      card_number= get_long("Card Number: ");
-    }
-    while(
+     int rem1= (int) (card_number/1e13);
+     printf("%i" , rem1);
+
+
 
     //int card_type = checksum(x);
     //if (x==true){
