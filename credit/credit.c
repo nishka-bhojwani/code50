@@ -18,6 +18,13 @@ int main(void)
      while(((int) (card_number/1e12)) <=0 || ((int) (card_number/1e16)>0)) ;
 
      string digits= (string) card_number;
-     if digits.length
+
 }
 
+
+int check_sum(long number)
+{
+    string dig= (string) number
+    int i;
+    
+}
