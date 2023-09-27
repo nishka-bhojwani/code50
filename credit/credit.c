@@ -39,13 +39,13 @@ bool check_sum(long number)
    int  n= strlen(dig);
     for (int i = n-1; i > 0; i=i-2)
     {
-        sum1 = sum1+ ((int) dig[i])*2;
+        sum1 =sum1+ ((int) dig[i])*2;
         i=i+2;
     }
 
     for(int i= 0 ; i<n ; i=i+2 )
     {
-        sum2= sum2 + ((int) dig[i]);
+        sum2=sum2 + ((int) dig[i]);
         i=i+2;
     }
 
