@@ -28,12 +28,12 @@ int check_sum(long number)
 
     string dig= (string) number;
    int  n= strlen(dig);
-    for (int i = ; i < n; i=i+2)
+    for (int i = n-1; i > 0; i=i-2)
     {
         sum = sum + ((int) dig[i])*2;
         i=i+2;
-        return sum;
-
-        }
+    }
+    return sum;
+    
 
 }
