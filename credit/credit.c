@@ -24,7 +24,11 @@ int main(void)
 
 int check_sum(long number)
 {
-    string dig= (string) number
-    int i;
-    
+    int sum=0;
+    string dig= (string) number;
+    for (int i = 1, n = strlen(dig); i < n; i+2)
+    {
+        sum = sum + ((int) dig[i])*2;
+        i+
+    }
 }
