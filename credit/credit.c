@@ -10,11 +10,13 @@ int main(void)
     int x;
     long card_number;
     int rem1;
+    int rem2;
 
 
      card_number= get_long("Card Number: ");
      rem1= (int) (card_number/1e12);
-     printf("%i\n" , rem1);
+     rem2= (int) (card_number/1e16);
+
 
 
 
