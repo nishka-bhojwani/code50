@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-
+int checksum(long number );
 
 int main(void)
 {
@@ -17,7 +17,7 @@ int main(void)
      }
      while(((int) (card_number/1e12)) <=0 || ((int) (card_number/1e16)>0)) ;
 
-     int i;
-     
-
+     string digits= (string) card_number;
+     if digits.length
 }
+
