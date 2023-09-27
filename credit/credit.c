@@ -17,4 +17,6 @@ int main(void)
      rem1= (int) (card_number/1e12);
      rem2= (int) (card_number/1e16);
 
+     
+
 }
