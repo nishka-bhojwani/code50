@@ -9,13 +9,12 @@ int main(void)
     //getting input from user
     int x;
     long card_number;
-    int quotient;
+    string length;
     do {
      card_number= get_long("Card Number: ");
-     quotient=(card_number/2)
+     string length = (string) card_number;
     }
-    while()
-
+    while(strlen(length)<13 && strlen(length)>16);
 
     //int card_type = checksum(x);
     //if (x==true){
