@@ -10,8 +10,9 @@ int main(void)
     long card_number;
     do {
     long card_number= get_float("Card Number: ");
+    long 
     }
-    while(card_number<13 && card_number>16);
+    while(card_number< && card_number>16);
 
     int card_type = checksum(x);
     if (x==true){
