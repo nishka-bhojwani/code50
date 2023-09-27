@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 int checksum(long number);
 
@@ -9,10 +10,10 @@ int main(void)
     int x;
     long card_number;
     do {
-    long card_number= get_float("Card Number: ");
+     card_number= get_long("Card Number: ");
     string length = (string) card_number;
     }
-    while(strlen(card_number)<13 && strlen(card_number)>16);
+    while(strlen.card_number<13 && strlen.card_number>16);
 
     //int card_type = checksum(x);
     //if (x==true){
