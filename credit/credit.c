@@ -18,5 +18,5 @@ int main(void)
      while(((int) (card_number/1e12)) <=0 || ((int) (card_number/1e16)>0)) ;
 
      int i;
-     remainders[i]
+     
 }
