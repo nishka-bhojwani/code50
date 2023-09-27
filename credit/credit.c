@@ -23,6 +23,6 @@ int main(void)
 
 int check_sum(long number)
 {
-  for 
+  int remainders[]
 
 }
