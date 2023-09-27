@@ -9,11 +9,11 @@ int main(void)
     //getting input from user
     int x;
     long card_number;
-    string length;
+
     do {
      card_number= get_long("Card Number: ");
-     string length = (string) card_number;
-    };
+    }
+    while((card_number/(1e12))<=0 || (card_number/(1e17)>0));
 
     //int card_type = checksum(x);
     //if (x==true){
