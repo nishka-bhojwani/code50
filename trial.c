@@ -3,8 +3,7 @@
 
 int main(void)
 {
-    long number= get_long("Give me a credit card number, please :");
-    int num= (int) number;
+    long num= get_long("Give me a credit card number, please :");
 
     if ((num/1e12)==4 || (num/1e13)== 4 || (num/1e14)==4 || (num/1e15)==4)
     {
