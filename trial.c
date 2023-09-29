@@ -32,9 +32,9 @@ int main(void)
 
 bool check_sum(long cc_num)
 {
-  if()
+  if(((int) (cc_num/1e12)) <=0 || ((int) (cc_num/1e16)>0)))
   {
-    cc_num
+    
   }
 
 
