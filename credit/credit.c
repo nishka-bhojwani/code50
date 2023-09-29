@@ -25,7 +25,7 @@ int main(void)
 int check_sum(long number)
 {
     int rem1;
-    rem1=number/1e12
+    rem1=number/1e13
 
 
 
