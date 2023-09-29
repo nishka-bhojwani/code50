@@ -30,9 +30,9 @@ int main(void)
 
 }
 
-bool check_sum(long cc)
+bool check_sum(long cc_num)
 {
-  long card;
+  for(cc)
 
 
 }
