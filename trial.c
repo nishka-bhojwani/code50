@@ -26,5 +26,5 @@ else if ((int)(num/1e13)==34 || (int)(num/1e13)==37)
     printf("INVALID card");
 
     }
-
+    
 }
