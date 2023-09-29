@@ -24,8 +24,8 @@ int main(void)
 }
 int check_sum(long number)
 {
-    int digits;
-    if 
+    int rem1;
+    rem1=number/1e12
 
 
 
