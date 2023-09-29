@@ -36,6 +36,10 @@ bool check_sum(long cc_num)
   {
     
   }
+  else
+{
+  return false;
+}
 
 
 }
