@@ -32,7 +32,10 @@ int main(void)
 
 bool check_sum(long cc_num)
 {
-  for(cc)
+  if()
+  {
+    cc_num
+  }
 
 
 }
