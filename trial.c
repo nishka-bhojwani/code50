@@ -5,7 +5,7 @@ int main(void)
 {
     long num= get_long("Give me a credit card number, please :");
 
-    if ((num/1e12)==4 || (num/1e13)== 4 || (num/1e14)==4 || (num/1e15)==4)
+  if ((num/1e12)==4 || (num/1e13)== 4 || (num/1e14)==4 || (num/1e15)==4)
     {
         printf("this cc could be a visa \n");
     }
