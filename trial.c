@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 
-chc
+
 
 int main(void)
 {
