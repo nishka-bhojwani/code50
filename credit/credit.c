@@ -24,7 +24,8 @@ int main(void)
 }
 int check_sum(long number)
 {
-    
+    int digits;
+    if 
 
 
 
