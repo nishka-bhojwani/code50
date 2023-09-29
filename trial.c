@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 
+bool check_sum(long cc_num);
 
 
 int main(void)
@@ -26,5 +27,12 @@ int main(void)
     printf("INVALID card");
 
     }
+
+}
+
+bool check_sum(long cc)
+{
+  long card;
+
 
 }
