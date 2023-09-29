@@ -35,7 +35,7 @@ bool check_sum(long cc_num)
   if(((int) (cc_num/1e12)) <=0 || ((int) (cc_num/1e16)>0)))
   {
     int n;
-    for(n=(ccnum/))
+    for(n=(ccnum))
   }
   else
 {
