@@ -6,7 +6,7 @@ bool check_sum(long long cc_num);
 
 int main(void)
 {
-    long num= get_long("Give me a credit card number, please :");
+    long num= get_long("Give me a credit card number, please: ");
     //printf("%i", (int)(num/1e12));
 
   if(check_sum(num)==true)
