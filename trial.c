@@ -11,7 +11,7 @@ int main(void)
 
     if ((int) (num/1e12)==4 || (int) (num/1e13)== 4 || (int) (num/1e14)==4 || (int)(num/1e15)==4)
 {
-  if
+  if (check_sum)
   printf("this cc could be a visa \n");
 }
     else if ((int)(num/1e13)==34 || (int)(num/1e13)==37)
@@ -39,7 +39,7 @@ bool check_sum(long long cc_num)
   while(cc_num>0)
   {
     int digit= cc_num%10;
-    if (next_digit)
+    if (next_digit==1)
     {
       digit*=2;
       if (digit >9)
@@ -48,9 +48,13 @@ bool check_sum(long long cc_num)
       }
 
     }
-    sum+=digit;
-    
-  }
+    sum += digit;
+    next_digit =! next_digit;
+
+    cc_num /= 10;
+     }
+    return ((sum%10) == 0);
+
 }
 
 
