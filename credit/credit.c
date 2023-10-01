@@ -7,7 +7,8 @@ bool check_sum(long long cc_num);
 int main(void)
 { // takes credit card input from user.
     long num = get_long("Give me a card number, please: ");
-     // checks if the card satisfies Luhn's Algorithm using the check_sum function
+
+    // checks if the card satisfies Luhn's Algorithm using the check_sum function
     if (check_sum(num) == true) // the nested if loop checks which type of credit card it is
     {
         if ((int) (num / 1e12) == 4 || (int) (num / 1e13) == 4 || (int) (num / 1e14) == 4 || (int) (num / 1e15) == 4)
