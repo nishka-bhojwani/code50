@@ -13,11 +13,11 @@ int main(void)
   {
     if ((int) (num/1e12)==4 || (int) (num/1e13)== 4 || (int) (num/1e14)==4 || (int)(num/1e15)==4)
   {
-  printf("VISA \n");
+  printf("VISA");
   }
     else if ((int)(num/1e13)==34 || (int)(num/1e13)==37)
     {
-      printf("AMERICAN EXPRESS\n" );
+      printf("AMERICAN EXPRESS" );
     }
     else if( (int)(num/1e14)==51 || (int)(num/1e14)==52 || (int)(num/1e14)==53 ||(int)(num/1e14)==54 || (int)(num/1e14)==55)
     {
