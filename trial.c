@@ -31,9 +31,23 @@ int main(void)
 
 }
 
-bool check_sum(long cc_num)
+bool check_sum(long long cc_num)
 {
-  
+  int sum=0;
+  bool next_digit = false;
+
+  while(cc_num>0)
+  {
+    int digit= cc_num%10;
+    if (next_digit)
+    {
+      digit*=2;
+      if (digit >9)
+      {
+
+      }
+    }
+  }
 }
 
 
