@@ -11,6 +11,7 @@ int main(void)
 
     if ((int) (num/1e12)==4 || (int) (num/1e13)== 4 || (int) (num/1e14)==4 || (int)(num/1e15)==4)
 {
+  if
   printf("this cc could be a visa \n");
 }
     else if ((int)(num/1e13)==34 || (int)(num/1e13)==37)
@@ -32,15 +33,8 @@ int main(void)
 
 bool check_sum(long cc_num)
 {
-  if(((int) (cc_num/1e12)) <=0 || ((int) (cc_num/1e16)>0)))
-  {
-    int n;
-    for(n=(ccnum))
-  }
-  else
-{
-  return false;
+  
 }
 
 
-}
+
