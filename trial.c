@@ -44,9 +44,12 @@ bool check_sum(long long cc_num)
       digit*=2;
       if (digit >9)
       {
-
+        digit-=9;
       }
+
     }
+    sum+=digit;
+    
   }
 }
 
