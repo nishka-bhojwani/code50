@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 
-bool check_sum(long cc_num);
+bool check_sum(long long cc_num);
 
 
 int main(void)
@@ -9,11 +9,12 @@ int main(void)
     long num= get_long("Give me a credit card number, please :");
     //printf("%i", (int)(num/1e12));
 
+  if(check_sum(num)==true)
+  {
     if ((int) (num/1e12)==4 || (int) (num/1e13)== 4 || (int) (num/1e14)==4 || (int)(num/1e15)==4)
-{
-  if (check_sum)
+  {
   printf("this cc could be a visa \n");
-}
+  }
     else if ((int)(num/1e13)==34 || (int)(num/1e13)==37)
     {
       printf("this could be an american express card \n" );
@@ -28,6 +29,12 @@ int main(void)
     printf("INVALID card");
 
     }
+}
+  else
+  {
+    printf("INVALID CARD");
+  }
+ printf("\n");
 
 }
 
