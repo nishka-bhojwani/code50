@@ -17,7 +17,7 @@ int main(void)
         }
         else if ((int) (num / 1e13) == 34 || (int) (num / 1e13) == 37)
         {
-            printf("AMERICAN EXPRESS");
+            printf("AMEX");
         }
         else if ((int) (num / 1e14) == 51 || (int) (num / 1e14) == 52 || (int) (num / 1e14) == 53 || (int) (num / 1e14) == 54 ||
                  (int) (num / 1e14) == 55)
