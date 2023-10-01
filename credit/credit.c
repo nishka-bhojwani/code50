@@ -1,34 +1,68 @@
-#include <cs50.h>
 #include <stdio.h>
-#include <string.h>
+#include <cs50.h>
 
-int check_sum(long number );
+bool check_sum(long long cc_num);
+
 
 int main(void)
 {
-    //getting input from user
-    int x;
-    long card_number;
-    int i;
+    long num= get_long("Give me a credit card number, please :");
+    //printf("%i", (int)(num/1e12));
 
-    do
-    {card_number= get_long("Card Number: ");
+  if(check_sum(num)==true)
+  {
+    if ((int) (num/1e12)==4 || (int) (num/1e13)== 4 || (int) (num/1e14)==4 || (int)(num/1e15)==4)
+  {
+  printf("VISA");
+  }
+    else if ((int)(num/1e13)==34 || (int)(num/1e13)==37)
+    {
+      printf("AMERICAN EXPRESS" );
+    }
+    else if( (int)(num/1e14)==51 || (int)(num/1e14)==52 || (int)(num/1e14)==53 ||(int)(num/1e14)==54 || (int)(num/1e14)==55)
+    {
 
-     }
-     while(((int) (card_number/1e12)) <=0 || ((int) (card_number/1e16)>0)) ;
-     int card_sum=check_sum(card_number);
-     printf("%i", card_sum);
+    printf("MASTERCARD");
+    }
+    else
+    {
+    printf("INVALID");
 
-
+    }
+}
+  else
+  {
+    printf("INVALID");
+  }
+ printf("\n");
 
 }
-int check_sum(long number)
+
+bool check_sum(long long cc_num)
 {
-    int rem1;
-    rem1=number/1e13
+  int sum=0;
+  bool next_digit = false;
 
+  while(cc_num>0)
+  {
+    int digit= cc_num%10;
+    if (next_digit==1)
+    {
+      digit*=2;
+      if (digit >9)
+      {
+        digit-=9;
+      }
 
+    }
+    sum += digit;
+    next_digit =! next_digit;
 
-
+    cc_num /= 10;
+     }
+    return ((sum%10) == 0);
 
 }
+
+
+
