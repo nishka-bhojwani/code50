@@ -7,7 +7,7 @@ float get_average(int numbers[]);
 int main(void)
 {
 
-    int scores[lent];
+    int scores[length];
     for(int i = 0 ; i < length ; i++)
     {
         scores[i]=get_int("Score: ");
@@ -22,7 +22,7 @@ float get_average(int numbers[])
     int sum = 0;
     for(int i =0 ; i< length ; i++)
     {
-        sum += sum numbers[i];
+        sum += numbers[i];
 
     }
     return (float) sum / length;
