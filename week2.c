@@ -20,6 +20,11 @@ float get_average(numbers[])
 {
 
     int sum = 0;
-    for(int n)
+    for(int i =0 ; i< N ; i++)
+    {
+        sum = sum + numbers[i];
+
+    }
+    return (float) sum / N;
 
 }
