@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <cs50.h>
 
-const int  N = 3;
+const int  length = 3;
 float get_average(int numbers[]);
 
 int main(void)
 {
 
-    int scores[N];
-    for(int i = 0 ; i < N ; i++)
+    int scores[lent];
+    for(int i = 0 ; i < length ; i++)
     {
         scores[i]=get_int("Score: ");
 
@@ -20,11 +20,11 @@ float get_average(int numbers[])
 {
 
     int sum = 0;
-    for(int i =0 ; i< N ; i++)
+    for(int i =0 ; i< length ; i++)
     {
-        sum = sum + numbers[i];
+        sum += sum numbers[i];
 
     }
-    return (float) sum / N;
+    return (float) sum / length;
 
 }
