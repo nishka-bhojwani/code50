@@ -1,9 +1,25 @@
 #include <stdio.h>
 #include <cs50.h>
 
-float get_average(int x , int y , int z);
+const int  N = 3;
+float get_average(numbers[]);
 
 int main(void)
 {
-    int numbers = get_int()
+
+    int scores[N];
+    for(int i = 0 ; i < N ; i++)
+    {
+        scores[i]=get_int("Score: ",);
+
+    }
+    printf("%f \n",get_average(scores));
+}
+
+float get_average(numbers[])
+{
+
+    int sum = 0;
+    for(int n)
+
 }
