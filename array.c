@@ -9,7 +9,7 @@ int main(void)
     for(int i=0 ; i<100 ; i++)
     {
         array[i]=num;
-        num++;
+        num=num++;
         //printf("%i ",num);
 
     }
