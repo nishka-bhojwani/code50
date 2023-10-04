@@ -10,8 +10,10 @@ int main(void)
     {
         array[i]=num;
         num++;
-        printf("%i ",num);
+        //printf("%i ",num);
 
     }
+
+    printf("%i \n" , array[50]);
 
 }
