@@ -6,9 +6,10 @@ int main(void)
 {
     string word = get_string(" Message: ");
     int length = strlen(word);
+    bool binary[8];
     for( int i = 0 ; i < length ; i++)
     {
-        
+      
     }
 
 }
