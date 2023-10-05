@@ -9,7 +9,7 @@ int main(void)
     bool binary[8];
     for( int i = 0 ; i < length ; i++)
     {
-      
+        
     }
 
 }
