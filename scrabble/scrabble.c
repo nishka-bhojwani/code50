@@ -58,6 +58,9 @@ int compute_score(string word)
   int sum = 0;
   for ( int n = 0 ; n < length ; n++ )
   {
-    sum = sum + POINTS[m]; 
+    sum = sum + POINTS[m];
+    return sum;
   }
+
+  
 }
