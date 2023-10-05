@@ -21,11 +21,11 @@ int main(void)
     // TODO: Print the winner
     if ( score1 > score2 )
     {
-        printf("Player 1 wins! \n" );
+        printf("Player 1 wins! \n %i",  sum);
     }
     else if ( score1 < score2 )
     {
-        printf("Player 2 wins! \n");
+        printf("Player 2 wins! \n %i" , sum);
     }
     else
     {
