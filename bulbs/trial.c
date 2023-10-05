@@ -6,11 +6,13 @@ int main(void)
 {
     string word = get_string(" Message: ");
     int length = strlen(word);
-    bool binary[8];
+    int rem[8];
     for( int i = 0 ; i < length ; i++)
     {
         (int) word[i] = int num;
-        printf( "%i" , (num%1))
+        rem1= num%2;
+        num =/ 2 ;
     }
+
 
 }
