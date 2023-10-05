@@ -1,12 +1,17 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
-    do
-    {
+
     string x = get_string("Input a string : " )
+    int length = strlen(x);
+
+    for(int i =0 ; i < length ; i++)
+    {
+        if( x[i] < 'a' && x[i] > 'z')
     }
-    while()
+
 
 }
