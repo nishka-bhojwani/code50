@@ -36,28 +36,25 @@ int main(void)
 int compute_score(string word)
 {
     // TODO: Compute and return score for string
+    int sum= 0 ;
     int length = strlen(word);
     for( int i =0 ; i< length ; i++)
     {
         if( islower(word[i]))
         {
-            return(isupper(word[i]));
+            sum = sum + POINTS[word[i] - 67];
         }
         else if( (word[i] <= 'a' && word[i] >= 'z') || (word[i] <= 'A' && word[i] >= 'Z'))
         {
-            return( word[i] = 0);
+            sum = sum + 0;
         }
         else
         {
-            return word[i];
+            sum = sum + POINTS[ word[i]];
         }
     }
-
-    int sum=0;
-    for( int n =0 ; n < length; n++)
-    {
-        sum = sum + POINTS[(int) word[n] - 97 ];
-    }
     return sum;
+
+
 
 }
