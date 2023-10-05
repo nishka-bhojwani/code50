@@ -28,6 +28,25 @@ int compute_score(string word)
     length = strlen(word);
     for(i =0 ; i< length ; i++)
     {
-        if( )
+        if( islower(word[i]))
+        {
+            return(isupper(word[i]));
+        }
+        else if( word[i] >= 'a' && word[i] <= 'z' || word[i] >= 'A' && word[i] <= 'Z')
+        {
+            return( word[i] == O );
+        }
+        else
+        {
+            return word[i];
+        }
     }
+
+    char alpha[26];
+    alpha[0] = 'A';
+    for ( int j = 0 ; j < 26 ; j++)
+    {
+        alpha[j] = 
+    }
+
 }
