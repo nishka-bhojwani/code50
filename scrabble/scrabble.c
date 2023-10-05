@@ -54,13 +54,9 @@ int compute_score(string word)
     }
 
 
-    char alpha[26];
-    alpha[0] = 'A';
-    for ( int j = 1 ; j < 26 ; j++)
-    {
-        alpha[j] = alpha[j-1] + 1 ;
-        return alpha[j];
-    }
+    char alpha[26] = { 'A' , 'B' , 'C' , 'D' , 'E' , 'F' , 'G', 'H' , 'I' , 'J' , 'L' , 'M' , 'N' , 'O' , 'P' , 'Q' , 'R' , 'S' , 'T' , 'U', 'V' , 'W' , 'X' , 'Y', 'Z',};
+
+
 
  for( int m= 0 ; m < 26 ; m++)
  {
