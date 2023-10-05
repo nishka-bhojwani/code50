@@ -26,7 +26,7 @@ int compute_score(string word)
     // TODO: Compute and return score for string
     string word;
     length = strlen(word);
-    for(i =0 ; i< length ; i++)
+    for( int i =0 ; i< length ; i++)
     {
         if( islower(word[i]))
         {
@@ -41,12 +41,23 @@ int compute_score(string word)
             return word[i];
         }
     }
+    return word;
 
     char alpha[26];
     alpha[0] = 'A';
     for ( int j = 1 ; j < 26 ; j++)
     {
-        alpha[j] = alpha[j] + 1
+        alpha[j] = alpha[j-1] + 1 ;
+        return alpha[j];
     }
 
+ for( int m= 0 ; m < 26 ; m++)
+ {
+    alpha[m] = POINTS[m];
+ }
+  int sum = 0;
+  for ( int n = 0 ; n < length ; n++ )
+  {
+    sum = sum + POINTS[m]; 
+  }
 }
