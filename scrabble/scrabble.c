@@ -42,7 +42,7 @@ int compute_score(string word)
     {
         if( islower(word[i]))
         {
-            sum = sum + POINTS[word[i] - 67];
+            sum = sum + POINTS[word[i] - 65];
         }
         else if( (word[i] <= 'a' && word[i] >= 'z') || (word[i] <= 'A' && word[i] >= 'Z'))
         {
@@ -50,7 +50,7 @@ int compute_score(string word)
         }
         else
         {
-            sum = sum + POINTS[ word[i]];
+            sum = sum + POINTS[ word[i]- 97];
         }
     }
     return sum;
