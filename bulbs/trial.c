@@ -9,7 +9,8 @@ int main(void)
     bool binary[8];
     for( int i = 0 ; i < length ; i++)
     {
-        
+        (int) word[i] = int num;
+        printf( "%i" , (num%1))
     }
 
 }
