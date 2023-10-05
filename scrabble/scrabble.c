@@ -43,7 +43,7 @@ int compute_score(string word)
         {
             return(isupper(word[i]));
         }
-        else if( (word[i] >= 'a' && word[i] <= 'z') || (word[i] >= 'A' && word[i] <= 'Z'))
+        else if( (word[i] <= 'a' && word[i] >= 'z') || (word[i] <= 'A' && word[i] >= 'Z'))
         {
             return( word[i] = 0);
         }
