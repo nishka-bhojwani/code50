@@ -53,21 +53,11 @@ int compute_score(string word)
         }
     }
 
-
-    char alpha[] = { 'A' , 'B' , 'C' , 'D' , 'E' , 'F' , 'G', 'H' , 'I' , 'J' , 'L' , 'M' , 'N' , 'O' , 'P' , 'Q' , 'R' , 'S' , 'T' , 'U', 'V' , 'W' , 'X' , 'Y', 'Z',};
-
-
-    int sum;
- for( int m= 0 ; m < 26 ; m++)
- {
-    alpha[m]= POINTS[m] ;
+    int sum=0;
     for( int n =0 ; n < length; n++)
     {
-        sum = sum + ;
-
+        sum = sum + POINTS[(int) word[n] - 97 ];
     }
- }
-
     return sum;
 
 }
