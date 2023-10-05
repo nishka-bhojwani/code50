@@ -24,24 +24,23 @@ int main(void)
 int compute_score(string word)
 {
     // TODO: Compute and return score for string
-    string word;
-    length = strlen(word);
+    int length = strlen(word);
     for( int i =0 ; i< length ; i++)
     {
         if( islower(word[i]))
         {
             return(isupper(word[i]));
         }
-        else if( word[i] >= 'a' && word[i] <= 'z' || word[i] >= 'A' && word[i] <= 'Z')
+        else if( (word[i] >= 'a' && word[i] <= 'z') || (word[i] >= 'A' && word[i] <= 'Z'))
         {
-            return( word[i] == O );
+            return( word[i] = 0);
         }
         else
         {
             return word[i];
         }
     }
-    return word;
+
 
     char alpha[26];
     alpha[0] = 'A';
@@ -58,9 +57,9 @@ int compute_score(string word)
   int sum = 0;
   for ( int n = 0 ; n < length ; n++ )
   {
-    sum = sum + POINTS[m];
+    sum = sum + POINTS[n];
     return sum;
   }
 
-  
+
 }
