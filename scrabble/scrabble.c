@@ -44,9 +44,9 @@ int compute_score(string word)
 
     char alpha[26];
     alpha[0] = 'A';
-    for ( int j = 0 ; j < 26 ; j++)
+    for ( int j = 1 ; j < 26 ; j++)
     {
-        alpha[j] = 
+        alpha[j] = alpha[j] + 1
     }
 
 }
