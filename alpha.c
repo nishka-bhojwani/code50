@@ -12,20 +12,22 @@ int main(void)
     {
         if( x[i] >= 'a' && x[i] <= 'z')
         {
-            if (x[i] < x[i-1])
+            if (x[i] > x[i+1])
             {
-                printf(" No");
+                printf(" No \n");
                 return 0;
-
-            }
+                }
             else
             {
-                printf("Yes \n);
+                printf("Yes \n");
                 return 0;
             }
+        }
         else
         {
-            printf("No");
+            printf("Give an input with lowercase charecters please \n");
+            return 0;
+
         }
 
     }
