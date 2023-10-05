@@ -12,7 +12,7 @@ int main(void)
     {
         if( x[i] >= 'a' && x[i] <= 'z')
         {
-            if (x[i] > x[i]-1)
+            if (x[i] > x[i-1])
             {
                 printf("Yes");
             }
