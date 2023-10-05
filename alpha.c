@@ -12,19 +12,22 @@ int main(void)
     {
         if( x[i] >= 'a' && x[i] <= 'z')
         {
-            if (x[i] > x[i-1])
+            if (x[i] < x[i-1])
             {
-                printf("Yes");
+                printf(" No");
+                return 0;
+
             }
             else
             {
-                printf("No");
+                printf("Yes \n);
+                return 0;
             }
-        }
         else
         {
             printf("No");
         }
+
     }
     printf("\n");
 
