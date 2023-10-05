@@ -46,14 +46,13 @@ int compute_score(string word)
         {
             sum = sum + POINTS[word[i] - 65];
         }
-        else if( (word[i] <= 'a' && word[i] >= 'z') || (word[i] <= 'A' && word[i] >= 'Z'))
-        {
-            sum = sum + 0;
-        }
-        else
-        {
-            sum = sum + POINTS[ word[i]- 97];
-        }
+
+      if(isupper(word[i]))
+      {
+        sum = sum + POINTS[word[i] - 97];
+      }
+
+      if((word[i] < 65 && word[i] > ))
     }
     return sum;
 
