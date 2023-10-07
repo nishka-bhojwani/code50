@@ -23,8 +23,9 @@ int main(void)
     for ( int j = 0 ; j < 8 ; j++)
     {
        num = rem[j];
+       print_bulb(num);
     }
-    print_bulb(num);
+    
     printf("\n");
 
     }
