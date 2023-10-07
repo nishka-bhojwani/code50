@@ -21,7 +21,8 @@ int main(void)
     }
     for ( int j = 0 ; j < 8 ; j++)
     {
-    printf("%i" , rem[j]);
+       int num = rem[j];
+    void print_bulb(int num);
     }
     printf("\n");
 
