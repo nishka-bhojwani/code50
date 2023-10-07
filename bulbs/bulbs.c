@@ -3,6 +3,7 @@
 #include <string.h>
 
 const int BITS_IN_BYTE = 8;
+int num;
 
 void print_bulb(int bit);
 
@@ -21,9 +22,9 @@ int main(void)
     }
     for ( int j = 0 ; j < 8 ; j++)
     {
-       int num = rem[j];
-    void print_bulb(int num);
+       num = rem[j];
     }
+    print_bulb(num);
     printf("\n");
 
     }
