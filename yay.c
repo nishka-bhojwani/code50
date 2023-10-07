@@ -9,7 +9,7 @@ int main(void)
     {
     rem[8-i]= (int)(num % 2) ;
     num = num / 2 ;
-    printf("%i" , rem[2]);
+    printf("%i" , rem[i]);
     }
 
 }
