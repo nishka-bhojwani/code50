@@ -4,14 +4,33 @@
 
 int main(void)
 {
-    string word = get_string(" Message: ");
+    char word[] = get_string(" Message: ");
     int length = strlen(word);
-    int rem[8];
     for( int i = 0 ; i < length ; i++)
     {
-        (int) word[i] = int num;
-        rem1= num%2;
-        num =/ 2 ;
+        for (int j = 0 ; j < 8 ; i++ )
+    {
+    rem[7-i]= (int)(word[i] % 2) ;
+    word[i] = word[i] / 2 ;
+    }
+    for ( int j = 0 ; j < 8 ; j++)
+    {
+    printf("%i" , rem[j]);
+    }
+
+    }
+    int num = 72;
+    int rem[8];
+
+
+    for (int j = 0 ; j < 8 ; i++ )
+    {
+    rem[7-i]= (int)(word[i] % 2) ;
+    word[i] = word[i] / 2 ;
+    }
+    for ( int j = 0 ; j < 8 ; j++)
+    {
+    printf("%i" , rem[j]);
     }
 
 
