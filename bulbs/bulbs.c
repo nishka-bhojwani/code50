@@ -21,11 +21,12 @@ int main(void)
     }
     for ( int j = 0 ; j < 8 ; j++)
     {
-    printf("%i" , rem[j]);
+    void print_bulb(int word[j]);
     }
     printf("\n");
 
     }
+
 }
 
 void print_bulb(int bit)
