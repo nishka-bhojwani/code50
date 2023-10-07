@@ -3,8 +3,8 @@
 #include <string.h>
 
 const int BITS_IN_BYTE = 8;
-int x ;
-void print_bulb(int bit[x]);
+
+void print_bulb(int bit);
 
 int main(void)
 {
@@ -21,21 +21,21 @@ int main(void)
     }
     for ( int j = 0 ; j < 8 ; j++)
     {
-    void print_bulb(int rem[j]);
+    printf("%i" , rem[j]);
     }
     printf("\n");
 
     }
 }
 
-void print_bulb(int bit[x])
+void print_bulb(int bit)
 {
-    if (bit[x] == 0)
+    if (bit == 0)
     {
         // Dark emoji
         printf("\U000026AB");
     }
-    else if (bit[x] == 1)
+    else if (bit == 1)
     {
         // Light emoji
         printf("\U0001F7E1");
