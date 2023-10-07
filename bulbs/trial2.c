@@ -4,6 +4,9 @@
 int main(void)
 {
     int num = 65;
-    int rem1= 65%(2^i);
-    int rem2=
+    for(int i = 0 ; i < 8 ; i ++)
+    {
+    int rem1= 72%(2*(i*2]);
+    printf("%i . ", rem1);
+    }
 }
