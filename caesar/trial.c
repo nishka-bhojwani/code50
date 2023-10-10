@@ -21,12 +21,16 @@ int main(int argc, string argv[])
 
 bool only_nums(string x)
 {
-    if( ((int) x < 0 ) || ((int) x > 9 ))
+    int length = strlen(x);
+    for(int i = 0 ; i < length ; i++ )
+    {
+    if( ((int) x[i] < 0 ) || ((int) x[i] > 9 ))
     {
         return true;
     }
     else
     {
         return false;
+    }
     }
 }
