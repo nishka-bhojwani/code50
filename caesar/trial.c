@@ -30,6 +30,4 @@ bool only_nums(string x)
     }
     }
     return true;
-
-
 }
