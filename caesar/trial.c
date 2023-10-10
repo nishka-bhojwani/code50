@@ -20,20 +20,29 @@ int main(int argc, string argv[])
 }
 
 bool only_nums(string x)
-{
+{   int cool;
     int length = strlen(x);
     for(int i = 0 ; i < length ; i++ )
     {
     if( ((int) x[i] < 0 ) || ((int) x[i] > 9 ))
     {
-        return true;
+        return cool=1;
     }
     else
     {
+        return cool=0;
+    }
+    }
+    if(cool==1)
+    {
+        return true;
+    }
+    if(cool==0)
+    {
         return false;
     }
-    }
-    
+
+
 
 
 }
