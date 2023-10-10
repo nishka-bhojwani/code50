@@ -21,5 +21,12 @@ int main(int argc, string argv[])
 
 bool only_nums(string x)
 {
-    if( x == (string) 0 
+    if( ((int) x < 0 ) || ((int) x > 9 ))
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
