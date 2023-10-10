@@ -2,11 +2,11 @@
 #include <stdio.h>
 #include <string.h>
 
-bool only_nums(sring x);
+bool only_nums(string x);
 
 int main(int argc, string argv[])
 {
-    if(argc == 2 )
+    if(argc == 2 && only_nums(argv[1]) )
     {
         return 0;
     }
