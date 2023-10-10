@@ -2,8 +2,13 @@
 #include <stdio.h>
 #include <
 
-int main(argc, argv[])
+int main(int argc, string argv[])
 {
-    
+    if(argc = 2 )
+    {
+        
+
+    }
+
 
 }
