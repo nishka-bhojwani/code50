@@ -6,7 +6,7 @@ bool only_nums(string x);
 
 int main(int argc, string argv[])
 {
-    if(argc == 2 && only_nums(argv[1]) )
+    if(argc == 2 && only_nums(argv[1])==true )
     {
         return 0;
     }
