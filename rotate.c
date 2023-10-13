@@ -3,13 +3,12 @@
 #include <string.h>
 #include <ctype.h>
 
-char rotate(char letter);
+char rotate(char letter , int key);
 
 
 int main(void)
 {
     string text = get_string("plaintext: ");
-    int
     printf("ciphertext:");
     for ( int i = 0 ; i < strlen(text) ; i++)
     {
@@ -51,5 +50,6 @@ char rotate(char letter, int key )
         c = (char) (c+97);
         return c;
     }
-    return 0;
+    return 1;
+
 }
