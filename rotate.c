@@ -18,17 +18,20 @@ int main(void)
             {
                 char final = rotate(text[i], 3);
                 printf("%c", final);
+                return 1 ;
             }
             else if(islower(text[i]))
             {
                 char final2 = rotate(text[i] , 3);
                 printf("%c" , final2);
+                return 1 ;
             }
         }
         else
         {
             printf("%c" , text[i]);
         }
+        printf("\n");
     }
 
 }
