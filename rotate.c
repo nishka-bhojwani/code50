@@ -12,13 +12,19 @@ int main(void)
 
 char rotate(char letter)
 {
-    char c1;
-    char c2;
 
     if(isupper(letter))
     {
         letter = (letter/65) ;
-        c1 =  ((letter + key ) % 26 )
-
+        int c1 =  ((letter + key ) % 26 )
+        char c1 = (char) c1+65
+        return c1;
+            }
+    else if(islower(letter))
+    {
+        letter = (letter/65) ;
+        int c1 =  ((letter + key ) % 26 )
+        char c1 = (char) c1+65
+        return c1
     }
 }
