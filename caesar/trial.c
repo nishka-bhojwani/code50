@@ -18,7 +18,16 @@ int main(int argc, string argv[])
     }
     int atoi(string argv[1]);
     int text = get_string("plaintext: \n");
-    
+    for ( int i = 0 ; i < strlen(text) ; i++)
+    {
+        if ( isalpha(text[i]) )
+        {
+            if(isupper(text[i]))
+            {
+                printf()
+            }
+        }
+    }
 
 
 
