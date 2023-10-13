@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 bool only_nums(string x);
 
@@ -15,7 +16,7 @@ int main(int argc, string argv[])
         printf("Usage: ./caesar key\n");
         return 1;
     }
-    int key = argv[1];
+
 
 
 }
