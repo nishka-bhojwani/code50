@@ -29,8 +29,8 @@ int main(void)
         {
             printf("%c" , text[i]);
         }
-        printf("\n");
     }
+      printf("\n");
 
 }
 
@@ -39,14 +39,14 @@ char rotate(char letter, int key )
 
     if(isupper(letter))
     {
-        letter = (letter/65) ;
+        letter = (letter-65) ;
         int c =  ((letter + key ) % 26 );
         c = (char) (c+65);
         return c;
             }
     else if(islower(letter))
     {
-        letter = (letter/97) ;
+        letter = (letter-97) ;
         int c =  ((letter + key ) % 26 );
         c = (char) (c+97);
         return c;
