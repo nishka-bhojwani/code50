@@ -16,7 +16,8 @@ int main(int argc, string argv[])
     }
     int num = atoi(argv[1]);
 
-    string text = get_string("plaintext: ");
+    string text = get_string("plaintext:  ");
+    printf("ciphertext: ");
     for ( int i = 0 ; i < strlen(text) ; i++)
     {
         if ( isalpha(text[i]) )
