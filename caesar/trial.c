@@ -2,8 +2,10 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 bool only_nums(string x);
+char rotate(char letter , int key);
 
 int main(int argc, string argv[])
 {
