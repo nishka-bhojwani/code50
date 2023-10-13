@@ -22,13 +22,7 @@ int main(int argc, string argv[])
     int text = get_string("plaintext: \n");
     for ( int i = 0 ; i < strlen(text) ; i++)
     {
-        if ( isalpha(text[i]) )
-        {
-            if(isupper(text[i]))
-            {
-                printf()
-            }
-        }
+        
     }
 
 
@@ -46,4 +40,24 @@ bool only_nums(string x)
     }
     }
     return true;
+}
+
+char rotate(char letter, int key )
+{
+
+    if(isupper(letter))
+    {
+        letter = (letter-65) ;
+        int c =  ((letter + key ) % 26 );
+        c = (char) (c+65);
+        return c;
+            }
+    else if(islower(letter))
+    {
+        letter = (letter-97) ;
+        int c =  ((letter + key ) % 26 );
+        c = (char) (c+97);
+        return c;
+    }
+    return 1;
 }

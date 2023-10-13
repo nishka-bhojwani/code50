@@ -9,7 +9,7 @@ char rotate(char letter , int key);
 int main(void)
 {
     string text = get_string("plaintext: ");
-    printf("ciphertext:");
+    printf("ciphertext: ");
     for ( int i = 0 ; i < strlen(text) ; i++)
     {
         if ( isalpha(text[i]) )
