@@ -19,7 +19,7 @@ int main(int argc, string argv[])
         return 1;
     }
     int atoi(string argv[1]);
-    int num = argv[1];
+
     int text = get_string("plaintext: \n");
     for ( int i = 0 ; i < strlen(text) ; i++)
     {
@@ -27,12 +27,12 @@ int main(int argc, string argv[])
         {
             if(isupper(text[i]))
             {
-                char final = rotate(text[i],num );
+                char final = rotate(text[i], argv[1] );
                 printf("%c", final);
             }
             else if(islower(text[i]))
             {
-                char final2 = rotate(text[i] , num);
+                char final2 = rotate(text[i] , argv[1]);
                 printf("%c" , final2);
             }
         }
