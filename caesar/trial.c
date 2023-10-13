@@ -9,18 +9,14 @@ char rotate(char letter , int key);
 
 int main(int argc, string argv[])
 {
-    if(argc == 2 && only_nums(argv[1])==true )
+    if(argc != 2 || only_nums(argv[1])==false )
     {
-        return 0;
-    }
-    else
-    {
-        printf("Usage: ./caesar key\n");
+         printf("Usage: ./caesar key\n");
         return 1;
     }
     int num = atoi(argv[1]);
 
-    string text = get_string("plaintext: \n");
+    string text = get_string("plaintext: ");
     for ( int i = 0 ; i < strlen(text) ; i++)
     {
         if ( isalpha(text[i]) )
