@@ -18,21 +18,21 @@ int main(int argc, string argv[])
         printf("Usage: ./caesar key\n");
         return 1;
     }
-    int atoi(string argv[1]);
+    int num = atoi(argv[1]);
 
-    int text = get_string("plaintext: \n");
+    string text = get_string("plaintext: \n");
     for ( int i = 0 ; i < strlen(text) ; i++)
     {
         if ( isalpha(text[i]) )
         {
             if(isupper(text[i]))
             {
-                char final = rotate(text[i], argv[1] );
+                char final = rotate(text[i], num);
                 printf("%c", final);
             }
             else if(islower(text[i]))
             {
-                char final2 = rotate(text[i] , argv[1]);
+                char final2 = rotate(text[i] , num);
                 printf("%c" , final2);
             }
         }
