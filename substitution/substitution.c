@@ -9,7 +9,7 @@ int main(int argc, string argv[])
 {
     if (argc != 2 || only_26(argv[1]) == false)
     {
-        printf("Usage: ./substitution key");
+        printf("Usage: ./substitution key ");
         return 1;
     }
 
@@ -31,6 +31,11 @@ bool only_26(string x)
     {
         return true;
     }
+    else
+    {
+        return false;
+    }
    }
-    return false;
+   return 1;
+
 }
