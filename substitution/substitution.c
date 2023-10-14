@@ -9,14 +9,14 @@ int main(int argc, string argv[])
 {
     if (argc != 2 || only_26(argv[1]) == false)
     {
-        printf("Usage: ./substitution key ");
+        printf("Usage: ./substitution key \n");
         return 1;
     }
 
     else if (argc ==2 && only_26(argv[1]) == true)
     {
         if(strlen(argv[1]) != 26)
-        printf("Key must contain 26 charecters.");
+        printf("Key must contain 26 charecters. \n");
         return 1 ;
     }
 
