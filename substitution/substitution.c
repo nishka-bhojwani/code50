@@ -29,10 +29,7 @@ int main(int argc, string argv[])
         return 1;
         }
     }
-    else
-    {
-        return 0;
-    }
+
 
     string text = get_string("plaintext:  ");
     printf("ciphertext: ");
