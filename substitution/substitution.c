@@ -27,7 +27,7 @@ int main(int argc, string argv[])
         printf("Key must contain only alphabets. \n");
         return 1;
     }
-    
+    else{
     string text = get_string("plaintext:  \n");
     printf("ciphertext: \n");
     for (int i = 0; i < strlen(text); i++)
@@ -62,6 +62,7 @@ int main(int argc, string argv[])
         }
     }
     printf("\n");
+    }
 }
 
 bool only_26(string x)
@@ -95,4 +96,5 @@ int sub(string given)
         }
     }
     return 1;
+
 }
