@@ -51,7 +51,7 @@ int main(int argc, string argv[])
         }
         if(islower(text[i]))
         {
-            index = sub(text);
+            index = sub(text[i]);
             if(islower(argv[1][index]))
             {
                 printf("%c" , argv[1][index]);
@@ -87,7 +87,7 @@ return true;
 
 int sub(char given)
 {
-    int c;
+    int c = 0;
     if(isupper(given))
     {
         c = (int)(given - 'A');
