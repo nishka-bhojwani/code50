@@ -16,6 +16,10 @@ int main(int argc, string argv[])
         printf("Usage: ./substitution key \n");
         return 1;
     }
+    else
+    {
+        return 0;
+    }
     if (argc ==2 )
     {
         if(strlen(argv[1]) != 26)
@@ -23,14 +27,16 @@ int main(int argc, string argv[])
         printf("Key must contain 26 charecters. \n");
         return 1 ;
         }
-    if (only_26(argv[1])==false)
+         if (only_26(argv[1])==false)
         {
         printf("Key must contain only alphabets. \n");
         return 1;
         }
     }
-
-    return 0;
+    else
+    {
+        return 0;
+    }
 
     string text = get_string("plaintext:  \n");
     printf("ciphertext: \n");
