@@ -11,11 +11,11 @@ int main(int argc, string argv[])
     {
         if(strlen(argv[1]) != 26)
         printf("Key must contain 26 charecters.");
-        return 1;
     }
     if (argc != 2 || only_26(argv[1]) == false)
     {
         printf("Usage: ./substitution key");
+        return 1;
     }
 
 }
