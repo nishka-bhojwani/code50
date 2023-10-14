@@ -4,9 +4,8 @@
 #include <stdlib.h> //for converting string to int
 #include <string.h> //for using strlen function
 
-bool only_26(string x);
+bool only_alpha(string x); //to check that all the charecters are alphabets
 int sub(char given);
-
 
 int main(int argc, string argv[])
 
@@ -24,7 +23,7 @@ int main(int argc, string argv[])
             printf("Key must contain 26 charecters. \n");
             return 1;
         }
-        if (only_26(argv[1]) == false)
+        if (only_alpha(argv[1]) == false)
         {
             printf("Key must contain only alphabets. \n");
             return 1;
@@ -44,7 +43,7 @@ int main(int argc, string argv[])
 
     string text = get_string("plaintext:  ");
     printf("ciphertext: ");
-    for (int i = 0; i < strlen(text); i++)
+    for (int i = 0; i < strlen(text); i++) //iterates through every element of the input text
     {
         if (isupper(text[i]))
         {
@@ -70,40 +69,37 @@ int main(int argc, string argv[])
                 printf("%c", (char) (argv[1][index] + 32));
             }
         }
-            if(!isalpha(text[i]))
-            {
-            printf("%c" , text[i]);
-            }
-
+        if (!isalpha(text[i]))
+        {
+            printf("%c", text[i]);
+        }
     }
     printf("\n");
-    }
+}
 
-
-bool only_26(string x)
+bool only_alpha(string x)
 {
     int length = strlen(x);
     for (int i = 0; i < length; i++)
-   {
-    if( !isalpha(x[i]))
     {
-        return false;
+        if (!isalpha(x[i]))
+        {
+            return false;
+        }
     }
-
-}
-return true;
+    return true;
 }
 
-int sub(char given)
+int sub(char given) //to covert the ints representing the alphabets to the required index of argv[1].
 {
     int c = 0;
-    if(isupper(given))
+    if (isupper(given)) //for uppercase charecters
     {
-        c = (int)(given - 'A');
+        c = (int) (given - 'A');
     }
-    else if(islower(given))
+    else if (islower(given)) //for lowercase charecters
     {
-        c = (int)(given - 'a');
+        c = (int) (given - 'a');
     }
     return c;
 }
