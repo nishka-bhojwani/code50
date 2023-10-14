@@ -19,13 +19,15 @@ int main(int argc, string argv[])
     if (argc ==2 )
     {
         if(strlen(argv[1]) != 26)
+        {
         printf("Key must contain 26 charecters. \n");
         return 1 ;
-    }
+        }
     if (only_26(argv[1])==false)
-    {
+        {
         printf("Key must contain only alphabets. \n");
         return 1;
+        }
     }
 
     return 0;
