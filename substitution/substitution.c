@@ -9,7 +9,8 @@ int sub(string given);
 
 
 int main(int argc, string argv[])
-{
+
+{   int index;
     if (argc != 2)
     {
         printf("Usage: ./substitution key \n");
@@ -28,12 +29,11 @@ int main(int argc, string argv[])
     }
     string text = get_string("plaintext:  \n");
     printf("ciphertext: \n");
-    int index;
     for (int i = 0; i < strlen(text); i++)
     {
         if(isupper(text[i]))
         {
-            int index = sub(text);
+            index = sub(text);
             if(isupper(argv[1][index]))
             {
                 printf("%c" , argv[1][index]);
@@ -45,7 +45,7 @@ int main(int argc, string argv[])
         }
         if(islower(text[i]))
         {
-            int index = sub(text);
+            index = sub(text);
             if(islower(argv[1][index]))
             {
                 printf("%c" , argv[1][index]);
