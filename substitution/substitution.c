@@ -27,7 +27,7 @@ bool only_26(string x)
     int length = strlen(x);
     for (int i = 0; i < length; i++)
    {
-        if (( x[i] >= 'a' && x[i] <= 'z') || ( x[i] >= 'A' && x[i] <= 'Z'))
+        if (( x[i] >= 65 && x[i] <= 90) || ( x[i] >= 97 && x[i] <= 122))
     {
         return true;
     }
