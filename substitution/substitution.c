@@ -16,11 +16,7 @@ int main(int argc, string argv[])
         printf("Usage: ./substitution key \n");
         return 1;
     }
-    else
-    {
-        return 0;
-    }
-    if (argc ==2 )
+    else if (argc ==2 )
     {
         if(strlen(argv[1]) != 26)
         {
@@ -38,8 +34,8 @@ int main(int argc, string argv[])
         return 0;
     }
 
-    string text = get_string("plaintext:  \n");
-    printf("ciphertext: \n");
+    string text = get_string("plaintext:  ");
+    printf("ciphertext: ");
     for (int i = 0; i < strlen(text); i++)
     {
         if(isupper(text[i]))
