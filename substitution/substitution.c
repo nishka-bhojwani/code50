@@ -27,11 +27,11 @@ bool only_26(string x)
     int length = strlen(x);
     for (int i = 0; i < length; i++)
    {
-        if (( x[i] >= 65 && x[i] <= 90) || ( x[i] >= 97 && x[i] <= 122))
+        if (( ((int) x[i] ) >= 65 && ((int) x[i] )<= 90) || ( ((int) x[i]) >= 97 && ((int) x[i]) <= 122))
     {
         return true;
     }
-    else
+        else
     {
         return false;
     }
