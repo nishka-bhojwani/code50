@@ -10,68 +10,64 @@ int sub(char given);
 
 int main(int argc, string argv[])
 
-{   int index;
+{
+    int index;
     if (argc != 2)
     {
         printf("Usage: ./substitution key \n");
         return 1;
     }
-    else if (argc ==2 )
+    else if (argc == 2)
     {
-        if(strlen(argv[1]) != 26)
+        if (strlen(argv[1]) != 26)
         {
-        printf("Key must contain 26 charecters. \n");
-        return 1 ;
+            printf("Key must contain 26 charecters. \n");
+            return 1;
         }
-         if (only_26(argv[1])==false)
+        if (only_26(argv[1]) == false)
         {
-        printf("Key must contain only alphabets. \n");
-        return 1;
+            printf("Key must contain only alphabets. \n");
+            return 1;
         }
-         for (int i = 0; i < 25; i++)
-    {
-        for (int j = i + 1; j < 26; j++)
+        for (int i = 0; i < 25; i++)
         {
-            if (argv[1][i] == argv[1][j])
+            for (int j = i + 1; j < 26; j++)
             {
-                printf("Key contains duplicate letters.\n");
-                return 1;
+                if (argv[1][i] == argv[1][j])
+                {
+                    printf("Key contains duplicate letters.\n");
+                    return 1;
+                }
             }
         }
     }
-
-    }
-
 
     string text = get_string("plaintext:  ");
     printf("ciphertext: ");
     for (int i = 0; i < strlen(text); i++)
     {
-        if(isupper(text[i]))
+        if (isupper(text[i]))
         {
             index = sub(text[i]);
-            if(isupper(argv[1][index]))
+            if (isupper(argv[1][index]))
             {
-                printf("%c" , argv[1][index]);
-
+                printf("%c", argv[1][index]);
             }
-            else if(islower(argv[1][index]))
+            else if (islower(argv[1][index]))
             {
-                printf("%c" , (char)(argv[1][index] - 32));
-
+                printf("%c", (char) (argv[1][index] - 32));
             }
         }
-        if(islower(text[i]))
+        if (islower(text[i]))
         {
             index = sub(text[i]);
-            if(islower(argv[1][index]))
+            if (islower(argv[1][index]))
             {
-                printf("%c" , argv[1][index]);
-
+                printf("%c", argv[1][index]);
             }
-            else if(isupper(argv[1][index]))
+            else if (isupper(argv[1][index]))
             {
-                printf("%c" , (char)(argv[1][index] + 32));
+                printf("%c", (char) (argv[1][index] + 32));
             }
         }
             if(!isalpha(text[i]))
