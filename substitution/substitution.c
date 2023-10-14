@@ -28,6 +28,18 @@ int main(int argc, string argv[])
         printf("Key must contain only alphabets. \n");
         return 1;
         }
+         for (int i = 0; i < 25; i++)
+    {
+        for (int j = i + 1; j < 26; j++)
+        {
+            if (argv[1][i] == argv[1][j])
+            {
+                printf("Key contains duplicate letters.\n");
+                return 1;
+            }
+        }
+    }
+
     }
 
 
