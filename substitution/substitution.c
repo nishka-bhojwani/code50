@@ -7,11 +7,17 @@
 bool only_26(string x);
 int main(int argc, string argv[])
 {
-    if (argc != 2 || only_26(argv[1]) == false) // condition to check that the user inputs only one key as a CLA
+    if (argc ==2 && only_26(argv[1]) == true) 
     {
-        printf("Usage: ./caesar key\n"); // incase user gives more than 1 input tells the user the required input structure
+        if(strlen(argv[1]) =! 26)
+        printf("Key must contain 26 charecters.");
         return 1;
     }
+    if (argc =! 2 || only_26(argv[1]) == false)
+    {
+        printf("Usage: ./substitution key");
+    }
+
 }
 
 bool only_26(string x)
@@ -19,7 +25,7 @@ bool only_26(string x)
     length = strlen(x);
     for (i = 0; i < length; i++)
    {
-        if (length == 26 && (( x[i] >= 'a' && x[i] <= 'z') || ( x[i] >= 'A' && x[i] <= 'Z')) )
+        if (( x[i] >= 'a' && x[i] <= 'z') || ( x[i] >= 'A' && x[i] <= 'Z'))
     {
         return true;
     }
