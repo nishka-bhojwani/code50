@@ -7,15 +7,17 @@
 bool only_26(string x);
 int main(int argc, string argv[])
 {
-    if (argc ==2 && only_26(argv[1]) == true)
-    {
-        if(strlen(argv[1]) != 26)
-        printf("Key must contain 26 charecters.");
-    }
     if (argc != 2 || only_26(argv[1]) == false)
     {
         printf("Usage: ./substitution key");
         return 1;
+    }
+
+    else if (argc ==2 && only_26(argv[1]) == true)
+    {
+        if(strlen(argv[1]) != 26)
+        printf("Key must contain 26 charecters.");
+        return 1 ;
     }
 
 }
