@@ -62,10 +62,11 @@ int main(int argc, string argv[])
                 printf("%c" , (char)(argv[1][index] + 32));
             }
         }
-        else
-        {
+            if(!isalpha(text[i]))
+            {
             printf("%c" , text[i]);
-        }
+            }
+
     }
     printf("\n");
     }
