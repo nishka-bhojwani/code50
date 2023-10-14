@@ -27,15 +27,6 @@ bool only_26(string x)
     int length = strlen(x);
     for (int i = 0; i < length; i++)
    {
-        if (( ((int) x[i] ) >= 65 && ((int) x[i] )<= 90) || ( ((int) x[i]) >= 97 && ((int) x[i]) <= 122))
-    {
-        return true;
-    }
-        else
-    {
-        return false;
-    }
-   }
-   return 1;
+    if( !isalpha(x[i]))
 
 }
