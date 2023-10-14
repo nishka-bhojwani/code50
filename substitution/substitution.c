@@ -49,6 +49,7 @@ int main(int argc, string argv[])
             {
                 printf("%c" , (char)(argv[1][index] - 32));
             }
+            return 1;
         }
         if(islower(text[i]))
         {
@@ -61,6 +62,7 @@ int main(int argc, string argv[])
             {
                 printf("%c" , (char)(argv[1][index] + 32));
             }
+            return 1;
         }
         else
         {
