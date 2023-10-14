@@ -5,7 +5,7 @@
 #include <string.h> //for using strlen function
 
 bool only_26(string x);
-char sub_upper(string given);
+int sub(string given);
 
 
 int main(int argc, string argv[])
@@ -28,10 +28,39 @@ int main(int argc, string argv[])
     }
     string text = get_string("plaintext:  \n");
     printf("ciphertext: \n");
-
-
-
-
+    int index;
+    for (int i = 0; i < strlen(text); i++)
+    {
+        if(isupper(text[i]))
+        {
+            int index = sub(text);
+            if(isupper(argv[1][index]))
+            {
+                printf("%c" , argv[1][index]);
+            }
+            if(islower(argv[1][index]))
+            {
+                printf("%c" , (char)(argv[1][index] - 32));
+            }
+        }
+        if(islower(text[i]))
+        {
+            int index = sub(text);
+            if(islower(argv[1][index]))
+            {
+                printf("%c" , argv[1][index]);
+            }
+            if(isupper(argv[1][index]))
+            {
+                printf("%c" , (char)(argv[1][index] + 32));
+            }
+        }
+        else
+        {
+            printf("%c" , text[i]);
+        }
+    }
+    printf("\n");
 }
 
 bool only_26(string x)
@@ -48,4 +77,21 @@ bool only_26(string x)
 return true;
 }
 
-char sub()
+int sub(string given)
+{
+    int c;
+    for (int i = 0; i < strlen(given); i++)
+    {
+        if(isupper(given[i]))
+        {
+            c = (int)(given[i] - 65);
+            return c;
+        }
+        if(islower(given[i]))
+        {
+            c = (int)(given[i] - 97);
+            return c;
+        }
+    }
+    return 1;
+}
