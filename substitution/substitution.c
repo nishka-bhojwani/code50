@@ -28,5 +28,8 @@ bool only_26(string x)
     for (int i = 0; i < length; i++)
    {
     if( !isalpha(x[i]))
+    {
+        
+    }
 
 }
