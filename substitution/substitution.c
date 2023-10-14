@@ -5,7 +5,7 @@
 #include <string.h> //for using strlen function
 
 bool only_26(string x);
-int sub(string given);
+int sub(char given);
 
 
 int main(int argc, string argv[])
@@ -37,7 +37,7 @@ int main(int argc, string argv[])
     {
         if(isupper(text[i]))
         {
-            index = sub(text[i]);
+            index = sub(text);
             if(isupper(argv[1][index]))
             {
                 printf("%c" , argv[1][index]);
