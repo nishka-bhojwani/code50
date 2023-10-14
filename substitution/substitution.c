@@ -5,6 +5,8 @@
 #include <string.h> //for using strlen function
 
 bool only_26(string x);
+char sub(string given);
+
 int main(int argc, string argv[])
 {
     if (argc != 2)
@@ -23,8 +25,11 @@ int main(int argc, string argv[])
         printf("Key must contain only alphabets. \n");
         return 1;
     }
-
+    string text = get_string("plaintext:  \n");
+    printf("ciphertext: \n");
     
+
+
 
 }
 
