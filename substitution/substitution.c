@@ -43,7 +43,7 @@ int main(int argc, string argv[])
                 printf("%c" , argv[1][index]);
 
             }
-            if(islower(argv[1][index]))
+            else if(islower(argv[1][index]))
             {
                 printf("%c" , (char)(argv[1][index] - 32));
 
@@ -57,7 +57,7 @@ int main(int argc, string argv[])
                 printf("%c" , argv[1][index]);
 
             }
-            if(isupper(argv[1][index]))
+            else if(isupper(argv[1][index]))
             {
                 printf("%c" , (char)(argv[1][index] + 32));
             }
