@@ -37,7 +37,7 @@ int main(int argc, string argv[])
     {
         if(isupper(text[i]))
         {
-            index = sub(text);
+            index = sub(text[i]);
             if(isupper(argv[1][index]))
             {
                 printf("%c" , argv[1][index]);
@@ -88,19 +88,13 @@ return true;
 int sub(string given)
 {
     int c;
-    for (int i = 0; i < strlen(given); i++)
+    if(isupper(given))
     {
-        if(isupper(given[i]))
-        {
-            c = (int)(given[i] - 65);
-            return c;
-        }
-        if(islower(given[i]))
-        {
-            c = (int)(given[i] - 97);
-            return c;
-        }
+        c = (int)(given - 'A');
     }
-    return 1;
-
+    else if(islower(given))
+    {
+        c = (int)(given - 'a');
+    }
+    return c;
 }
