@@ -5,7 +5,8 @@
 #include <string.h> //for using strlen function
 
 bool only_26(string x);
-char sub(string given);
+char sub_upper(string given);
+char sub_lower(string given);
 
 int main(int argc, string argv[])
 {
@@ -27,7 +28,7 @@ int main(int argc, string argv[])
     }
     string text = get_string("plaintext:  \n");
     printf("ciphertext: \n");
-    
+
 
 
 
@@ -46,3 +47,5 @@ bool only_26(string x)
 }
 return true;
 }
+
+char sub_upper()
