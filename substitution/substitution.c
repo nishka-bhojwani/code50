@@ -6,7 +6,7 @@
 
 bool only_26(string x);
 char sub_upper(string given);
-char sub_lower(string given);
+
 
 int main(int argc, string argv[])
 {
@@ -48,4 +48,4 @@ bool only_26(string x)
 return true;
 }
 
-char sub_upper()
+char sub()
