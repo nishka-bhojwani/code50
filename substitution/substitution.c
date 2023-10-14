@@ -37,7 +37,7 @@ int main(int argc, string argv[])
     {
         if(isupper(text[i]))
         {
-            index = sub(text);
+            index = sub(text[i]);
             if(isupper(argv[1][index]))
             {
                 printf("%c" , argv[1][index]);
@@ -85,7 +85,7 @@ bool only_26(string x)
 return true;
 }
 
-int sub(string given)
+int sub(char given)
 {
     int c;
     if(isupper(given))
