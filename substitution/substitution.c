@@ -44,12 +44,13 @@ int main(int argc, string argv[])
             if(isupper(argv[1][index]))
             {
                 printf("%c" , argv[1][index]);
+                return 1;
             }
             if(islower(argv[1][index]))
             {
                 printf("%c" , (char)(argv[1][index] - 32));
+                return 1;
             }
-            return 1;
         }
         if(islower(text[i]))
         {
@@ -57,12 +58,13 @@ int main(int argc, string argv[])
             if(islower(argv[1][index]))
             {
                 printf("%c" , argv[1][index]);
+                return 1;
             }
             if(isupper(argv[1][index]))
             {
                 printf("%c" , (char)(argv[1][index] + 32));
+                return 1;
             }
-            return 1;
         }
         else
         {
