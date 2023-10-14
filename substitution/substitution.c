@@ -27,13 +27,10 @@ int main(int argc, string argv[])
         printf("Key must contain only alphabets. \n");
         return 1;
     }
-   string text;
-do
-{
-    text = get_string("plaintext:  \n");
-}
-while (strlen(text) == 0);
-    
+
+    return 0;
+
+    string text = get_string("plaintext:  \n");
     printf("ciphertext: \n");
     for (int i = 0; i < strlen(text); i++)
     {
