@@ -10,11 +10,11 @@ int main(void)
     {
         if (doors[i]==50)
         {
-            printf("Yayy I found 50, %i \n" , i);
+            printf("Yayy I found 50, %i \n" , i+1);
             return 1;
         }
     }
-    return 0; 
+    return 0;
 
 
 }
