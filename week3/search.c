@@ -2,11 +2,12 @@
 #include <stdio.h>
 
 int main(void)
-{
-    int numbers[] = {20 , 50 , 10 , 5 , 100 , 15};
+{   int n ;
+    int numbers[n] = {20 , 50 , 10 , 5 , 100 , 15};
+
 
     int num= get_int("Number: ");
-    for (int i = 0; i < 7 ; i++)
+    for (int i = 0; i < n ; i++)
     {
         if(num==numbers[i])
         {
