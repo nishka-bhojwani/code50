@@ -30,9 +30,3 @@ int main(void)
     return 1;
 }
 
-typedef struct
-{
-    string name;
-    string number;
-}
-person people[2];
