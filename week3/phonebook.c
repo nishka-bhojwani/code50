@@ -2,12 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 
-typedef struct
-{
-    string name;
-    string number;
-}
-person people[2];
+typedef struct;
 
 int main(void)
 {
@@ -28,3 +23,10 @@ int main(void)
     printf("Not found \n");
     return 1;
 }
+
+typedef struct
+{
+    string name;
+    string number;
+}
+person people[2];
