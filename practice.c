@@ -15,7 +15,7 @@ int main(void)
         printf("\n");
         for ( int n = i+2 ; n < 6 ; n++)
         {
-            printf("  " );
+            printf(" ");
         }
         printf("%i", i+1);
 
