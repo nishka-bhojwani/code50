@@ -6,14 +6,17 @@ int main(void)
 {
     for( int i = 1 ; i < 6 ; i++)
     {
-        for(int j = 5 ; j < 1 ; j--)
+        for(int m = i+1 ; m < 6 ; m++)
+            {
+              printf("  ");
+            }
+
+        for(int j = 0 ; j < i ; j++)
         {
-            printf(' ');
+            printf("%i ", i);
+
         }
-        for(int j = 0 ; j < i+1 ; j++)
-        {
-            printf("%i \n", i);
-        }
-        printf("\n");
+    printf("\n");
     }
+    printf("\n");
 }
