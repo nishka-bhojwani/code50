@@ -11,11 +11,13 @@ int main(void)
               printf("  ");
             }
 
-        for(int j = 0 ; j < i ; j++)
+        printf("%i ", i);
+        printf("\n");
+        for ( int n = i+2 ; n < 6 ; n++)
         {
-            printf("%i ", i);
-
+            printf("  " );
         }
-    printf("\n");
+        printf("%i", i+1);
+
     }
 }
