@@ -18,7 +18,7 @@ int main(void)
             // Print middle spaces
             for (int n = 1; n <= (2*i - 3) ; n++)
             {
-                printf("  ");
+                printf(" %i", i);
             }
 
             printf("%d", i);
