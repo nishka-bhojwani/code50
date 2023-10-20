@@ -11,13 +11,17 @@ int main(void)
               printf("  ");
             }
 
-        printf("%i ", i);
-        printf("\n");
+        printf("%i \n", i);
         for ( int n = i+2 ; n < 6 ; n++)
         {
             printf(" ");
         }
-        printf("%i", i+1);
 
+        if(i!=5)
+        {
+        printf("%i", i+1);
+        }
     }
+    printf("\n");
+
 }
