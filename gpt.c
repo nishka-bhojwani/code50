@@ -11,14 +11,13 @@ int main(void)
             printf("  ");
         }
 
-        printf("%d", i);
 
         if (i > 1)
         {
             // Print middle spaces
-            for (int n = 1; n <= (2*i - 3) ; n++)
+            for (int n = 1; n <=  ; n++)
             {
-                printf(" %i", i);
+                printf("%i", i);
             }
 
             printf("%d", i);
