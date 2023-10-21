@@ -2,7 +2,7 @@
 // Learn to debug buggy code
 
 #include <cs50.h>
-#include<stdio.h>
+#include <stdio.h>
 
 int main(void)
 {
