@@ -18,8 +18,8 @@ int main(void)
 // TODO: Complete the function
 float half(float bill, float tax, int tip)
 {
-    tax = tax*100;
-    tip = tip*100;
+    tax = (tax*bill)/100;
+    tip = (tip*bill)/100;
     float half_amount = (bill+tax+tip)/2;
     return half_amount;
 
