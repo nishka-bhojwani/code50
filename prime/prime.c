@@ -33,9 +33,9 @@ bool prime(int number)
     // TODO
     if(number >1)
     {
-        for(int n  2 ; n < number ; n++)
+        for(int n=2 ; n < number ; n++)
         {
-            if((number%n)==0)
+            if((number%n)!=0)
             {
                 return true;
             }
