@@ -35,11 +35,13 @@ bool prime(int number)
     {
         for(int n=2 ; n < number ; n++)
         {
-            if((number%n)!=0)
+            if((number%n)==0)
             {
-                return true;
+                return false;
             }
+
         }
+        return true;
     }
     return false;
 }
