@@ -4,6 +4,8 @@
 
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
+#include <ctype.h>
 
 bool valid(string password);
 
@@ -42,8 +44,16 @@ bool valid(string password)
         {
             number = true;
         }
-        if(is)
+        if(ispunct(password[i]))
+    {
+        special = true;
     }
+    if(upper==true && lower == true && number == true && special == true )
+    {
+        return true;
+    }
+    }
+
 
     return false;
 }
