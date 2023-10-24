@@ -6,7 +6,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-char replace(char letter);
+string replace(string word);
 
 int main(int argc, string argv[])
 {
