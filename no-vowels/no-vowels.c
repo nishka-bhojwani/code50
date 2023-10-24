@@ -16,7 +16,7 @@ int main(int argc, string argv[])
         return 0 ;
     }
     replace(argv[1])
-    printf()
+    printf("%s",word)
 }
 
 string replace(string word)
@@ -26,13 +26,13 @@ string replace(string word)
         switch(word[i])
         {
         case 'a':
-            return 6;
+            return '6';
         case 'e':
-            return 3;
+            return '3';
         case 'i':
-            return 1;
+            return '1';
         case 'o':
-            return 0;
+            return '0';
     }
     }
     return word;
