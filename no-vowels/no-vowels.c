@@ -13,11 +13,11 @@ int main(int argc, string argv[])
 {
     if(argc != 2)
     {
-        printf("Usage: ./no-vowels word");
+        printf("Usage: ./no-vowels word \n");
         return 0 ;
     }
     replace(argv[1]);
-    printf("%s",argv[1]);
+    printf("%s \n",argv[1]);
 }
 
 string replace(string word)
@@ -27,13 +27,13 @@ string replace(string word)
         switch(word[i])
         {
         case 'a':
-            return '6';
+            word[i]='6';
         case 'e':
-            return '3';
+            word[i]='3';
         case 'i':
-            return '1';
+            word[i]='1';
         case 'o':
-            return '0';
+            word[i]='0';
     }
     }
     return word;
