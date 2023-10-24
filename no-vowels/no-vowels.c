@@ -28,12 +28,16 @@ string replace(string word)
         {
         case 'a':
             word[i]='6';
+            break;
         case 'e':
             word[i]='3';
+            break;
         case 'i':
             word[i]='1';
+            break;
         case 'o':
             word[i]='0';
+            break;
     }
     }
     return word;
