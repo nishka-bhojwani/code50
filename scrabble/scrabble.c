@@ -60,5 +60,5 @@ int compute_score(string word)
             return score;
         }
     }
-    return 1;
+    return score;
 }
