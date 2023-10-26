@@ -132,6 +132,7 @@ bool vote(int voter, int rank, string name)
     {
         if (candidates[i].name == name)
         return true;
+        candidates[i].votes= 
     }
     return false;
 }
