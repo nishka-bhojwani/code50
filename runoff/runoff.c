@@ -147,7 +147,7 @@ void tabulate(void)
     {
         for(int j = 0 ; j < candidate_count ; j++)
         {
-            if (candidates[prefrences[i][j]].eliminated==false)
+            if (candidates[preferences[i][j]].eliminated==false)
             {
                 candidates[preferences[i][j]].votes++;
                 break;
@@ -164,9 +164,9 @@ bool print_winner(void)
     // TODO
     for(int i = 0; i< candidate_count ; i++)
     {
-        if(candidates[i].votes > (voters_count/2))
+        if(candidates[i].votes > (voter_count/2))
         {
-            return ("%s \n",candidates[i].name);
+            printf("%s \n",candidates[i].name);
             return true;
         }
     }
@@ -176,8 +176,8 @@ bool print_winner(void)
 // Return the minimum number of votes any remaining candidate has
 int find_min(void)
 {
-    int min = voters_count ;
-    for( int i = 0 ; i < cadidate_count ; i++)
+    int min = voter_count ;
+    for( int i = 0 ; i < candidate_count ; i++)
     {
         if(candidates[i].votes < min && candidates[i].eliminated==false )
         {
