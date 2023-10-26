@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 // Max voters and candidates
 #define MAX_VOTERS 100
@@ -139,15 +140,17 @@ bool vote(int voter, int rank, string name)
 // Tabulate votes for non-eliminated candidates
 void tabulate(void)
 {
-    for ( int i = 0 ; i < candidate_count ; i++ )
-    if(strcmp(name,candidates[i].name)==0)
+
+    for (int i = 0 ; i < voter_count ; i++)
     {
-        preferences[voter][rank]=i; //candidate index assigned to that possition
-    }
-    return i;
-    for (int i = 0 ; i < voters_count ; i++)
-    {
-        if(preferences[i][1]==i)
+        for(int j = 0 ; j < candidate_count ; j++)
+        {
+            if (preference[i][1]==j)
+            {
+                candidate[i].votes++;
+            }
+        }
+
     }
     return;
 }
