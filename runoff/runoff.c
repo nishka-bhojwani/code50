@@ -164,7 +164,8 @@ bool print_winner(void)
     {
         if(candidates[i].votes > (voters_count/2))
         {
-            return ("%s",candidates[i].name);
+            return ("%s \n",candidates[i].name);
+            return true;
         }
     }
     return false;
