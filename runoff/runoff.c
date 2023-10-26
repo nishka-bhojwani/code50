@@ -128,13 +128,7 @@ int main(int argc, string argv[])
 bool vote(int voter, int rank, string name)
 {
     // TODO
-    for (int i = 0 ; i < candidates_count ; i++)
-    {
-        if (candidates[i].name == name)
-        return true;
-        
-    }
-    return false;
+    
 }
 
 // Tabulate votes for non-eliminated candidates
