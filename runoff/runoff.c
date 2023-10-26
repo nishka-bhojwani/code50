@@ -139,10 +139,15 @@ bool vote(int voter, int rank, string name)
 // Tabulate votes for non-eliminated candidates
 void tabulate(void)
 {
-    // TODO
+    for ( int i = 0 ; i < candidate_count ; i++ )
+    if(strcmp(name,candidates[i].name)==0)
+    {
+        preferences[voter][rank]=i; //candidate index assigned to that possition
+    }
+    return i;
     for (int i = 0 ; i < voters_count ; i++)
     {
-        if(preferences[i][1]==)
+        if(preferences[i][1]==i)
     }
     return;
 }
