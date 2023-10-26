@@ -128,7 +128,11 @@ int main(int argc, string argv[])
 bool vote(int voter, int rank, string name)
 {
     // TODO
-    
+    for (int i = 0; i < voter; i++)
+    {
+        // Query for each rank
+        for (int j = 0; j < candid; j++)
+        {
 }
 
 // Tabulate votes for non-eliminated candidates
