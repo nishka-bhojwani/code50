@@ -6,6 +6,7 @@
 void create_account(int account_number , char holder_name[] ,float balance);
 void deposit(int account_number, float amount);
 void withdraw(int account_number , float amount);
+void view_account(int account_number);
 
 typedef struct
 {
@@ -39,8 +40,8 @@ void create_account(int account_number , char holder_name[] ,float initial_balan
     if(account_count < MAX_ACCOUNTS)
     {
         strcpy(accounts[account_count].holder_name, holder_name);
-        accounts[accounts_count].account_number=account_number;
-        accounts[accounts_count].balance=initial_balance;
+        accounts[account_count].account_number=account_number;
+        accounts[account_count].balance=initial_balance;
         account++;
         printf(" Account created successfully! \n");
     }
@@ -94,6 +95,6 @@ void view_account(int account_number) {
         }
     }
     printf("Account not found. Viewing details failed.\n");
-
+}
 
 
