@@ -75,7 +75,16 @@ void withdraw(int account_number, float withdraw_amt) {
 
 }
 
-
+void view_account(int account_number) {
+    for (int i = 0; i < account_count; i++) {
+        if (accounts[i].account_number == account_number) {
+            printf("Account Number: %d\n", accounts[i].account_number);
+            printf("Holder Name: %s\n", accounts[i].holder_name);
+            printf("Balance: %.2f\n", accounts[i].balance);
+            return;
+        }
+    }
+    printf("Account not found. Viewing details failed.\n");
 
 
 
