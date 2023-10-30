@@ -55,5 +55,27 @@ void deposit(int account_number , float deposit)
      printf("Account not found. Deposit failed.\n");
 
 }
+void withdraw(int account_number, float withdraw_amt) {
+    for (int i = 0; i < account_count; i++) {
+        if (accounts[i].account_number == account_number)
+        {
+            if(withdraw_amt >= accounts[i].balance)
+            {
+                accounts[i].balance -= withdraw_amt ;
+                printf("Amount of %f withdrawn from account %i \n",withdrawn_amt , accounts[i].account_number)
+            }
+            else
+            {
+                printf("Insuffient balance ,cannot withdraw money \n")
+            }
+            return;
+        }
+    }
+    printf("Account not found \n");
+
+}
+
+
+
 
 
