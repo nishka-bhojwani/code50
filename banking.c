@@ -53,12 +53,12 @@ void create_account(int account_number , char holder_name[] ,float initial_balan
 
 void deposit(int account_number , float deposit)
 {
-    for (int i = 0 ; i < account_number < ; i++)
+    for (int i = 0 ; i < account_count ; i++)
     {
         if(account_number == accounts[i].account_number)
         {
             accounts[i].balance += deposit;
-             printf("Deposited %.2f into account %d. New balance: %.2f\n", amount, account_number, accounts[i].balance);
+             printf("Deposited %.2f into account %d. New balance: %.2f\n",deposit , account_number, accounts[i].balance);
             return;
         }
     }
@@ -72,11 +72,11 @@ void withdraw(int account_number, float withdraw_amt) {
             if(withdraw_amt >= accounts[i].balance)
             {
                 accounts[i].balance -= withdraw_amt ;
-                printf("Amount of %f withdrawn from account %i \n",withdrawn_amt , accounts[i].account_number)
+                printf("Amount of %f withdrawn from account %i \n",withdraw_amt , accounts[i].account_number);
             }
             else
             {
-                printf("Insuffient balance ,cannot withdraw money \n")
+                printf("Insuffient balance ,cannot withdraw money \n");
             }
             return;
         }
