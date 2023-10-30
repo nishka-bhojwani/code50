@@ -26,11 +26,14 @@ int main(void)
 
 void create_account(int account_number , char holder_name[] ,float balance)
 {
-    for( int i = 0 ; i < account_count ; i++)
-    {
+
     if(account_count < MAX_ACCOUNTS)
     {
-        accounts[account_count].holder_name=
+        accounts[account_count].holder_name=holder_name[];
+        accounts[accounts_count].account_number=account_number;
+        accounts[accounts_count].balance=balance;
+        account++;
+        printf(")
     }
 }
 
