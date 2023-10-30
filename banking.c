@@ -20,7 +20,16 @@ int account_count = 0 ;
 
 int main(void)
 {
+    create_account(1001, "John Doe", 5000.0);
+    create_account(1002, "Jane Smith", 10000.0);
 
+    deposit(1001, 1000.0);
+    withdraw(1002, 2000.0);
+
+    view_account(1001);
+    view_account(1003);
+
+    return 0;
 }
 
 
