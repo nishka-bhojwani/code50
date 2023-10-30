@@ -42,7 +42,7 @@ void create_account(int account_number , char holder_name[] ,float initial_balan
         strcpy(accounts[account_count].holder_name, holder_name);
         accounts[account_count].account_number=account_number;
         accounts[account_count].balance=initial_balance;
-        account_number++;
+        account_count++;
         printf(" Account created successfully! \n");
     }
     else
@@ -69,7 +69,7 @@ void withdraw(int account_number, float withdraw_amt) {
     for (int i = 0; i < account_count; i++) {
         if (accounts[i].account_number == account_number)
         {
-            if(withdraw_amt >= accounts[i].balance)
+            if(withdraw_amt <= accounts[i].balance)
             {
                 accounts[i].balance -= withdraw_amt ;
                 printf("Amount of %f withdrawn from account %i \n",withdraw_amt , accounts[i].account_number);
