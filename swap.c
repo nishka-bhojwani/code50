@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void swap(int a , int b);  //declaring a function called swap
+void swap(int *a , int *b);  //declaring a function called swap
 
 
 int main(void)
@@ -15,10 +15,7 @@ int main(void)
 
 void swap(int *a , int *b)
 {
-    a= malloc(sizeof(int));
-    b= malloc(sizeof(int));
-    int temp;
-    temp = *b;
+    int temp = *b;
     *b = *a;
     *a = temp;
 }
