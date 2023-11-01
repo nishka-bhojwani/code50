@@ -1,10 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void)
 {
-    
+
     int x ;
     int y;
+    malloc=
 
     *x= 42;
 
