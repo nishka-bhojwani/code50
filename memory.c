@@ -4,17 +4,18 @@
 int main(void)
 {
 
-    int x ;
-    int y;
-    malloc=
+    int *x ;
+    int *y;
+
+    x = malloc(sizeof(int));
 
     *x= 42;
 
-    x=y;
+    y=x;
 
     *y=13;
 
-    printf("%p,%p",x,y);
+    printf("%i \n",*y);
 
 
 
