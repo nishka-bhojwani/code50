@@ -47,7 +47,7 @@ void create_account(int account_number , char holder_name[] ,float initial_balan
     }
     else
     {
-        printf("Max account limit exceded can not create new account \n" );
+       printf("Max account limit exceded can not create new account \n" );
     }
 }
 
@@ -58,7 +58,7 @@ void deposit(int account_number , float deposit)
         if(account_number == accounts[i].account_number)
         {
             accounts[i].balance += deposit;
-             printf("Deposited %.2f into account %d. New balance: %.2f\n",deposit , account_number, accounts[i].balance);
+            printf("Deposited %.2f into account %d. New balance: %.2f\n",deposit , account_number, accounts[i].balance);
             return;
         }
     }
@@ -72,11 +72,11 @@ void withdraw(int account_number, float withdraw_amt) {
             if(withdraw_amt <= accounts[i].balance)
             {
                 accounts[i].balance -= withdraw_amt ;
-                printf("Amount of %f withdrawn from account %i \n",withdraw_amt , accounts[i].account_number);
+               printf("Amount of %f withdrawn from account %i \n",withdraw_amt , accounts[i].account_number);
             }
             else
             {
-                printf("Insuffient balance ,cannot withdraw money \n");
+              printf("Insuffient balance ,cannot withdraw money \n");
             }
             return;
         }
