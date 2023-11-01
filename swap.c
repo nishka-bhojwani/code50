@@ -13,7 +13,7 @@ int main(void)
     printf("x:%i, y:%i",x,y);
 }
 
-void swap(int a , int b)
+void swap(int *a , int *b)
 {
     a= malloc(sizeof(int));
     b= malloc(sizeof(int));
