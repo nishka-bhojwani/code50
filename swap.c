@@ -8,11 +8,15 @@ int main(void)
 {
     int x = 1;
     int y = 2;
-    swap()
+    printf("x:%i, y:%i",x,y);
+    swap(x,y);
+    printf("x:%i, y:%i",x,y);
 }
 
 void swap(int a , int b)
 {
+    a= malloc(sizeof(int));
+    b= malloc(sizeof(int));
     int temp;
     temp = *b;
     *b = *a;
