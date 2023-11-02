@@ -4,6 +4,6 @@
 int main(void)
 {
     char *s;
-    s = "HI I am Nishka";
-    printf("%s \n" , s);
+    s = "HI";
+    printf("%c" , s[2]);
 }
