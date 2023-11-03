@@ -6,7 +6,7 @@
 
 int main(void)
 {
-    char *s = get_string ("s: \n")
+    char *s = get_string ("s: \n");
     char *t = malloc(strlen(s)+1);
     for (int i = 0, int n = strlen(s)+1  ; i < n ; i++)
     {
