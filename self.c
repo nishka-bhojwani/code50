@@ -22,7 +22,7 @@ int main(void)
             }
             else
             {
-            images[i][j]=images[i][size -1 -j];
+            images[i][j]=images[i][size-j - 1];
             printf("%i " , images[i][j]);
             }
         }
