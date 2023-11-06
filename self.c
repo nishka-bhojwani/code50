@@ -27,7 +27,7 @@ void make_array(int n, int array[n][n])  //creating an array
     {
         for (int l = 0  ; l < m ; l++)
         {
-            array[m][l]= (m+1)*3 ;
+            array[m][l]= (m + 1)*3 ;
         }
     }
     return int array[m][l];
