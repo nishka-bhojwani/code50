@@ -3,7 +3,7 @@
 
 
 int size = 8 ;
-void make_array(int n, int array[n][n])//creating an array of a given size
+void make_array(int n, int array[n][n]);//creating an array of a given size
 
 int main(void)
 {
@@ -16,9 +16,9 @@ int main(void)
             images[i][j]=images[i][size -1 -j];
             printf("%i" , images[i][j]);
         }
-
+    printf("\n");
     }
-    printf("\n")
+
 }
 
 void make_array(int n, int array[n][n])  //creating an array
@@ -28,8 +28,9 @@ void make_array(int n, int array[n][n])  //creating an array
         for (int l = 0  ; l < m ; l++)
         {
             array[m][l]= (m + 1)*3 ;
-            printf("%i" , )
+            printf("%i " , array[m][l]);
         }
+        printf("\n");
     }
 
 }
