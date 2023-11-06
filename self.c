@@ -13,7 +13,7 @@ int main(void)
     {
         for(int j = 0 ; j<8 ; j++)
         {
-            images[i][j]=images[i][j-i];
+            images[i][j]=images[i][8-j];
             printf("%i" , images[i][j]);
         }
 
