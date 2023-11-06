@@ -3,12 +3,12 @@
 
 
 int size = 8 ;
-int array[n][n] make_array(int n); //creating an array of a given size
+int make_array(int n); //creating an array of a given size
 
 int main(void)
 {
 
-    images[size][size] =make_array(int size);
+    int images =make_array(size);
     for (int i = 0 ; i < 8 ; i++)
     {
         for(int j = 0 ; j<8 ; j++)
@@ -21,7 +21,7 @@ int main(void)
     printf("\n")
 }
 
-int array[n][n] make_array(int n);  //creating an array
+int make_array(int n);  //creating an array
 {
     for ( int m = 0 ; m < n  ; m++)
     {
