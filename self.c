@@ -13,7 +13,7 @@ int main(void)
     {
         for(int j = 0 ; j<8 ; j++)
         {
-            images[i][j]=images[i][8-j];
+            images[i][j]=images[i][size -1 -j];
             printf("%i" , images[i][j]);
         }
 
@@ -28,7 +28,8 @@ void make_array(int n, int array[n][n])  //creating an array
         for (int l = 0  ; l < m ; l++)
         {
             array[m][l]= (m + 1)*3 ;
+            printf("%i" , )
         }
     }
-    return int array[m][l];
+
 }
