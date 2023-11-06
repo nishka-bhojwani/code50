@@ -17,12 +17,12 @@ int main(void)
         {
             if(j==0 )
             {
-                images[i][0]=images[i][j];
+                images[i][j]=images[i][j];
                 printf("%i " , images[i][j]);
             }
             else
             {
-            images[i][j]=images[i][8-j];
+            images[i][j]=images[i][size -1 -j];
             printf("%i " , images[i][j]);
             }
         }
