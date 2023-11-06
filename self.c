@@ -9,11 +9,13 @@ int main(void)
 {
     int images[size][size];
     make_array(size, images);
+    printf("\n");
+    printf("\n");
     for (int i = 0 ; i < 8 ; i++)
     {
         for(int j = 0 ; j<8 ; j++)
         {
-            images[i][j]=images[i][size -1 -j];
+            images[i][j]=images[i][8-j];
             printf("%i" , images[i][j]);
         }
     printf("\n");
