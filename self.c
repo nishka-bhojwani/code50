@@ -15,8 +15,16 @@ int main(void)
     {
         for(int j = 0 ; j<8 ; j++)
         {
+            if(j==0 )
+            {
+                images[i][0]=images[i][j];
+                printf("%i " , images[i][j]);
+            }
+            else
+            {
             images[i][j]=images[i][8-j];
-            printf("%i" , images[i][j]);
+            printf("%i " , images[i][j]);
+            }
         }
     printf("\n");
     }
@@ -29,7 +37,7 @@ void make_array(int n, int array[n][n])  //creating an array
     {
         for (int l = 0  ; l < n ; l++)
         {
-            array[m][l]= (m + l ) ;
+            array[m][l]= (1+m+l ) ;
             printf("%i " , array[m][l]);
         }
         printf("\n");
