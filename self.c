@@ -27,7 +27,7 @@ void make_array(int n, int array[n][n])  //creating an array
 {
     for ( int m = 0 ; m < n  ; m++)
     {
-        for (int l = 0  ; l < m ; l++)
+        for (int l = 0  ; l < n ; l++)
         {
             array[m][l]= (m + l ) ;
             printf("%i " , array[m][l]);
