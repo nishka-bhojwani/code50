@@ -1,6 +1,6 @@
 #include "helpers.h"
 
-float sum = 0 ;
+
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
@@ -24,9 +24,9 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
     {
         for( int j = 0 ; j < width ; j++)
         {
-            float sepiaRed = sum +(.393 * image[i][j]rgbtRed) + (.769 *image[i][j]rgbtGreen)  + (.189 * image[i][j]Blue);
-            float sepiaGreen = sum + (.349 * image[i][j]rgbtRed) + (.686 *image[i][j]rgbtGreen)  + (.168 * image[i][j]Blue);
-            float sepiaBlue = sum + (.131 * image[i][j]rgbtRed) + (.534 *image[i][j]rgbtGreen)  + (.131 * image[i][j]Blue);
+            float sepiaRed = (.393 * image[i][j]rgbtRed) + (.769 *image[i][j]rgbtGreen)  + (.189 * image[i][j]Blue);
+            float sepiaGreen =  (.349 * image[i][j]rgbtRed) + (.686 *image[i][j]rgbtGreen)  + (.168 * image[i][j]Blue);
+            float sepiaBlue = (.131 * image[i][j]rgbtRed) + (.534 *image[i][j]rgbtGreen)  + (.131 * image[i][j]Blue);
             if((int)sepiaRed > 255)
             {
                 image[i][j].rgbtRed = 255;
