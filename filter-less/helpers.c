@@ -70,5 +70,38 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
+    //Create a copy of tne given array
+    RGBTTRIPLE copy[height][width];
+    for (int i = 0 ; i < height ; i++)
+    {
+        for(int j = 0 ; j < width ; j++)
+        {
+            copy[i][j] = image[i][j];
+        }
+    }
+    for (int i = 0 ; i < height ; i++)
+    {
+        for(int j = 0 ; j < width ; j++)
+        {
+            int red_total= 0;
+            int green_total = 0;
+            int blue_total= 0;
+            float total = 0 ;
+
+            for (int x = -1 ; x < 2 ; x++)
+            {
+                for (int y = -1 ; y < 2 ; y++)
+                {
+                    X_value = x + i;
+                    Y_value = y + j;
+                }
+                //checking the validity of surrounding values
+                if( X_value < 0 || X_value > height-1 || Y_value < 0|| Y_value > width - 1 )
+                {
+                    continue ; 
+                }
+            }
+        }
+    }
     return;
 }
