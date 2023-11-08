@@ -96,9 +96,15 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                     Y_value = y + j;
                 }
                 //checking the validity of surrounding values
-                if( X_value < 0 || X_value > height-1 || Y_value < 0|| Y_value > width - 1 )
+                if( X_value < 0 || X_value > height-1 || Y_value < 0|| Y_value > width - 1 ){
+
+                }
+                else
                 {
-                    continue ; 
+                    red_total += images[X_value][Y_value].rgbtRed ;
+                    green_total += images[X_value][Y_value].rgbtGreen ;
+                    blue_total += images[X_value][Y_value].rgbtBlue ;
+                    total++ ; 
                 }
             }
         }
