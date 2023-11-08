@@ -71,7 +71,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
     //Create a copy of tne given array
-    RGBTTRIPLE copy[height][width];
+    RGBTRIPLE copy[height][width];
     for (int i = 0 ; i < height ; i++)
     {
         for(int j = 0 ; j < width ; j++)
@@ -92,8 +92,8 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             {
                 for (int y = -1 ; y < 2 ; y++)
                 {
-                    X_value = x + i;
-                    Y_value = y + j;
+                    int X_value = x + i;
+                    int Y_value = y + j;
 
                 //checking the validity of surrounding values
                 if( X_value < 0 || X_value > height-1 || Y_value < 0|| Y_value > width - 1 )
@@ -108,8 +108,8 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                     total++ ;
                 }
                 copy[i][j].rgbtRed = round(red_total/total);
-                copy[i][j].rgbtGreen = round(red_total/total);
-                copy[i][j].rgbtBlue = round(red_total/total);
+                copy[i][j].rgbtGreen = round(green_total/total);
+                copy[i][j].rgbtBlue = round(blue_total/total);
             }
             }
 
