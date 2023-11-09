@@ -23,4 +23,8 @@ int main(int argc , string argv[])
 
     unit8_t buffer[4];
     fread(buffer , sizeof(uint8_t), 4 , input);
+    for (int i= 0 ; i < 4 ; i++)
+    {
+        
+    }
 }
