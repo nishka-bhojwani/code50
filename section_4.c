@@ -25,6 +25,15 @@ int main(int argc , string argv[])
     fread(buffer , sizeof(uint8_t), 4 , input);
     for (int i= 0 ; i < 4 ; i++)
     {
-        printf("%i \n" , buffer[i]);
+        if(buffer[0] == 37 && buffer[1] == 80 && buffer[2] == 68 && buffer[3]==70)
+        {
+            printf("given file is a pdf\n");
+            return 0 ;
+        }
+        else
+        {
+            printf("given file is not a pdf\n");
+            return 0 ;
+        }
     }
 }
