@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <cs50.h>
+#include <stdint.h>
 
 int main(int argc , string argv[])
 {
@@ -20,5 +21,5 @@ int main(int argc , string argv[])
         return 1 ;
     }
 
-    unit8_t 
+    unit8_t
 }
