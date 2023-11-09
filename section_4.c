@@ -19,4 +19,6 @@ int main(int argc , string argv[])
         printf("file unavailable\n");
         return 1 ;
     }
+
+    unit8_t 
 }
