@@ -12,4 +12,11 @@ int main(int argc , string argv[])
     //open file
     string file_name = argv[1];
     FILE *input = fopen(file_name , "r");
+
+    //check if file exists
+    if (input == NULL)
+    {
+        printf("file unavailable\n");
+        return 1 ;
+    }
 }
