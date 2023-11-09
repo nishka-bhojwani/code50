@@ -9,5 +9,7 @@ int main(int argc , string argv[])
         printf("Usage: ./section_4 input_file \n");
         return 1;
     }
-    
+    //open file
+    string file_name = argv[1];
+    FILE *input = fopen(file_name , "r");
 }
