@@ -21,5 +21,6 @@ int main(int argc , string argv[])
         return 1 ;
     }
 
-    unit8_t
+    unit8_t buffer[4];
+    fread(buffer , sizeof(uint8_t), 4 , input);
 }
