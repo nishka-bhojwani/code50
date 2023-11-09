@@ -5,7 +5,7 @@
 
 int main(int argc , string argv[])
 {
-    if(argc!=0)
+    if(argc!=2)
     {
         printf("Usage: ./section_4 input_file \n");
         return 1;
@@ -21,7 +21,7 @@ int main(int argc , string argv[])
         return 1 ;
     }
 
-    unit8_t buffer[4];
+    uint8_t buffer[4];
     fread(buffer , sizeof(uint8_t), 4 , input);
     for (int i= 0 ; i < 4 ; i++)
     {
