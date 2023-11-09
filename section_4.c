@@ -25,6 +25,6 @@ int main(int argc , string argv[])
     fread(buffer , sizeof(uint8_t), 4 , input);
     for (int i= 0 ; i < 4 ; i++)
     {
-        
+        printf(ibuffer[i]
     }
 }
