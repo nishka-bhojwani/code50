@@ -6,10 +6,11 @@ int main(int argc, char *argv[])
     if (argc != 2)
     {
         printf("Usage: ./recover card.raw \n");
+        return 1 ;
     }
 
-    FILE* new_file = fopen(card.raw , 'r');
-    if(card.raw == NULL)
+    FILE *input_file = fopen(argv[1] , "r");
+    if(input_file== NULL)
     {
         printf("invalid file \n");
     }
