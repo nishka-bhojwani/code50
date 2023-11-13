@@ -16,6 +16,9 @@ int main(int argc, char *argv[])
         return 2;
     }
 
-    //declare a variable to store the 
+    //declare a variable to store the 512 bytes in a block
+    //also a counter that counts the number of images generated
+    //file pointer to handle the JPEGS that are found and need to be recovered
+    
 
 }
