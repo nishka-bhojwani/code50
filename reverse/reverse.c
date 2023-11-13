@@ -13,11 +13,13 @@ int main(int argc, char *argv[])
     // TODO #1
     if(argc != 3 )
     {
-        printf("Usage: input output \n");
+        printf("Usage: ./reverse input output \n");
+        return 1;
     }
 
     // Open input file for reading
     // TODO #2
+    char *input_file = argv[1];
     FILE *input_file = fopen(argv[1],"r");
     if(input_file==NULL)
     {
