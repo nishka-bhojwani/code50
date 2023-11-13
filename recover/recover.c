@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
     //also a counter that counts the number of images generated
     //file pointer to handle the JPEGS that are found and need to be recovered
     unsigned char buffer[512];
-    int images = 0 ;
+    int image_count = 0 ;
     FILE *output_file = NULL ;
     char *file_name = malloc(8*sizeof(char));
 
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 {
     if( buffer[0]== 0xff && buffer[1]== 0xd8 && buffer[2]==0xff &&(buffer[3] & 0xf0 == 0xe0 ))
     {
-
+        sprintf(file_name , "%03i.jpg" , image_count);
     }
 
 
