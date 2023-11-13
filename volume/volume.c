@@ -25,16 +25,16 @@ int main(int argc, char *argv[])
     }
 
     FILE *output = fopen(argv[2], "w");
-    if (output == NULL)
+    if (output == NULL) //checking if the file has data to prevent errors
     {
         printf("Could not open file.\n");
         return 1;
     }
 
-    float factor = atof(argv[3]);
+    float factor = atof(argv[3]); // determing that the 3rd user input is the scaling factor
 
     // TODO: Copy header from input file to output file
-    uint8_t HEADER[HEADER_SIZE];
+    uint8_t HEADER[HEADER_SIZE]; //creating a 
     fread(HEADER, HEADER_SIZE , 1 , input);
     fwrite(HEADER, HEADER_SIZE , 1 , output);
 
