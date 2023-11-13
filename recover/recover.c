@@ -33,7 +33,19 @@ int main(int argc, char *argv[])
     if( buffer[0]== 0xff && buffer[1]== 0xd8 && buffer[2]==0xff &&(buffer[3] & 0xf0 == 0xe0 ))
     {
         sprintf(file_name , "%03i.jpg" , image_count);
+
+        //open a file to write into
+        output_file = fopen(output_file , "w");
+        image_count++;
     }
 
+    if (output_file !=NULL)
+    {
+        fwrite(buffer , sizeof(char), 512 ,output_file )
+    }
 
+}
+    free(file_name);
+    fclose(input_file);
+    fclose(output_file);
 }
