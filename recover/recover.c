@@ -35,13 +35,13 @@ int main(int argc, char *argv[])
         sprintf(file_name , "%03i.jpg" , image_count);
 
         //open a file to write into
-        output_file = fopen(output_file , "w");
+        output_file = fopen(file_name, "w");
         image_count++;
     }
 
     if (output_file !=NULL)
     {
-        fwrite(buffer , sizeof(char), 512 ,output_file )
+        fwrite(buffer , sizeof(char), 512 ,output_file );
     }
 
 }
