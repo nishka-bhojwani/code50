@@ -29,9 +29,9 @@ int main(int argc, char *argv[])
 
     //iterating through 512 bytes of memory in the input file
     fread(buffer , sizeof(char),512,input_file );
-    if( buffer[0]== 0xff && buffer[1]== 0xd8 && buffer[2]==0xff &&(buffer[3]&& 0x0f == 0xe0 ))
+    if( buffer[0]== 0xff && buffer[1]== 0xd8 && buffer[2]==0xff &&(buffer[3] & 0xf0 == 0xe0 ))
     {
-        
+
     }
 
 }
