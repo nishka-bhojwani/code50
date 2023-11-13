@@ -18,10 +18,11 @@ int main(int argc, char *argv[])
 
     // Open input file for reading
     // TODO #2
-    
+    FILE *input_file = fopen(argv[1],"r");
 
     // Read header
     // TODO #3
+    
 
     // Use check_format to ensure WAV format
     // TODO #4
