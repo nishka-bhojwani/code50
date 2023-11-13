@@ -28,6 +28,7 @@ int main(int argc, char *argv[])
     char *file_name = malloc(8*sizeof(char));
 
     //iterating through 512 bytes of memory in the input file
-    
+    fread(buffer , sizeof(char),512,input_file );
+    if(buffer[0]==)
 
 }
