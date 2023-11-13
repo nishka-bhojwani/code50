@@ -19,6 +19,9 @@ int main(int argc, char *argv[])
     //declare a variable to store the 512 bytes in a block
     //also a counter that counts the number of images generated
     //file pointer to handle the JPEGS that are found and need to be recovered
-    u
+    unsigned char buffer[512];
+    int images = 0 ;
+    FILE *output_file = NULL ;
+    char *file_name = malloc(8*sizeof(char));
 
 }
