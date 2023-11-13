@@ -34,10 +34,10 @@ int main(int argc, char *argv[])
     float factor = atof(argv[3]); // determing that the 3rd user input is the scaling factor
 
     // TODO: Copy header from input file to output file
-    uint8_t HEADER[HEADER_SIZE]; //creating a 
+    uint8_t HEADER[HEADER_SIZE]; //breaking 44 bits into 8 bit of blocks and storing it as an array(space in memory) so that it can be used later
     fread(HEADER, HEADER_SIZE , 1 , input);
     fwrite(HEADER, HEADER_SIZE , 1 , output);
-
+    
 
 
     // TODO: Read samples from input file and write updated data to output file
