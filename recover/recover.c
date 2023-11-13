@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-typedef uint8_t BYTE;
+typedef uint8_t BYTE; //defining BYTE as 8 unsigned int bits
 
 int main(int argc, char *argv[])
 {
@@ -32,21 +32,26 @@ int main(int argc, char *argv[])
 {
     if( buffer[0]== 0xff && buffer[1]== 0xd8 && buffer[2]==0xff &&(buffer[3] & 0xf0) == 0xe0 )
     {
-        sprintf(file_name , "%03i.jpg" , image_count);
+        sprintf(file_name , "%03i.jpg" , image_count); //creating a jpg file with the prefex 001.jpg for image_Count = 1
 
-        //open a file to write into
+        //opening that jpg file to write into it
         output_file = fopen(file_name, "w");
-        image_count++;
+        image_count++; //incrementing the image count
     }
 
-    if (output_file !=NULL)
+    if (output_file !=NULL) //if output file is opem
     {
-        fwrite(buffer , sizeof(char), 512 ,output_file );
+        fwrite(buffer , sizeof(char), 512 ,output_file ); //writing the before copied data from the input file (buffer)
     }
 
 }
+
+    //freeing the used up space becuase of malloc and opening files
     free(file_name);
     fclose(input_file);
     fclose(output_file);
-    return 0;
+    return 0; //successfully executed code
 }
+
+
+
