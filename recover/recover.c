@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-typedef uint8_t BYTE; 
+typedef uint8_t BYTE;
 
 int main(int argc, char *argv[])
 {
@@ -26,5 +26,8 @@ int main(int argc, char *argv[])
     int images = 0 ;
     FILE *output_file = NULL ;
     char *file_name = malloc(8*sizeof(char));
+
+    //iterating through 512 bytes of memory in the input file
+    
 
 }
