@@ -33,6 +33,7 @@ int main(int argc, char *argv[])
 
     // Use check_format to ensure WAV format
     // TODO #4
+    
 
     // Open output file for writing
     // TODO #5
