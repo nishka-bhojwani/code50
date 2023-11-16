@@ -9,7 +9,7 @@
  }
  node;
 
-int main(int argc , string argv[])
+int main(int argc , char *argv[])
 {
     if(argc != 3)
     {
@@ -20,7 +20,7 @@ int main(int argc , string argv[])
     node *n = malloc(sizeof(node));
     for (int i = 1 ; i < argc ; i++)
     {
-        int num = atoi(argc[i]);
+        int num = atoi(argv[i]);
         n->number = num;
         n->next = NULL;
     }
