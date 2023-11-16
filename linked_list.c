@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib>
+#include <stdlib.h>
 
 typedef struct node
 {
@@ -14,7 +14,7 @@ int main(int argc ,char *argv[]) //takes command line arguments
     for (int i = 1 , i < argc ; i++) //iterating over the command line arguments
     {
         int num = atoi(argv[i]); //stoi converts string to an integer
-    node *n = malloc(sizeof(node));
+        node *n = malloc(sizeof(node));
     if(n==NULL)
     {
         return 1;
