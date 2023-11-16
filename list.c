@@ -32,6 +32,8 @@ int main(int argc , char *argv[])
     }
         n->number = num;
         n->next = NULL;
+
+        n->next = list; //new node points to the u
     }
 
 
