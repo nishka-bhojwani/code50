@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
  //defining a node
- typedef struct node
-  {
+typedef struct node
+{
     int number ;
-    node *next; //defining the address of the next node
- }
+    struct node *next; //defining the address of the next node
+}
  node;
 
 int main(int argc , char *argv[])
@@ -40,7 +40,7 @@ int main(int argc , char *argv[])
     {
         printf("%i" , ptr->number);
         ptr = ptr->next ; //follow the arrow and grab the next field
-         
+
     }
 
 
