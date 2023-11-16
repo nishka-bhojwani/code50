@@ -7,6 +7,7 @@ int main(void)
     if(list == NULL)
     {
         return 1;
+        free(list);
     }
     list[0] = 1;
     list[1] = 2 ;
@@ -14,7 +15,7 @@ int main(void)
 
     for(int i = 0 ; i < 3 ; i++)
     {
-        printf("%i " , list[i]);
+        printf("%i \n" , list[i]);
     }
-    
+
 }
