@@ -23,7 +23,7 @@ int main(int argc ,char *argv[]) //takes command line arguments
     n->next = NULL; // clearing up the address space for next variable in that particular node
 
     n->next = list; //new node points to the list (prepend)
-    list = n ;
+    list = n ; // appending the list
     }
     node *ptr = list;
     while(ptr !=NULL)
