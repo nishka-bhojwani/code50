@@ -30,7 +30,7 @@ int main(int argc , char *argv[])
     {
         return 1;
     }
-     n->number = num;
+        n->number = num;
         n->next = NULL;
     }
 
