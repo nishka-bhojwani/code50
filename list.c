@@ -18,10 +18,19 @@ int main(int argc , char *argv[])
  //defining a variable called list which is an empty node
     node *list = NULL;
     node *n = malloc(sizeof(node));
+    if(n==NULL)
+    {
+        return 1;
+    }
     for (int i = 1 ; i < argc ; i++)
     {
-        int num = atoi(argv[i]);
-        n->number = num;
+        int num = atoi(argv[i]); //atoi = aski to integer
+         node *n = malloc(sizeof(node));
+          if(n==NULL)
+    {
+        return 1;
+    }
+     n->number = num;
         n->next = NULL;
     }
 
