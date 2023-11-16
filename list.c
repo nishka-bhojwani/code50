@@ -33,9 +33,15 @@ int main(int argc , char *argv[])
         n->number = num;
         n->next = NULL;
 
-        n->next = list; //new node points to the u
+        n->next = list; //new node points to the current begining of the list
+        list = n;
+    node *ptr= list ; //ptr points at first node in the list
+    while(ptr != NULL)
+    {
+        printf("%i" , ptr->number);
+        ptr = ptr->next ; //follow the arrow and grab the next field
+         
     }
-
 
 
 }
