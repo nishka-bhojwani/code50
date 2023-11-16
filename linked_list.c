@@ -10,7 +10,7 @@ node;
 
 int main(int argc ,char *argv[])
 {
-    node *list = NULL;
+    node *list = NULL; //declaring a variable called list that acts as an empty block to declare the starting of a list
     for (int i = 1 , i < argc ; i++)
     {
         int number = atoi(argv[i]);
