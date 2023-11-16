@@ -26,6 +26,7 @@ int main(int argc , char *argv[])
 
         n->next = list; //new node points to the current begining of the list
         list = n;
+    }
     node *ptr= list; //ptr points at first node in the list
     while(ptr != NULL)
     {
@@ -38,4 +39,4 @@ int main(int argc , char *argv[])
 
 
 }
-}
+
