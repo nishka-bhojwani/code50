@@ -14,7 +14,7 @@ int main(void)
     list[2] = 3;
     //creating a temprary list to copy the data from list and then make changes to it
 
-    int *tmp = realloc(list, 4*sizeof(int));
+    int *tmp = realloc(list, 4*sizeof(int)); //checking the list values to make sure we're not playing with unassigned memory 
     if(tmp==NULL)
     {
         free(list);
