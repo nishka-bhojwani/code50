@@ -21,7 +21,10 @@ int main(int argc , string argv[])
     for (int i = 1 ; i < argc ; i++)
     {
         int num = atoi(argc[i]);
+        n->number = num;
+        n->next = NULL;
     }
+
 
 
 }
