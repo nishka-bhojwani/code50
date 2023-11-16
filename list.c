@@ -35,7 +35,13 @@ int main(int argc , char *argv[])
 
     }
 
-    ptr = list;
+    ptr = list; //iterating over the values and freeing them 
+    while( ptr != NULL)
+    {
+        node *next = ptr->next;
+        free(ptr);
+        ptr = next ;
+    }
 
 
 }
