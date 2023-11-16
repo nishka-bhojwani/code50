@@ -11,7 +11,7 @@ node;
 int main(int argc ,char *argv[]) //takes command line arguments
 {
     node *list = NULL; //declaring a variable called list that acts as an empty block to declare the starting of a list
-    for (int i = 1 , i < argc ; i++) //iterating over the command line arguments
+    for (int i = 1 ; i < argc ; i++) //iterating over the command line arguments
     {
         int num = atoi(argv[i]); //stoi converts string to an integer
         node *n = malloc(sizeof(node));
