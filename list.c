@@ -35,10 +35,10 @@ int main(int argc , char *argv[])
 
     }
 
-    ptr = list; //iterating over the values and freeing them 
+    ptr = list; //iterating over the values and freeing them
     while( ptr != NULL)
     {
-        node *next = ptr->next;
+        node *next = ptr->next; //need to define a temporary variable so that we can go to the memory we want to 
         free(ptr);
         ptr = next ;
     }
