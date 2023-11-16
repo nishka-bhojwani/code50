@@ -25,10 +25,11 @@ int main(int argc ,char *argv[]) //takes command line arguments
     n->next = list; //new node points to the list (prepend)
     list = n ; // appending the list
     }
-    node *ptr = list;
+    node *ptr = list; //points to first node in the list
     while(ptr !=NULL)
     {
-        printf("%i \n", ptr-> number);
+        printf("%i \n", ptr->number);
+        ptr = ptr->next; //ptr->next go to the next number and therefore the pointer points at the second node
     }
 
 }
