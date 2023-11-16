@@ -31,5 +31,7 @@ int main(int argc ,char *argv[]) //takes command line arguments
         printf("%i \n", ptr->number);
         ptr = ptr->next; //ptr->next go to the next number and therefore the pointer points at the second node
     }
+    ptr = list; //gives a temporary pointer that points at 3 
+
 
 }
