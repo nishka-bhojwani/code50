@@ -11,17 +11,8 @@ typedef struct node
 
 int main(int argc , char *argv[])
 {
-    if(argc != 3)
-    {
-        printf("Usage : ./list int ....");
-    }
  //defining a variable called list which is an empty node
     node *list = NULL;
-    node *n = malloc(sizeof(node));
-    if(n==NULL)
-    {
-        return 1;
-    }
     for (int i = 1 ; i < argc ; i++)
     {
         int num = atoi(argv[i]); //atoi = aski to integer
@@ -35,13 +26,16 @@ int main(int argc , char *argv[])
 
         n->next = list; //new node points to the current begining of the list
         list = n;
-    node *ptr= list ; //ptr points at first node in the list
+    node *ptr= list; //ptr points at first node in the list
     while(ptr != NULL)
     {
-        printf("%i" , ptr->number);
+        printf("%i \n" , ptr->number);
         ptr = ptr->next ; //follow the arrow and grab the next field
 
     }
 
+    ptr = list;
 
+
+}
 }
