@@ -34,11 +34,11 @@ int main(int argc , char *argv[])
         ptr = ptr->next ; //follow the arrow and grab the next field
 
     }
-
+ 
     ptr = list; //iterating over the values and freeing them
     while( ptr != NULL)
     {
-        node *next = ptr->next; //need to define a temporary variable so that we can go to the memory we want to 
+        node *next = ptr->next; //need to define a temporary variable so that we can go to the memory we want to
         free(ptr);
         ptr = next ;
     }
