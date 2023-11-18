@@ -34,7 +34,7 @@ int main(int argc , char *argv[])
         ptr = ptr->next ; //follow the arrow and grab the next field
 
     }
- 
+   
     ptr = list; //iterating over the values and freeing them
     while( ptr != NULL)
     {
