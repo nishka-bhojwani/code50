@@ -10,8 +10,8 @@
 #define LENGTH 45
 
 // Prototypes
-bool check(const char *word);
-unsigned int hash(const char *word);
+bool check(const char *word); //char * represents that the word will be a string
+unsigned int hash(const char *word); //
 bool load(const char *dictionary);
 unsigned int size(void);
 bool unload(void);
