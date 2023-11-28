@@ -19,12 +19,6 @@ int main(void)
 void parenthesis(int num)
 {
 
-    //1st set of parenthesis
-     for( int i = 0 ; i < num ; i++)
-    {
-        printf("()");
-
-    }
     //2nd set of parenthesis
     for(int i = 0 ; i < num ; i++)
     {
@@ -51,11 +45,13 @@ void parenthesis(int num)
 
 for ( int  j = 0 ; j < num ; j++)
 {
-    for (int i = 0 ; i < j ; i++)
+    for (int i = 0 ; i < j+1 ; i++)
     {
         printf("()");
-        printf("  ");
+
     }
+    for ( int m = 0 ; m < )
+    printf("  ");
 }
 
 
