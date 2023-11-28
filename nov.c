@@ -18,12 +18,13 @@ int main(void)
 
 void parenthesis(int num)
 {
+    //1st set of parenthesis
     for( int i = 0 ; i < num ; i++)
     {
         printf("()");
 
     }
-    printf("\n");
+    //2nd set of parenthesis
     for(int i = 0 ; i < num ; i++)
     {
         printf("(");
@@ -32,6 +33,22 @@ void parenthesis(int num)
     {
         printf(")");
     }
+
+ //3rd set of combinations
+ for(int i = 0 ; i < num -2 ; i++)
+    {
+        printf("(");
+    }
+    for(int i = 0 ; i< num - 1 ;i++ )
+    {
+        printf("()");
+    }
+    for(int i = 0 ; i < num -2 ; i++)
+    {
+        printf(")");
+    }
+
+    
 
 
 }
