@@ -19,6 +19,8 @@ int main(void)
 void parenthesis(int num)
 {
 
+
+
  for(int i = 0 ; i < 2 ; i++)
     {
         printf("(");
@@ -32,14 +34,17 @@ void parenthesis(int num)
         printf(")");
     }
     printf("\n");
+
 //increasing single brackets decreasting nested brackets
 
 for ( int  j = 0 ; j < num ; j++)
 {
+    if(n>2){
     for (int i = 0 ; i < j; i++)
     {
         printf("()");
 
+    }
     }
     for (int m = num - 1; m >0; m--)
     {
@@ -49,7 +54,7 @@ for ( int  j = 0 ; j < num ; j++)
     {
         printf(")");
     }
-    printf("\n");
+
 
 }
 
