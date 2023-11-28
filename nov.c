@@ -18,6 +18,7 @@ int main(void)
 
 void parenthesis(int num)
 {
+    int temp = 
     //1st set of parenthesis
     for( int i = 0 ; i < num ; i++)
     {
@@ -48,7 +49,13 @@ void parenthesis(int num)
         printf(")");
     }
 
-    
+    //1st set of parenthesis
+    for( int i = 0 ; i < num-2; i++)
+    {
+        printf("()");
+    }
+
+
 
 
 }
