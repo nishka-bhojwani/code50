@@ -18,7 +18,7 @@ int main(void)
 
 void parenthesis(int num)
 {
-    tmp = num;
+    tmp = 0;
     //1st set of parenthesis
      for( int i = 0 ; i < num ; i++)
     {
@@ -34,7 +34,7 @@ void parenthesis(int num)
     {
         printf(")");
     }
-    
+
 
  //3rd set of combinations
  for(int i = 0 ; i < num -2 ; i++)
@@ -50,14 +50,9 @@ void parenthesis(int num)
         printf(")");
     }
 
-    //4th set
-    for( int i = 0 ; i < num-2; i++)
+    for(tmp = 1 ; tmp <= num ; tmp++)
     {
-        printf("()");
-    }
-    for(int i = 0 ; i < num -1 ; i++)
-    {
-        printf()
+        for int( i = 0 ; i < tmp )
     }
 
 
