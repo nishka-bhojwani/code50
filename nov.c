@@ -24,6 +24,15 @@ void parenthesis(int num)
 
     }
     printf("\n");
+    for(int i = 0 ; i < num ; i++)
+    {
+        printf("(");
+    }
+    for(int i = 0 ; i < num ; i++)
+    {
+        printf(")");
+    }
+
 
 }
 
