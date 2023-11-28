@@ -39,18 +39,17 @@ void parenthesis(int num)
 
 for ( int  j = 0 ; j < num ; j++)
 {
-    if(n>2){
     for (int i = 0 ; i < j; i++)
     {
         printf("()");
 
     }
-    }
-    for (int m = num - 1; m >0; m--)
+    
+    for (int m = num - 1; m >=0; m--)
     {
         printf("(");
     }
-    for (int m = num - 1; m>0; m--)
+    for (int m = num - 1; m>=0; m--)
     {
         printf(")");
     }
