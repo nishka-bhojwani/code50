@@ -49,6 +49,15 @@ void parenthesis(int num)
         printf(")");
     }
 
+for ( int  j = 0 ; j < num ; j++)
+{
+    for (int i = 0 ; i < j ; i++)
+    {
+        printf("()");
+        printf("  ");
+    }
+}
+
 
 
 
