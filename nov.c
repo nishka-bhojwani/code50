@@ -1,9 +1,32 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(int argv , char* argc[])
+int n ;
 
-    if(argv!=2)
+void parenthesis(int num);
 
-        printf("usage:)
+int main(void)
+{
+
+    printf("n: ");
+    scanf("%d", &n);
+    parenthesis(n);
+
+
+    return 0;
+}
+
+void parenthesis(int num)
+{
+    for( int i = 0 ; i < num ; i++)
+    {
+        printf("()");
+
+    }
+    printf("\n");
+
+}
+
+
+
 
