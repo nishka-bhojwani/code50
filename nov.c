@@ -18,9 +18,9 @@ int main(void)
 
 void parenthesis(int num)
 {
-    int temp = 
+
     //1st set of parenthesis
-    for( int i = 0 ; i < num ; i++)
+    for (int n = 0 ; for( int i = 0 ; i < num ; i++)
     {
         printf("()");
 
@@ -49,10 +49,14 @@ void parenthesis(int num)
         printf(")");
     }
 
-    //1st set of parenthesis
+    //4th set
     for( int i = 0 ; i < num-2; i++)
     {
         printf("()");
+    }
+    for(int i = 0 ; i < num -1 ; i++)
+    {
+        printf()
     }
 
 
