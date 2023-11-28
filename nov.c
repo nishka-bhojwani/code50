@@ -42,7 +42,7 @@ for (int j = 2 ; j <num ; j++)
 
 for ( int  j = 0 ; j < num ; j++)
 {
-    for (int i = 0 ; i < j; i++)
+    for (int i = 0 ; i < ja; i++)
     {
         printf("()");
 
