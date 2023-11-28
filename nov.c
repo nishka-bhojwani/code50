@@ -44,12 +44,12 @@ for ( int  j = 0 ; j < num ; j++)
         printf("()");
 
     }
-    
-    for (int m = num - 1; m >=0; m--)
+
+    for (int m = num - 1; m >=j; m--)
     {
         printf("(");
     }
-    for (int m = num - 1; m>=0; m--)
+    for (int m = num - 1; m>=j; m--)
     {
         printf(")");
     }
