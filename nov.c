@@ -33,7 +33,6 @@ void parenthesis(int num)
     {
         printf(")");
     }
-    printf("\n");
 
 //increasing single brackets decreasting nested brackets
 
@@ -53,16 +52,7 @@ for ( int  j = 0 ; j < num ; j++)
     {
         printf(")");
     }
-
-
 }
-
-
-
-
-
-
-
 }
 
 
