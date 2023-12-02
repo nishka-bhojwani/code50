@@ -62,11 +62,19 @@ for ( int  j = 0 ; j < num ; j++)
 }
 }
 
-void single_brackets(int n)
+void single_brackets_r(int n)
 {
     for (int i = 0 ; i < n ; i++)
     {
-        printf("()")
+        printf("(")
+    }
+}
+
+void single_brackets_l(int n)
+{
+    for(int i = 0 ; i < n ; i++)
+    {
+        
     }
 }
 
@@ -74,7 +82,8 @@ void double_brackets(int n)
 {
     for (int i = 0 ; i < n ; i++)
     {
-        printf()
+        printf("(");
+
     }
 }
 
