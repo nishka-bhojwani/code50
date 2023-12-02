@@ -4,6 +4,8 @@
 int n ;
 
 void parenthesis(int num);
+void single_brackets(int n);
+void double_brackets(int n );
 
 int main(void)
 {
@@ -60,6 +62,17 @@ for ( int  j = 0 ; j < num ; j++)
 }
 }
 
+void single_brackets(int n)
+{
+    for (int i = 0 ; i < n ; i++)
+    {
+        printf("()")
+    }
+}
 
+void double_brackets(int n)
+{
+    for (int )
+}
 
 
