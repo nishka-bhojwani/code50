@@ -1,6 +1,6 @@
 sort1 uses: Bubble sort
 
-How do you know?: For sorted data merge sort has the a much faster run time than selection sort for sorted data 
+How do you know?: For sorted data merge sort has the a much faster run time than selection sort for sorted data because 
 
 sort2 uses: merge sort
 
