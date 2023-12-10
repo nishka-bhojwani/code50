@@ -65,7 +65,7 @@ int main(int argc, string argv[])
 }
 
 // Update vote totals given a new vote
-bool vote(string name , int n)
+bool vote(string name , int n)  //comparing the inputs to candidates names if its the same incrememting that candidates vote count by 1
 {
     // TODO
     for (int i = 0 ; i < n ; i++ )
@@ -83,9 +83,9 @@ bool vote(string name , int n)
 void print_winner(int n)
 {
     // TODO
-     int max_votes = 0;
+     int max_votes = 0; //inializing maximum votes to zero
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) //if votes of candidates are more than maximum votes the max votes become that candidates votes
     {
         if (candidates[i].votes > max_votes)
         {
@@ -93,7 +93,7 @@ void print_winner(int n)
         }
     }
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) //print the candidate with maximum number of votes
     {
         if (candidates[i].votes == max_votes)
         {
