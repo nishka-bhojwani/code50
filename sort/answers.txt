@@ -1,10 +1,10 @@
 sort1 uses: Bubble sort
 
-How do you know?: TODO
+How do you know?: For sorted data merge sort has the a much faster run time than selection sort 
 
 sort2 uses: merge sort
 
-How do you know?: for random data set the running time for the 
+How do you know?: for random data set the running time for the merge sort is the least because its big O of n running time is O(nlogn) which is much faster in comparision to the O(n^2) run time of selection and bubble sort
 
 sort3 uses: TODO
 
