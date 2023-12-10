@@ -1,10 +1,10 @@
-sort1 uses: T
+sort1 uses: Bubble sort
 
 How do you know?: TODO
 
-sort2 uses: TODO
+sort2 uses: merge sort
 
-How do you know?: TODO
+How do you know?: for random data set the running time for the 
 
 sort3 uses: TODO
 
