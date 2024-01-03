@@ -37,6 +37,9 @@ int main(void)
         return 1;
     }
 
+    //copying list to tmp
+    
+
     list[0] = 1;  //can also be written as *list
     list[1] = 2 ; //*(list+1)
     list [2] = 3;
@@ -45,4 +48,5 @@ int main(void)
      {
         printf("%i \n", list[i]);
      }
+
 }
