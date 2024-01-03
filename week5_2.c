@@ -1,6 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main(void)
 
 /* this means you cannot allocate memory dynamically
 int main(void)
@@ -20,8 +20,14 @@ int main(void)
 //initialising list as a pointer
 
 int main(void)
-
 {
-    int *list =
+    int *list = malloc(3*sizeof(int));
+    list[0] = 1;
+    list[1] = 2 ;
+    list [2] = 3;
 
+    for (int i = 0 ; i < 3  ; i++)
+     {
+        printf("%i \n", list[i]);
+     }
 }
