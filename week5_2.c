@@ -29,6 +29,10 @@ int main(void)
         return 556;
     }
 
+    list[0] = 1;  //can also be written as *list
+    list[1] = 2 ; //*(list+1)
+    list [2] = 3;
+
 
     int *tmp = malloc(4*sizeof(int));
     if(tmp==NULL)
@@ -38,15 +42,15 @@ int main(void)
     }
 
     //copying list to tmp
-    
+    for ( int i = 0  ; i < 3 ; i++ )
+    {
+        tmp[i] = list[i];
+    }
+    tmp[2+1] = 4 ;
 
-    list[0] = 1;  //can also be written as *list
-    list[1] = 2 ; //*(list+1)
-    list [2] = 3;
-
-    for (int i = 0 ; i < 3  ; i++)
+    for (int i = 0 ; i < 4  ; i++)
      {
-        printf("%i \n", list[i]);
+        printf("%i \n", tmp[i]);
      }
 
 }
