@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+const int size = 3;
 /* this means you cannot allocate memory dynamically
 int main(void)
 {
@@ -21,7 +21,7 @@ int main(void)
 
 int main(void)
 {
-    int *list = malloc(3*sizeof(int));
+    int *list = malloc(size*sizeof(int));
     //always check for list not being null
     if(list == NULL)
     {
@@ -34,7 +34,7 @@ int main(void)
     list [2] = 3;
 
 
-    int *tmp = malloc(4*sizeof(int));
+    int *tmp = malloc((size+1)*sizeof(int));
     if(tmp==NULL)
     {
         free(list);
@@ -42,11 +42,11 @@ int main(void)
     }
 
     //copying list to tmp
-    for ( int i = 0  ; i < 3 ; i++ )
+    for ( int i = 0  ; i < size ; i++ )
     {
         tmp[i] = list[i];
     }
-    tmp[2+1] = 4 ;
+    tmp[size] = 4 ;
 
     for (int i = 0 ; i < 4  ; i++)
      {
