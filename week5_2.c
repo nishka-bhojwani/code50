@@ -2,7 +2,8 @@
 
 int main(void)
 
-/* this means you cannot allocate memory dynamically 
+/* this means you cannot allocate memory dynamically
+int main(void)
 {
     int list[3];
 
@@ -15,3 +16,12 @@ int main(void)
      }
 }*/
 
+
+//initialising list as a pointer
+
+int main(void)
+
+{
+    int *list =
+
+}
