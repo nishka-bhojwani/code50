@@ -34,6 +34,11 @@ int main(void)
     list[2] = 3;
 
     int *tmp = realloc(list,(size+1)*sizeof(int));
+    if(tmp==NULL)
+    {
+        free(list);
+        return 1;
+    }
     /* does all this copying by itself
     int *tmp = malloc((size+1)*sizeof(int));
     if(tmp==NULL)
