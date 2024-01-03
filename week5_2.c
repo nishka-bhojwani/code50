@@ -46,11 +46,14 @@ int main(void)
     {
         tmp[i] = list[i];
     }
+    free(list);
     tmp[size] = 4 ;
+
+    list = tmp ;
 
     for (int i = 0 ; i < 4  ; i++)
      {
-        printf("%i \n", tmp[i]);
+        printf("%i \n", list[i]);
      }
-
+    free(tmp);
 }
