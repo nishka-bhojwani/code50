@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 int main(void)
+
+/* this means you cannot allocate memory dynamically 
 {
     int list[3];
 
@@ -11,5 +13,5 @@ int main(void)
      {
         printf("%i \n", list[i]);
      }
-}
+}*/
 
