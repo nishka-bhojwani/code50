@@ -22,6 +22,13 @@ int main(void)
 int main(void)
 {
     int *list = malloc(3*sizeof(int));
+    //always check for list not being null
+    if(list == NULL)
+    {
+        printf("error 556 :no list found");
+        return 556
+    }
+
     list[0] = 1;  //can also be written as *list
     list[1] = 2 ; //*(list+1)
     list [2] = 3;
