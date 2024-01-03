@@ -46,7 +46,7 @@ int main(void)
     {
         tmp[i] = list[i];
     }
-    free(list);
+    free(list); //freeing the original address of the list i.e. the size 3 array 
     tmp[size] = 4 ;
 
     list = tmp ;
@@ -55,5 +55,5 @@ int main(void)
      {
         printf("%i \n", list[i]);
      }
-    free(tmp);
+    free(list);
 }
