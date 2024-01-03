@@ -26,7 +26,15 @@ int main(void)
     if(list == NULL)
     {
         printf("error 556 :no list found");
-        return 556
+        return 556;
+    }
+
+
+    int *tmp = malloc(4*sizeof(int));
+    if(tmp==NULL)
+    {
+        free(list);
+        return 1;
     }
 
     list[0] = 1;  //can also be written as *list
