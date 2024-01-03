@@ -31,9 +31,9 @@ int main(void)
 
     list[0] = 1;  //can also be written as *list
     list[1] = 2 ; //*(list+1)
-    list [2] = 3;
+    list[2] = 3;
 
-    int *tmp = realloc(list , (size+1)*sizeof(int));
+    int *tmp = realloc(list,(size+1)*sizeof(int));
     /* does all this copying by itself
     int *tmp = malloc((size+1)*sizeof(int));
     if(tmp==NULL)
