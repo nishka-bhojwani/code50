@@ -33,7 +33,8 @@ int main(void)
     list[1] = 2 ; //*(list+1)
     list [2] = 3;
 
-
+    int *tmp = realloc(list , (size+1)*sizeof(int));
+    /* does all this copying by itself
     int *tmp = malloc((size+1)*sizeof(int));
     if(tmp==NULL)
     {
@@ -46,7 +47,8 @@ int main(void)
     {
         tmp[i] = list[i];
     }
-    free(list); //freeing the original address of the list i.e. the size 3 array 
+    */
+    free(list); //freeing the original address of the list i.e. the size 3 array
     tmp[size] = 4 ;
 
     list = tmp ;
