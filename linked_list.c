@@ -11,6 +11,7 @@ node
 int main (int argc ; char *argv[])
 {
     node *list = NULL;
+    for (int i = 0 ; i < )
     node n = malloc(sizeof(node));
 
     node->number = 1;
