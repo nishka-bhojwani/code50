@@ -8,13 +8,13 @@ typedef struct node
 }
 node
 
-int main (int argc ; char* argv[])
+int main (int argc ; char *argv[])
 {
-
+    node *list = NULL;
     node n = malloc(sizeof(node));
 
     node->number = 1;
-    node ->
+    node ->next = 0 ;
 
 
 }
