@@ -12,19 +12,21 @@ node
 
 #define LIST_SIZE 2;
 
-void unload(node *list);
-void visualize(node *list);
+//void unload(node *list);
+
 
 int main(void)
 {
     node *list = NULL;
 
-    for (int i = 0 ; i< LIST_SIZE ; i++)
+    for(int i = 0 ; i< LIST_SIZE ; i++)
     {
         string phrase = get_string("Phrase: ");
         node *n = malloc(sizeof(node));
         n->phrase = phrase;
-        n->next = NULL;
+        n->next = list;
         list = n;
+
     }
+    printf(list)
 }
