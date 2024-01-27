@@ -10,7 +10,7 @@ typedef struct node
 }
 node
 
-#define LIST_SIZE 2;
+#define LIST_SIZE 2
 
 //void unload(node *list);
 
