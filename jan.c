@@ -18,6 +18,13 @@ void visualize(node *list);
 int main(void)
 {
     node *list = NULL;
-    node *n = malloc(sizeof(node));
-    
+
+    for (int i = 0 ; i< LIST_SIZE ; i++)
+    {
+        string phrase = get_string("Phrase: ");
+        node *n = malloc(sizeof(node));
+        n->phrase = phrase;
+        n->next = NULL;
+        list = n;
+    }
 }
