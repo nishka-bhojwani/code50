@@ -12,7 +12,12 @@ node
 
 #define LIST_SIZE 2;
 
-int main(char argc, string argv[])
-{
+void unload(node *list);
+void visualize(node *list);
 
+int main(void)
+{
+    node *list = NULL;
+    node *n = malloc(sizeof(node));
+    
 }
