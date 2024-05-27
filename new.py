@@ -5,3 +5,5 @@ print("hello",name , sep = "bruh" ) #print function used by new.py , argument is
 
 print("hello," , end = "" )
 print(name)
+print ("hello , \"friend\"")# \ represents escape charecter
+
