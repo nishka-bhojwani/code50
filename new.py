@@ -7,3 +7,5 @@ print("hello," , end = "" )
 print(name)
 print ("hello , \"friend\"")# \ represents escape charecter
 
+
+
