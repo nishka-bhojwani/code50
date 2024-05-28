@@ -5,7 +5,7 @@ print("hello",name , sep = "" ) #print function used by new.py , argument is wha
 
 print("hello," , end = "" )
 print(name)
-print ("hello , \"friend\"")# \ represents escape charecter
+print ("hello , \"friend\"")# represents escape charecter
 
 
 #strip - to remove white spaces
@@ -16,5 +16,5 @@ print(name)
 #using f string
 # split gives the first word before a space is used
 name = input("What is your name ? ").strip().title()
-name = name.split()
-print(f"hello,{name}")
+first, last = name.split(" ")
+print(f"hello,{first}")
