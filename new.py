@@ -8,4 +8,6 @@ print(name)
 print ("hello , \"friend\"")# \ represents escape charecter
 
 
-
+#strip - to remove white spaces
+#title for making the first letter of all words capital 
+name = name.strip()
