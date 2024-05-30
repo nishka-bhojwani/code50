@@ -2,8 +2,8 @@ x = float(input("x: ")) #input gets called first # the o/p of that becomes the i
 y = float(input("y: "))
 
 z = int(x + y) #takes only the integer part
-n  = round(x+y) #rounds the value (5 gets rounded down )
+n  = round(x+y) #rounds the value (5 gets rounded down ) #syntax round(number[,ndigit])
 
 print(x+y)
-print(z)
+print(f"{z:,}") # commas to group 3 zeroes 
 print(n)
