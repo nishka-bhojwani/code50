@@ -4,5 +4,6 @@ y = float(input("y: "))
 z = int(x + y) #takes only the integer part
 n  = round(x+y) #rounds the value (5 gets rounded down )
 
+print(x+y)
 print(z)
 print(n)
