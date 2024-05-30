@@ -1,5 +1,9 @@
 def main():
     x = int(input("x:"))
-    return x**2
+    print(f"x squared is {square(x)}")
+
+def square(n):
+    return n**2
+
 
 main()
