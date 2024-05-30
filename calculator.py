@@ -1,6 +1,8 @@
-x = float(input("x: "))
+x = float(input("x: ")) #input gets called first # the o/p of that becomes the input to int function
 y = float(input("y: "))
 
-z = x + y
+z = int(x + y) #takes only the integer part
+n  = round(x+y) #rounds the value 
 
 print(z)
+print(n)
