@@ -6,6 +6,6 @@ def main():
 
 #defining a function that converts the given input to lowercase
 def lowercase(convert):
-    return convert.lowercase()
+    return convert.lower()
 
-
+main()
