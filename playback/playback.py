@@ -1,11 +1,5 @@
 # to write a programme that replaces space with ...
+message  = str(input("message: "))
+new = message.replace(" ","...")
+print(new)
 
-def main():
-    message  = str(input("message: "))
-    replace(message)
-
-#creagting a function to replace the whitespaces with ...
-def replace(old):
-    print(old,sep='...')
-
-main()
