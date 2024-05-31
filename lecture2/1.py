@@ -1,11 +1,14 @@
-x = int(input("What's x? " ))
-y = int(input("What's y? "))
+def main():
+    x = int(input("What's x? " ))
+    if is_even(x):
+        print("even")
+    else:
+        print(odd)
 
-if x==y:
-    print("x is equal to y")
+def is_even(number):
+    if (number%2)==0:
+        return true
+    else:
+        return false
 
-else:
-    print("x is not equal to y")
-
-
-
+main()
