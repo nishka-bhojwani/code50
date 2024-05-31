@@ -6,16 +6,16 @@ def main():
 
 
 def dollars_to_float(d):
-    d = d.replace("$","")
-    d = float(d)
-    return d
+    d = d.replace("$","") #replacing $ with no charecter
+    d = float(d) # converting it to float for calculation
+    return d # returning the float value of d 
 
 
 def percent_to_float(p):
     # TODO
-    p = p.replace("%","")
-    new_p = float(p)
-    return(new_p/100)
+    p = p.replace("%","")#replacing % with no charecter
+    new_p = float(p) # convertung to float and storing it in new_p
+    return(new_p/100) # returning decimal value of the given percent
 
 
 main()
