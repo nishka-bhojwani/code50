@@ -2,6 +2,9 @@
 
 def main():
     message  = str(input("message: "))
-    print(message)
+    print(f"replace{message}")
 
-def 
+#creagting a function to replace the whitespaces with ...
+def replace(old):
+    return 
+
