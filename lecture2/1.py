@@ -6,9 +6,6 @@ def main():
         print("odd")
 
 def is_even(number):
-    if (number%2)==0:
-        return True
-    else:
-        return False
+     return (number%2==0)
 
 main()
