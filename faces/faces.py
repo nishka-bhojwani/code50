@@ -7,8 +7,7 @@ def main():
 
 
 def convert(old):
-    new = old.replace(":)","🙂")
-    new = old.replace(":(","🙁")
+    new = old.replace(":(","🙁").replace(":)","🙂")
     return new
 
 main()
