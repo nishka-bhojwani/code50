@@ -17,7 +17,7 @@ else:
     extension = new[1] # gets the second word after splitting and stores it in extension
 #taking into account all specified conditions printing o/p
     if extension == "gif" or extension == "jpg" or extension == "jpeg" or extension == "png":
-        if extension == "jpeg" or "jpg":
+        if extension == "jpeg" or extension =="jpg":
             print("image/jpeg")
         else:
             print(f"image/{extension}")
