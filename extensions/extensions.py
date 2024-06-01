@@ -9,25 +9,24 @@ general suffixes and output for reference
 .zip   - application/zip
 """
 
-file = str(input("file : " ))# takes user input
+file = str(input("file : " )).strip().lower()# takes user input
 new = file.split(".")#splitting the original string into two strings before and after the .
 if len(new)==1:
-    print()
-
-extension = new[1] # gets the second word after splitting and stores it in extension
+    print("application/octet-stream")
+else:
+    extension = new[1] # gets the second word after splitting and stores it in extension
 #taking into account all specified conditions printing o/p
-if extension == "gif" or extension == "jpg" or extension == "jpeg" or extension == "png":
-    if extension == "jpeg" or "jpg":
-        print("image/jpeg")
+    if extension == "gif" or extension == "jpg" or extension == "jpeg" or extension == "png":
+        if extension == "jpeg" or "jpg":
+            print("image/jpeg")
+        else:
+            print(f"image/{extension}")
+    elif extension == "pdf" or extension == "zip":
+        print(f"application/{extension}")
+    elif extension == "txt":
+        print(f"text/plain")
     else:
-        print(f"image/{extension}")
-elif extension == "pdf" or extension == "zip":
-    print(f"application/{extension}")
-elif extension == "txt":
-    print(f"text/plain")
-
-if len(new)==1:
-    print()
+     print("application/octet-stream")
 
 
 
