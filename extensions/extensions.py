@@ -1,6 +1,6 @@
 file = str(input("file : " ))
-new = file.strip(".")
-extension = new[]
-print(extension)
+new = file.split(".")
+extension = new[1]
+print(f"image/{extension}")
 
 
