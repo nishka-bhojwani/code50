@@ -13,7 +13,7 @@ file = str(input("file : " )).strip().lower()# takes user input
 new = file.split(".")#splitting the original string into two strings before and after the .
 if len(new)==1:
     print("application/octet-stream")
-else:
+elif len(new)==2:
     extension = new[1] # gets the second word after splitting and stores it in extension
 #taking into account all specified conditions printing o/p
     if extension == "gif" or extension == "jpg" or extension == "jpeg" or extension == "png":
@@ -27,6 +27,8 @@ else:
         print(f"text/plain")
     else:
      print("application/octet-stream")
+
+
 
 
 
