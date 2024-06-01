@@ -2,11 +2,11 @@
 
 
 def main():
-    message = str(input("greeting:"))
-    with_hello(message)
-    print(message[0:5])
+    message = str(input("greeting:")).strip().lower()#getting input greeting and removing whitespaces and making everything lowercase for comparision
+    with_hello(message)#calling the function in main 
 
-def with_hello(message):
+
+def with_hello(message): #using a function to check and give the amount on the basis of the greeting
     if message[0:5] == "hello":
         print("$0")
     elif message[0] == "h":
