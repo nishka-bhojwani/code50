@@ -13,12 +13,12 @@ file = str(input("file : " ))# takes user input
 new = file.split(".")#splitting the original string into two strings before and after the .
 extension = new[1] # gets the second word after splitting and stores it in extension
 #taking into account all specified conditions printing o/p
-if extension == "gif" or "jpg" or "jpeg" or "png":
+if extension == "gif" or extension == "jpg" or extension == "jpeg" or extension == "png":
     if extension == "jpeg" or "jpg":
         print("image/jpeg")
     else:
         print(f"image/{extension}")
-elif extension == "pdf" or "zip":
+elif extension == "pdf" or extension == "zip":
     print(f"application/{extension}")
 elif extension == "txt":
     print(f"text/plain")
