@@ -8,13 +8,13 @@ general suffixes and output for reference
 .txt   -  text/plain
 .zip   - application/zip
 """
-
+n = int
 file = str(input("file : " )).strip().lower()# takes user input
 new = file.split(".")#splitting the original string into two strings before and after the .
 if len(new)==1:
     print("application/octet-stream")
-elif len(new)==2:
-    extension = new[1] # gets the second word after splitting and stores it in extension
+elif len(new)==n:
+    extension = new[n-1] # gets the second word after splitting and stores it in extension
 #taking into account all specified conditions printing o/p
     if extension == "gif" or extension == "jpg" or extension == "jpeg" or extension == "png":
         if extension == "jpeg" or extension =="jpg":
