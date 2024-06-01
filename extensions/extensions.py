@@ -11,6 +11,9 @@ general suffixes and output for reference
 
 file = str(input("file : " ))# takes user input
 new = file.split(".")#splitting the original string into two strings before and after the .
+if len(new)==1:
+    print()
+
 extension = new[1] # gets the second word after splitting and stores it in extension
 #taking into account all specified conditions printing o/p
 if extension == "gif" or extension == "jpg" or extension == "jpeg" or extension == "png":
@@ -22,19 +25,11 @@ elif extension == "pdf" or extension == "zip":
     print(f"application/{extension}")
 elif extension == "txt":
     print(f"text/plain")
-else:
-    print("application/octet-stream")
+
+if len(new)==1:
+    print()
 
 
 
 
 
-"""
-.gif   - image/gif
-.jpg   - image/jpeg
-.jpeg  - image/jpeg
-.png   - image/png
-.pdf   - application/pdf
-.txt   -  text/plain
-.zip   - application/zip
-"""
