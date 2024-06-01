@@ -4,12 +4,12 @@
 def main():
     message = str(input("greeting:"))
     with_hello(message)
-    print(message[0])
+    print(message[0:5])
 
 def with_hello(message):
-    if message[0:] == "hello":
+    if message[0:5] == "hello":
         print("$0")
-    elif message[0][0] == "h":
+    elif message[0] == "h":
         print("$20")
     else:
         print("$100")
