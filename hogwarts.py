@@ -13,8 +13,8 @@ for student in students:
 new = [
     {"name" :"Hermione" , "house": "Gryffindor" , "petrona":"Otter" },
     {"name" :"Harry" , "house": "Gryffindor" , "petrona":"Stag" },
-     {"name" :"Ron" , "house": "Gryffindor" , "petrona":"deer" },
-      {"name" :"Draco" , "house": "Slytherin" , "petrona":None}
+    {"name" :"Ron" , "house": "Gryffindor" , "petrona":"deer" },
+    {"name" :"Draco" , "house": "Slytherin" , "petrona":None}
 ]
 for student in new:
     print(new["name"], new["house"])
