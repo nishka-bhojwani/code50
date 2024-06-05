@@ -16,5 +16,5 @@ new = [
      {"name" :"Ron" , "house": "Gryffindor" , "petrona":"deer" },
       {"name" :"Draco" , "house": "Slytherin" , "petrona":None}
 ]
-for student in students:
+for student in new:
     print(new["name"],new["house"],new["petrona"],sep=" ")
