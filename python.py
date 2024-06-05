@@ -16,10 +16,20 @@ for i in range(3):
 print("meow\n"*3,end = "")
 '''
 # to prompt user again and again for a particular type of input (positive integer in this case)
-while True:
-    n = int(input("What is n ? "))
-    if n > 0:
-        break
 
-for x in range(n):
+
+def main():
+   n = get_number()
+   meow(n)
+
+def get_number():
+    while True:
+     n = int(input("What is n ? "))
+     if n > 0:
+        return n
+
+
+
+def meow(n):
+   for _ in range(n):
     print("meow")
