@@ -2,7 +2,7 @@
 
 amount = int(input("Amount due: "))
 if amount==50:
-    
 
+        
 
 
