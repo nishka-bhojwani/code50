@@ -7,4 +7,6 @@ def print_column(height):
 
 
 
+
+
 main()
