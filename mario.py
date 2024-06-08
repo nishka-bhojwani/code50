@@ -1,8 +1,9 @@
 def main():
-    print_rows(4)
+    print_square(4)
 
-def print_rows(width):
-        print("?"*width)
+def print_square(size):
+        for i in range(size):
+              
 
 
 
