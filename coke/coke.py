@@ -2,5 +2,8 @@
 
 amount = int(input("Amount due: "))
 if amount==50:
+    
     coin1 = int(input("Insert coin: " ))
+    if
+        coin2 = int(input("Insert coin: " ))
 
