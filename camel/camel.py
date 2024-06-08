@@ -4,8 +4,8 @@ camel_name = str(input("camelCase:"))
 length = len(camel_name)
 
 for i in range(length):
-    if camelname[i].isupper():
-        print(i)
+    if camel_name[i].isupper():
+        print(str camel_name
 
 
 
