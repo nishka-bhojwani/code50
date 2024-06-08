@@ -5,7 +5,7 @@ length = len(camel_name)
 
 for i in range(length):
     if camel_name[i].isupper():
-        print(camel_name[0:i])
+        print(f"{camel_name[0:i]}_{camel_name[i:length].lower()}")
         
 
 
