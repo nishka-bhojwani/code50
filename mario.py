@@ -1,9 +1,8 @@
 def main():
-    print_rows(3)
+    print_rows(4)
 
-def print_column(height):
-    for i in range(height):
-        print("#")
+def print_rows(width):
+        print("?"*width)
 
 
 
