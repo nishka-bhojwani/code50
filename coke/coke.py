@@ -2,6 +2,7 @@
 
 amount = int(input("Amount due: "))
 counter = 0
+# if statement 
 if amount==50:
     coin = int(input("Insert coin: "))
     while coin not in [25,5,10]:
@@ -15,9 +16,7 @@ if amount==50:
         amount_due = amount_due - coin1
         if amount_due >= 0:
             print(f"Amount due: {amount_due}")
-        else:
-            print("Amount due: 0")
     change = int(-(amount_due))
-    print(f"Change due: {change}")
+    print(f"Change owed: {change}")
 else:
     print("Invalid input")
