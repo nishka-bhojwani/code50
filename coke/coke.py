@@ -4,13 +4,13 @@ amount = int(input("Amount due: "))
 counter = 0
 if amount==50:
     coin = int(input("Insert coin: "))
-    while coin not in [25,15,10]:
+    while coin not in [25,5,10]:
         coin = int(input("Insert coin: "))
     amount_due = amount-coin
     print(f"Amount due: {amount_due}")
     while amount_due > 0 :
         coin1 = int(input("Insert coin: "))
-        while coin1 not in [25,15,10]:
+        while coin1 not in [25,5,10]:
             coin1 = int(input("Insert coin: "))
         amount_due = amount_due - coin1
         if amount_due >= 0:
