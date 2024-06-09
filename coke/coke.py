@@ -17,6 +17,4 @@ if amount==50:
         if amount_due >= 0:
             print(f"Amount due: {amount_due}")
     change = int(-(amount_due)) #calculating the change owed
-    print(f"Change owed: {change}") # printing the change owed 
-else:
-    print("Invalid input")
+    print(f"Change owed: {change}") # printing the change owed
