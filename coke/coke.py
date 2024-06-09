@@ -7,4 +7,7 @@ if amount==50:
         coin = int(input("Insert coin: "))
     amount_due = amount-coin
     print(f"Amount due: {amount_due}")
-
+    while amount_due > 0:
+        coin = int(input("Insert coin: "))
+        amount_due = amount - coin
+    if
