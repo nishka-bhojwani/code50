@@ -2,5 +2,9 @@
 
 text = str(input("Input: "))
 
-ch
+vowels = ['a','A','e','E','i','I','o','O','u','U']
 
+
+for i in vowels:
+    new = text.replace(i,"")
+    print(new)
