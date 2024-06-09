@@ -13,6 +13,6 @@ while amount_due > 0 : # checking if due amount is greater than zero and then as
         coin1 = int(input("Insert coin: "))
     amount_due = amount_due - coin1
     if amount_due >0:
-        print(f"Amount due: {amount_due}")
+        print(f"Amount Due: {amount_due}")
 change = int(-(amount_due)) #calculating the change owed
-print(f"Change owed: {change}") # printing the change owed
+print(f"Change Owed: {change}") # printing the change owed
