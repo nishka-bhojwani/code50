@@ -2,5 +2,5 @@
 
 text = str(input("Input: "))
 
-new = text.
+ch
 
