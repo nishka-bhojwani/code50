@@ -16,7 +16,7 @@ if amount==50:
         amount_due = amount_due - coin1
         print(f"Amount due: {amount_due}")
         counter = coin + coin1
-    change = int(amount - counter)
+    change = int(-(amount_due))
     print(f"Change due: {change}")
 else:
     print("Invalid input")
