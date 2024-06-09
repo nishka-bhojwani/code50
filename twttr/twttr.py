@@ -6,5 +6,6 @@ vowels = ['a','A','e','E','i','I','o','O','u','U']
 
 
 for i in vowels:
-    new = text.replace(i,"")
-    print(new)
+    text = text.replace(i,"")
+
+print(f"Output: {text}")
