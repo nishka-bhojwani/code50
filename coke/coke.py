@@ -11,7 +11,7 @@ if amount==50:
     print(f"Amount due: {amount_due}")
     while amount_due > 0:
         coin1 = int(input("Insert coin: "))
-        amount_due = amount - coin1
+        amount_due = amount_due - coin1
         counter = coin + coin1
     change = int(amount - counter)
     print(f"Change due: {change}")
