@@ -8,7 +8,8 @@ def main():
 
 def is_valid(s):
     if s.alunum():
-        if s 
+        if 2<=s.len()<=6:
+            
 
 
 main()
