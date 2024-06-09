@@ -7,7 +7,8 @@ def main():
 
 
 def is_valid(s):
-    if s.alunum()
+    if s.alunum():
+        if s 
 
 
 main()
