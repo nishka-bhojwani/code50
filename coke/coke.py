@@ -1,7 +1,6 @@
 #taking user input (only integers 25, 5 and 10 are accepted )
 
 amount = int(input("Amount due:50"))
-# if statement to proceed when 1st input is 50
 
 coin = int(input("Insert coin: "))#taking first coin input
 while coin not in [25,5,10]: # keep prompting till input is in 25,5,10
