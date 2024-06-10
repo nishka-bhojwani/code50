@@ -7,15 +7,10 @@ def main():
 
 
 def is_valid(s):
-    if s.alunum():
-        if 2<=s.len()<=6:
-            print(s.len())
-            if s.len()==2:
-                
+    if s.isalnum() and 2<=len(s)<=6:
+        if len(s) ==2:
+            
 
-
-    else:
-        return False
 
 
 
