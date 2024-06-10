@@ -15,7 +15,7 @@ def is_valid(s):
             else:
                 return True
         elif len(s) == n:
-            for char in range(s[0:n-1]):
+            for char in s[0:n-1]:
                 if char.isdigit():
                     return False
                 else:
