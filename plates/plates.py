@@ -7,9 +7,22 @@ def main():
 
 
 def is_valid(s):
+    n = int(3)
     if s.isalnum() and 2<=len(s)<=6:
         if len(s) ==2:
-            if s[0]
+            if s[0].isdigit():
+                return False
+            else:
+                return True
+        elif len(s) == n:
+            for char in range(s[0:n-1]):
+                if char.isdigit():
+                    return false:
+                else:
+                    return True
+        n= n+1
+        
+
 
 
 
