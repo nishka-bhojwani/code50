@@ -10,7 +10,7 @@ def is_valid(s):
     n = int(3)
     if s.isalnum() and 2<=len(s)<=6:
         if len(s) ==2:
-            if s[0].isdigit():
+            if s[0].isdigit() or s[1].isdigit()  :
                 return False
             else:
                 return True
