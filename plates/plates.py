@@ -40,7 +40,4 @@ def is_valid(s):
 
 
 
-
-
-
 main()
