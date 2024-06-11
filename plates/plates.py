@@ -30,11 +30,10 @@ def is_valid(s):
                 return True
             if s[2].isdigit() == False and s[3].isdigit()== True:
                 return True
-            #if s[2].isdigit() == True and s[3].isdigit()== False:
-                #return False
             else:
                 return False
-
+        elif len(s) == 5:
+            
 
     else:
         return False
