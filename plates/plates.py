@@ -59,7 +59,9 @@ def is_valid(s):
                  return True
              else:
                 return False
-             
+             for char in s:
+                if char.isdigit():
+                    return int(char)
 
 
 
