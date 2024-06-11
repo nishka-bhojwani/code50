@@ -55,7 +55,7 @@ def is_valid(s):
                 return True
              if s[2].isdigit() == False and s[3].isdigit()==False and s[4].isdigit and s[5].isdigit() and s[4] !="0":
                  return True
-             if s[2].isdigit() == False and s[3].isdigit()==False and s[4].isdigit==False and s[5].isdigit() and s[5] !="0":
+             if s[2].isdigit() == False and s[3].isdigit()==False and s[4].isdigit== False and s[5].isdigit() and s[5] !="0":
                  return True
              else:
                 return False
