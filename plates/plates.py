@@ -29,6 +29,10 @@ def is_valid(s):
                 return True
             if s[2].isdigit() == False and s[3].isdigit():
                 return True
+            for char in s:
+                if char.isdigit():
+                    if char != 0:
+                        return True 
             else:
                 return False
         elif len(s) == 5:
@@ -42,6 +46,10 @@ def is_valid(s):
                 return True
              if s[2].isdigit() == False and s[3].isdigit()==False and s[4].isdigit():
                  return True
+             for char in s:
+                if char.isdigit():
+                    if char != 0:
+                        return True
              else:
                 return False
         elif len(s) == 6:
@@ -57,11 +65,13 @@ def is_valid(s):
                  return True
              if s[2].isdigit() == False and s[3].isdigit()==False and s[4].isdigit==False and s[5].isdigit():
                  return True
-             else:
-                return False
              for char in s:
                 if char.isdigit():
-                    return int(char)
+                    if char != 0:
+                        return True
+             else:
+                return False
+
 
 
 
