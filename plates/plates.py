@@ -15,12 +15,12 @@ def is_valid(s):
             else:
                 return True
         elif len(s) == 3:
-            if s[1].isdigit()==True  and s[2].isdigit() == False:
+            if s[1].isdigit()==True :
                 return False
-            elif s[1].isdigit()==True and  s[2].isdigit() == True:
+            elif  s[2].isdigit() == True:
                 return True
             else:
-                return True 
+                return True
     else:
         return False
 
