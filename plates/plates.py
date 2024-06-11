@@ -37,25 +37,25 @@ def is_valid(s):
                 for i in s[0:2]:
                     if i.isdigit():
                         return False
-                if i[2].isdigit():
+                if s[2].isdigit():
                     for i in s[2:5]:
                         if i.isdigit():
                             return True
                         else:
                             return False
-                if i[3].isdigit():
+                if s[3].isdigit():
                     for i in s[3:5]:
                         if i.isdigit():
                             return True
                         else:
                             return False
-                if i[4].isdigit():
+                if s[4].isdigit():
                     for i in s[4:5]:
                         if i.isdigit():
                             return True
                         else:
                             return False
-    
+
 
 
 
