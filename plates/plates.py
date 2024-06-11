@@ -34,7 +34,26 @@ def is_valid(s):
                 return False
         elif len(s) == 5:
             for i in s:
-                for i in s[0:]
+                for i in s[0:2]:
+                    if i.isdigit():
+                        return False
+                if i[2].isdigit():
+                    for i in s[2:5]:
+                        if i.isdigit():
+                            return True
+                        else:
+                            return False
+                if i[3].isdigit():
+                    for i in s[3:5]:
+                        if i.isdigit():
+                            return True
+                        else:
+                            return False
+                if i[4].isdigit():
+                    
+
+
+
 
 
     else:
