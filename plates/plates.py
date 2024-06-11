@@ -14,13 +14,13 @@ def is_valid(s):
                 return False
             else:
                 return True
-        elif len(s) == n:
-            for char in s[0:n-1]:
-                if char.isdigit():
-                    return False
-                else:
-                    return True
-        n= n+1
+        elif len(s) == 3:
+            if s[1].isdigit()==True  and s[2].isdigit() == False:
+                return False
+            elif s[1].isdigit()==True and  s[2].isdigit() == True:
+                return True
+            else:
+                return True 
     else:
         return False
 
