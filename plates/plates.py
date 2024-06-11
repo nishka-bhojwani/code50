@@ -15,9 +15,9 @@ def is_valid(s):
             else:
                 return True
         elif len(s) == 3:
-            if s[1].isdigit()==True :
+            if s[1].isdigit()==True and s[1]!=0 :
                 return False
-            elif  s[2].isdigit() == True:
+            elif  s[2].isdigit() == True :
                 return True
             else:
                 return True
