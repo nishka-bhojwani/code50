@@ -38,7 +38,7 @@ def is_valid(s):
                 return False
              if s[2].isdigit() and s[3].isdigit() and s[4].isdigit() and s[2] !="0":
                 return True
-             if s[2].isdigit() == False and s[3].isdigit()and s[4].isdigit and s[3] !="0":
+             if s[2].isdigit() == False and s[3].isdigit() and s[4].isdigit and s[3] !="0":
                 return True
              if s[2].isdigit() == False and s[3].isdigit()==False and s[4].isdigit() and s[4] != "0":
                  return True
