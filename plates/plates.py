@@ -22,40 +22,28 @@ def is_valid(s):
             else:
                 return True
         elif len(s)==4:
-            if s[1].isdigit()==True or s[0].isdigit()==True:
+            if s[1].isdigit() or s[0].isdigit():
                 return False
-            if s[2].isdigit() == True and s[3].isdigit()== True:
+            if s[2].isdigit() and s[3].isdigit():
                 return True
             if s.isalpha():
                 return True
-            if s[2].isdigit() == False and s[3].isdigit()== True:
+            if s[2].isdigit() == False and s[3].isdigit():
                 return True
             else:
                 return False
         elif len(s) == 5:
-            for i in s:
-                for i in s[0:2]:
-                    if i.isdigit():
-                        return False
-                if s[2].isdigit():
-                    for i in s[2:5]:
-                        if i.isdigit():
-                            return True
-                        else:
-                            return False
-                if s[3].isdigit():
-                    for i in s[3:5]:
-                        if i.isdigit():
-                            return True
-                        else:
-                            return False
-                if s[4].isdigit():
-                    for i in s[4:5]:
-                        if i.isdigit():
-                            return True
-                        else:
-                            return False
 
+             if s.isalpha():
+                return True
+             if s[1].isdigit() or s[0].isdigit():
+                return False
+             if s[2].isdigit() and s[3].isdigit() and s[4].isdigit():
+                return True
+             if s[2].isdigit() == False and s[3].isdigit():
+                return True
+            else:
+                return False
 
 
 
