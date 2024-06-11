@@ -40,6 +40,8 @@ def is_valid(s):
                 return False
              if s[2].isdigit() and s[3].isdigit()== False and s[4].isdigit():
                 return False
+            if s[2].isdigit() and s[3].isdigit()== False and s[4].isdigit():
+
              if s[2].isdigit() == False and s[3].isdigit()and s[4].isdigit ==False:
                 return False
              if
