@@ -26,7 +26,15 @@ def is_valid(s):
                 return False
             if s[2].isdigit() == True and s[3].isdigit()== True:
                 return True
-            if s.is
+            if s.isalpha():
+                return True
+            if s[2].isdigit() == False and s[3].isdigit()== True:
+                return True
+            #if s[2].isdigit() == True and s[3].isdigit()== False:
+                #return False
+            else:
+                return False
+
 
     else:
         return False
