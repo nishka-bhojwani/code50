@@ -38,13 +38,12 @@ def is_valid(s):
                 return True
              if s[1].isdigit() or s[0].isdigit():
                 return False
-             if s[2].isdigit() and s[3].isdigit()== False and s[4].isdigit():
-                return False
-            if s[2].isdigit() and s[3].isdigit()== False and s[4].isdigit():
-
-             if s[2].isdigit() == False and s[3].isdigit()and s[4].isdigit ==False:
-                return False
-             if
+             if s[2].isdigit() and s[3].isdigit() and s[4].isdigit():
+                return True
+             if s[2].isdigit() == False and s[3].isdigit()and s[4].isdigit:
+                return True
+             if s[2].isdigit() == False and s[3].isdigit()==False and s[4].isdigit:
+                 return True 
              else:
                 return False
 
