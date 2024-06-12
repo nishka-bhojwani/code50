@@ -1,9 +1,13 @@
 
 
 def main():
-    fraction = int(input("Fraction: "))
-    get_fuel(fraction)
+    get_fuel()
 
 
-def get_fuel(x):
-    
+def get_fuel():
+    while True:
+        try:
+            x = str(input("Fraction: "))
+        except ValueError:
+                
+
