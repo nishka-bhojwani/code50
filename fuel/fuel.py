@@ -1,13 +1,17 @@
 
 
 def main():
-    get_fuel()
+    user = str(input("Fraction: "))
+    new1 = user.split("/")[0]
+    new2 = int(new1 = int(user.split("/")[0]))
 
 
-def get_fuel():
-    while True:
-        try:
-            x = str(input("Fraction: "))
-        except ValueError:
-                
+main()
+
+
+
+
+
+
+
 
