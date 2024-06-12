@@ -7,12 +7,15 @@ def main():
     new2 = int(new[1])
     first(new1)
     second(new2)
-    
+    while (new1/new2 )> 0:
+        user = str(input("Fraction: "))
+    print(f"{(new1/new2)*100}%")
 
 def first(x):
     while True :
         try :
             return int(input(x))
+            break
         except ValueError:
             pass
 
@@ -21,9 +24,13 @@ def second(y):
     while True:
         try:
             return int(input(y))
-        except ZeroError:
+            break
+        except ZeroDivisionError:
             pass
-        except
+        except ValueError:
+            pass
+
+main()
 
 
 
