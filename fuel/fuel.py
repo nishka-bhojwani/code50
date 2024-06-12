@@ -2,12 +2,19 @@
 
 def main():
     user = str(input("Fraction: "))
-    new1 = user.split("/")[0]
-    new2 = int(new1 = int(user.split("/")[0]))
+    new = user.split("/")
+    new1 = int(new[0])
+    new2 = int(new[1])
+    first(new1)
+    second(new2)
 
-
-main()
-
+def first(x):
+    while True :
+        try :
+            return x
+        except ValueError:
+            pass
+    
 
 
 
