@@ -11,6 +11,6 @@ name = str(input("Item: " )).lower()
 if name in fruits:
     print(f"Calories : {fruits[name]}")
 else:
-    pass
+    pass #passes the invalid inputs that is gives no o/p
 
 
