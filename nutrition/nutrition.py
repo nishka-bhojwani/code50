@@ -7,7 +7,7 @@ fruits = {"apple":130 , "avocado":50 , "banana":110 , "cantaloupe":110, "grapefr
 #taking input from user as string i.e. the fruit
 name = str(input("Item: " )).lower()
 
-# checking whether the 
+# checking whether the inputed fruit is in the list and thereby printing teh required value 
 if name in fruits:
     print(f"Calories : {fruits[name]}")
 else:
