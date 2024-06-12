@@ -14,7 +14,7 @@ def main():
 def first(x):
     while True :
         try :
-            return int(input(x))
+            return x
             break
         except ValueError:
             pass
@@ -23,7 +23,7 @@ def first(x):
 def second(y):
     while True:
         try:
-            return int(input(y))
+            return y
             break
         except ZeroDivisionError:
             pass
