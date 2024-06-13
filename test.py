@@ -1,10 +1,14 @@
-
-
 def main():
-    user = str(input("Fraction: "))
-    new = user.split("/")
-    
- try:
+    while True:
+        user = input("Fraction: ")
+        new = user.split("/")
+
+        # Check if input can be split correctly
+        if len(new) != 2:
+            print("Invalid input. Please enter in the form 'numerator/denominator'.")
+            continue
+
+        try:
             # Ensure both parts are integers
             new1 = int(new[0])
             new2 = int(new[1])
@@ -25,13 +29,3 @@ def main():
             print("Denominator cannot be zero. Try again.")
 
 main()
-
-
-
-
-main()
-
-
-
-
-
