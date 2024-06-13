@@ -2,22 +2,15 @@
 
 def main():
     user = str(input("Fraction: "))
-    new = user.split("/")
+    new = user.split("/")\
     new1 = int(new[0])
     new2 = int(new[1])
-    first(new1)
-    second(new2)
-    while (new1/new2 )> 0:
+
+    while (new1/new2 )> 1:
         user = str(input("Fraction: "))
     print(f"{(new1/new2)*100}%")
 
-def first(x):
-    while True :
-        try :
-            return x
-            break
-        except ValueError:
-            pass
+
 
 
 def second(y):
