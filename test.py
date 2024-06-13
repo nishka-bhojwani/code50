@@ -20,8 +20,7 @@ def main():
             if 0 <= fraction <= 1:
                 print(f"{fraction * 100:.0f}%")
                 break
-            else:
-                print("Fraction should be between 0 and 1. Try again.")
+            
 
         except ValueError:
             print("Invalid input. Please enter integers in the form 'numerator/denominator'.")
