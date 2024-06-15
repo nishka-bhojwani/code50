@@ -4,9 +4,8 @@ def main():
         new = user.split("/")
 
         # Check if input can be split correctly
-        if len(new) != 2:
-            print("Invalid input. Please enter in the form 'numerator/denominator'.")
-            continue
+        while len(new) != 2:
+
 
         try:
             # Ensure both parts are integers
