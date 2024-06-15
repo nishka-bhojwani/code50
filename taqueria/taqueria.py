@@ -11,11 +11,15 @@ menu = {
         }
 
 try:
-    item = str(input("Item:")).title()
-    Total = 0
-    for item in menu:
-        Total = Total + menu(item)
-        print("Total: {Total}")
+    while True:
+        item = str(input("Item:")).title()
+        Total = 0
+        if item in menu:
+            Total = Total + menu[item]
+            print(f"Total: {Total}")
+        else:
+            continue
+
 
 except EOFError:
     exit
