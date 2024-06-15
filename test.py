@@ -5,6 +5,8 @@ def main():
 
         # Check if input can be split correctly
         while len(new) != 2:
+             user = input("Fraction: ")
+             new = user.split("/")
 
 
         try:
@@ -19,6 +21,7 @@ def main():
             if 0 <= fraction <= 1:
                 print(f"{fraction * 100:.0f}%")
                 break
+            
 
 
         except ValueError:
