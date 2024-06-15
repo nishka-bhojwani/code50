@@ -22,7 +22,6 @@ try:
         print(f"Total: {Total}")
 
 except EOFError:
-    print("\n")
     exit
 
 
