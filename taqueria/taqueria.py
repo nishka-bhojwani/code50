@@ -17,4 +17,9 @@ try:
         Total = Total + menu(item)
         print("Total: {Total}")
 
-except 
+except EOFError:
+    exit
+    print("\n")
+
+except KeyError:
+    pass
