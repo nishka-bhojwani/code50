@@ -13,7 +13,7 @@ menu = {
 try:
     Total = 0
     while True:
-        item = str(input("Item:")).title()
+        item = str(input("Item: ")).title()
         if item in menu:
                new = menu[item]
         else:
@@ -26,7 +26,8 @@ except EOFError:
     exit
 
 
+
 except KeyError:
-    pass
+    exit
 
 
