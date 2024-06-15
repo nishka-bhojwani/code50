@@ -21,6 +21,7 @@ try:
         Total = Total+ new
         print(f"${Total:.2f}")
 
+#exiting the programme a
 except EOFError:
     exit
     print(" ")
