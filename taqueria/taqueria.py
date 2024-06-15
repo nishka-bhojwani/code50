@@ -23,7 +23,7 @@ try:
 
 except EOFError:
     exit
-    next 
+    print(" ")
 
 
 
