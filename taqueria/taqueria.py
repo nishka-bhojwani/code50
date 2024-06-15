@@ -19,7 +19,7 @@ try:
         else:
             continue
         Total = Total+ new
-        print(f"Total: {Total}")
+        print(f"${Total}:.2f")
 
 except EOFError:
     exit
