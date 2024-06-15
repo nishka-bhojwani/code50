@@ -19,7 +19,7 @@ while True: #to create a loop to keep promting the user
          elif fraction==0 or (fraction*100)<=1:
             print("E")
             break
-         elif fraction == 1 or (fraction*100)>=99 :
+         elif  fraction ==1 or ((fraction*100)>=99 and (fraction*100)<=1):
             print("F")
             break
 
