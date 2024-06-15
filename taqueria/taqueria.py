@@ -21,13 +21,11 @@ try:
         Total = Total+ new
         print(f"Total: {Total}")
 
-
 except EOFError:
+    print("\n")
     exit
 
 
 
-except KeyError:
-    exit
 
 
