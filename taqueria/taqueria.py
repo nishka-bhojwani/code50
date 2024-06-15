@@ -24,7 +24,9 @@ try:
 
 except EOFError:
     exit
-    print("\n")
+
 
 except KeyError:
     pass
+
+
