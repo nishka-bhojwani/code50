@@ -1,4 +1,4 @@
-def main():
+while True:
     fuel= str(input("Fraction: "))
     new = fuel.split("/")
     while len(new) != 2:
@@ -14,7 +14,7 @@ def main():
          fraction = new1/new2
 
          if 0<fraction<1:
-            print(f"{fraction*100}%")
+            print(f"{fraction*100:.0f}%")
             break
          elif fraction==0:
             print("E")
@@ -22,6 +22,7 @@ def main():
          elif fraction == 1:
             print("F")
             break
+
 
     except ValueError:
         pass
@@ -33,5 +34,5 @@ def main():
 
 
 
-main()
+
 
