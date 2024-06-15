@@ -13,11 +13,7 @@ def main():
             # Ensure both parts are integers
             new1 = int(new[0])
             new2 = int(new[1])
-        except ValueError:
-            pass
-        except ZeroDivisionError:
-            pass
-
+      
             # Calculate the fraction
             fraction = new1 / new2
 
@@ -27,8 +23,15 @@ def main():
                 break
             elif fraction == 0:
                 print("E")
+                break
             elif fraction == 1:
                 print("F")
+                break
+        except ValueError:
+            pass
+        except ZeroDivisionError:
+            pass
+
 
 
 
