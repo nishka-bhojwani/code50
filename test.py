@@ -10,14 +10,14 @@ def main():
 
 
         try:
-            # Ensure that both the numerator and denominator are fractions 
+            # Ensure that both the numerator and denominator are fractions
             new1 = int(new[0])
             new2 = int(new[1])
 
-            # Calculate the fraction
+            # Calculating the fraction
             fraction = new1 / new2
 
-            # loop to check the range of fraction and print the given percentages based on the fraction
+            # conditionals  to check the range of fraction and print the given percentages based on the fraction
             if 0 < fraction < 1:
                 print(f"{fraction * 100:.0f}%")
                 break
@@ -27,9 +27,11 @@ def main():
             elif fraction == 1:
                 print("F")
                 break
-        except ValueError:
+
+            # handling the errors
+        except ValueError: #keeps prompting the user if the numerator and denominator are not integers
             pass
-        except ZeroDivisionError:
+        except ZeroDivisionError:#keeps prompting the user if the denominator is zero 
             pass
 
 
