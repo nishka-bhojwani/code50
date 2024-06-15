@@ -13,13 +13,13 @@ while True: #to create a loop to keep promting the user
     # calculating the fraction
          fraction = new1/new2
      #conditions to check the input fraction and print the o/p percentage
-         if 0<fraction<1 and (fraction*100)>=1 and (fraction*100)<=99:
+         if 0<fraction<1 and (fraction*100)>1 and (fraction*100)<99:
             print(f"{fraction*100:.0f}%")
             break # to exit the loop once
          elif fraction==0 or (fraction*100)<=1:
             print("E")
             break
-         elif fraction == 1 or (fraction*100)>=99:
+         elif fraction == 1 or (fraction*100)>=99 :
             print("F")
             break
 
