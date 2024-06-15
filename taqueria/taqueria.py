@@ -23,6 +23,7 @@ try:
 
 except EOFError:
     exit
+    next 
 
 
 
