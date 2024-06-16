@@ -10,7 +10,7 @@ try:
 
 except EOFError:
     exit
-    print(" ")
+
 
 new= list(grocery.keys())
 new.sort()
