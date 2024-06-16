@@ -16,5 +16,6 @@ try:
 except EOFError:
     exit
 
+new = 
 for x in grocery:
      print(f"{grocery[x]} {x}")
