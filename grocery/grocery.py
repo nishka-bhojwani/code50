@@ -7,7 +7,7 @@ try:
         grocery.update({item:counter})
         if item in grocery:
             grocery[item] = counter +1
-        
+
 
 
 except EOFError:
