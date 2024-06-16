@@ -18,4 +18,6 @@ except EOFError:
 
 for x in grocery:
     new = [x]
-    
+    new = sorted(new)
+    for i in new:
+        print(f"{grocery[i]} {i}")
