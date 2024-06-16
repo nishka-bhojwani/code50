@@ -2,7 +2,7 @@
 try:
     grocery = {}
     while True:
-        item = str(input())
+        item = str(input()).strip()
         if item not in grocery:
             grocery[item]=1
         elif item in grocery:
