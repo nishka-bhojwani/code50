@@ -7,6 +7,7 @@ try:
         
 
 
+
 except EOFError:
     exit
     print(" ")
