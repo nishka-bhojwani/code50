@@ -1,7 +1,7 @@
 # taking input from user
 try:
     grocery = {}
-    counter = 1
+    counter = 0
     while True:
         item = str(input())
         if item not in grocery:
