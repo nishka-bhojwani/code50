@@ -1,11 +1,15 @@
 # taking input from user
 try:
     grocery = {}
-    counter = 0
+    counter = 1
     while True:
         item = str(input())
-        grocery.update({item:1})
-        if item in grocery 
+        if item not in grocery:
+            grocery.update({item:1})
+        elif item in grocery:
+            counter+=1
+            grocery.update({item:counter})
+
 
 
 
