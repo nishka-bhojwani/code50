@@ -10,10 +10,10 @@ try:
             grocery[item] = counter+1
         else:
             grocery[item] = counter
-    print(grocery)
 
 
 except EOFError:
     print("")
     exit
-    
+
+print(grocery)
