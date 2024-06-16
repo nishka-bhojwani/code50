@@ -4,12 +4,12 @@ try:
     counter = 0
     while True:
         item = str(input())
-        grocery.update({item:counter})
+
         if item in grocery:
             grocery[item] +=1
         else:
             grocery[item] = 1
-
+        grocery.update({item:counter})
 
 
 except EOFError:
