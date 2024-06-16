@@ -16,5 +16,5 @@ try:
 
 except EOFError:
     exit
-print(grocery)
+
 
