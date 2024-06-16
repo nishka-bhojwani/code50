@@ -4,7 +4,6 @@ try:
     counter = 0
     while True:
         item = str(input())
-        counter = counter+1
         grocery.update({item:counter})
         if item in grocery:
             grocery[item] = counter+1
