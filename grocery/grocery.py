@@ -8,13 +8,9 @@ try:
         elif item in grocery:
             grocery[item]+=1
 
-
-
-
-
-
 except EOFError:
     exit
+    print(" ")
 
 new= list(grocery.keys())
 new.sort()
