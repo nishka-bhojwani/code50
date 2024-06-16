@@ -7,7 +7,7 @@ try:
             grocery[item]=1
         elif item in grocery:
             grocery[item]+=1
-        grocery.
+        grocery = sorted(grocery)
         for x in grocery:
             print(f"{grocery[x]} {x}")
 
