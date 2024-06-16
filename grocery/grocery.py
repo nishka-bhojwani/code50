@@ -16,7 +16,10 @@ try:
 except EOFError:
     exit
 
-for x in grocery:
-    new = [x].sort()
-    for i in new:
-        print(f"{grocery[i]} {i}")
+new= list(grocery.keys())
+new.sort()
+
+for i in new:
+    print(f"{grocery[i]} {i}")
+
+
