@@ -2,7 +2,7 @@
 try:
     grocery = {}
     while True:
-        item = str(input()).strip()
+        item = str(input()).strip().upper()
         if item not in grocery:
             grocery[item]=1
         elif item in grocery:
@@ -11,7 +11,8 @@ try:
 
 
 
+
 except EOFError:
     exit
-
 print(grocery)
+
