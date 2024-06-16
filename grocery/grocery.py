@@ -6,9 +6,8 @@ try:
         item = str(input())
         grocery.update({item:counter})
         if item in grocery:
-            grocery[item] = counter+1
-        else:
-            grocery[item] = counter
+            grocery[item] = counter +1
+        
 
 
 except EOFError:
