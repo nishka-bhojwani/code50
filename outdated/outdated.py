@@ -1,5 +1,5 @@
 #taking specific input from user else reprompt
-months = [
+months= [
     "January",
     "February",
     "March",
@@ -27,8 +27,7 @@ try:
         elif " " and "," in date:
             date_new = date.split(" ")
             date_new[1] = date_new[1].strip(",")
-            print(date_new)
-            if len(date_new)==3 and date_new[0] in months:
+            if len(date_new)==3 and date_new[0] in months and len(date_new[2])==4 and 1<=date_new[1]<=31:
                 month_index = months.index(date_new[0]) + 1
                 print(f"{date_new[2]}-{month_index:02}-{int(date_new[1]):02}")
             else:
