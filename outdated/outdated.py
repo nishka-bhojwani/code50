@@ -23,7 +23,7 @@ try:
                 print(f"{date_new[2]}-{int(date_new[0]):02}-{int(date_new[1]):02}")
                 break
             else:
-                pass
+                continue
         elif " " and "," in date:
             date_new = date.split(" ")
             date_new[1] = date_new[1].strip(",")
@@ -41,5 +41,4 @@ try:
 except ValueError:
     pass
 
-except EOFError:
-    exit
+
