@@ -14,4 +14,8 @@ months = [
     "December"
 ]
 
- 
+try:
+    while True:
+        date = str(input("Date: "))
+        
+
