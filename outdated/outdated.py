@@ -24,7 +24,7 @@ try:
                 break
             else:
                 continue
-        elif " " and "," in date:
+        elif " "in date  and "," in date:
             date_new = date.split(" ")
             date_new[1] = date_new[1].strip(",")
             date_new[0] = date_new[0].capitalize()
