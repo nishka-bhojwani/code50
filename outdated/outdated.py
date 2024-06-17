@@ -20,12 +20,14 @@ try:
         if "/" in date:
             date_new = date.split("/")
             print(date_new)
+            if 1<= date_new <=12 and :
+
             break
         elif " " and "," in date:
             date_new = date.split(" ")
             date_new[1] = date_new[1].split(", ")
             print(date_new)
-            break
+
         else:
             pass
 
