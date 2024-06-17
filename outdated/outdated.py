@@ -17,5 +17,9 @@ months = [
 try:
     while True:
         date = str(input("Date: "))
-        date.split(" ",)
+        if "/" in date:
+            date_new = date.split("/")
+            print(date_new)
 
+except ValueError:
+    pass
