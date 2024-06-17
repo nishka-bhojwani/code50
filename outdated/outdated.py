@@ -22,7 +22,8 @@ try:
             print(date_new)
             break
         elif " " and "," in date:
-            date_new = date.split(" ").split(",")
+            date_new = date.split(" ")
+            date_new[1].split(",")
             print(date_new)
             break
         else:
