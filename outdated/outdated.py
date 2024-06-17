@@ -17,5 +17,5 @@ months = [
 try:
     while True:
         date = str(input("Date: "))
-        
+        date.split(" ",)
 
