@@ -19,7 +19,8 @@ try:
         date = str(input("Date: "))
         if "/" in date:
             date_new = date.split("/")
-            if len(date_new) == 3 and date_new[0] ==int and 1<= int(date_new[0]) <=12 and 0<=int(date_new[1]) <=31:
+            date_new[0] = int(date_new[0])
+            if len(date_new) == 3 and 1<= int(date_new[0]) <=12 and 0<=int(date_new[1]) <=31:
                 print(f"{date_new[2]}-{int(date_new[0]):02}-{int(date_new[1]):02}")
                 break
             else:
