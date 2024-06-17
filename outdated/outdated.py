@@ -21,7 +21,7 @@ try:
             date_new = date.split("/")
             try:
                 if len(date_new) == 3 and 1 <= int(date_new[0]) <= 12 and 1 <= int(date_new[1]) <= 31:
-                    print(f"{date_new[2]}-{int(date_new[0]):02}-{int(date_new[1]):02}")
+                    print(f"{date_new[2]}-{int(date_new[0]):02}-{int(date_new[1]):02}",end= "")
                     break
             except ValueError:
                 pass
