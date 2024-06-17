@@ -10,8 +10,12 @@ print(coin)
 
 
 # from - can import a particular function from a module
-
+"""
 from random import choice
 
 coin = choice(["heads","tails"])
 print(coin)
+"""
+
+number = random.randint(1,10)
+print(number)
