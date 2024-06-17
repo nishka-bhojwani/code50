@@ -4,5 +4,6 @@
 #problem to simulate a coin , 50% probability
 
 import random
-
-random.choice(["heads","tails"])
+#random - module , choice - function
+coin = random.choice(["heads","tails"])
+print(coin)
