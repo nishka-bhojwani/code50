@@ -23,8 +23,8 @@ try:
             break
         elif " " and "," in date:
             date_new = date.split(" ")
-            date_new2 = date_new[1].split(",")
-            print(date_new[0] , date_new2)
+            date_new[1] = date_new[1].split(", ")
+            print(date_new)
             break
         else:
             pass
