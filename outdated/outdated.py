@@ -29,7 +29,9 @@ try:
             date_new[1] = date_new[1].strip(",")
             print(date_new)
             if len(date_new)==3 and date_new[0] in months:
-                print
+                print(f"{date_new[2]}-{(date_new[0].index()+1):02}-{int(date_new[1]):02}")
+            else:
+                pass
 
         else:
             pass
