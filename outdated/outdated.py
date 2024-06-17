@@ -26,7 +26,10 @@ try:
                 pass
         elif " " and "," in date:
             date_new = date.split(" ")
-            date_new[1] = date_new[1].split(", ")
+            date_new2= date_new[1].split(", ")
+            date_new[1] = date_new2[0]
+            date_new[2] = date_new2[1]
+
             print(date_new)
 
         else:
