@@ -1,3 +1,3 @@
 import sys
 
-print("hello , my name is ", sys.argv[1] )
+print("hello , my name is", sys.argv[1].capitalize() )
