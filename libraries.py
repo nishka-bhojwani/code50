@@ -7,3 +7,11 @@ import random
 #random - module , choice - function
 coin = random.choice(["heads","tails"])
 print(coin)
+
+
+# from - can import a particular function from a module
+
+from random import choice
+
+coin = choice(["heads","tails"])
+print(coin)
