@@ -20,9 +20,11 @@ try:
         if "/" in date:
             date_new = date.split("/")
             print(date_new)
-            if 1<= date_new <=12 and :
-
-            break
+            if date_new.len() == 5 and 1<= date_new[0] <=12 :
+                print(f"{date_new[0]:02}-{date_new[1]}-{date_new[2]:02}")
+                break
+            else:
+                pass
         elif " " and "," in date:
             date_new = date.split(" ")
             date_new[1] = date_new[1].split(", ")
