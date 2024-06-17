@@ -1,3 +1,0 @@
-import statistics
-
-print
