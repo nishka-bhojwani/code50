@@ -20,7 +20,13 @@ try:
         if "/" in date:
             date_new = date.split("/")
             print(date_new)
+            break
         elif " " and "," in date:
             date_new = date.split(" ").split(",")
+            print(date_new)
+            break
+        else:
+            pass
+
 except ValueError:
     pass
