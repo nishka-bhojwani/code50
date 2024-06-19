@@ -23,4 +23,5 @@ response = requests.get("https://itunes.apple.com/search?entity=song&limit=50&te
 o = response.json() #grabbing the json object b/w the curly braces
 for result in o["results"]: #results key is a list
     print(result["trackName"])
-
+#pip - package manager
+#py.pi - open source platform 
