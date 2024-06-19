@@ -9,5 +9,5 @@ def hello(name):
 def goodbye(name):
     print(f"goodbye , {name}" )
 
-if __name__ =="__main__": #__name__ - special variable whose value is set to be main 
+if __name__ =="__main__": #__name__ - special variable whose value is set to be main  
     main()
