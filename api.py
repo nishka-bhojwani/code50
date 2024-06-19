@@ -7,9 +7,10 @@
 
 #request library converts it to python dictionary
 #program acts as a browser to grab data from
-import requests
+import requests #does not come with python so installed using pip
+
 import sys
-import json 
+import json
 
 if len(sys.argv) != 2:
     sys.exit()
