@@ -7,7 +7,7 @@
 
 #request library converts it to python dictionary
 #program acts as a browser to grab data from
-import requests #does not come with python so installed using pip
+import requests #does not come with python so installed using pip #code - pip install requests (in terminal )
 
 import sys
 import json
