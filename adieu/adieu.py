@@ -10,6 +10,7 @@ while True:
     except ValueError:
         break
 
+
 print(f"\n{names}")
 
 
