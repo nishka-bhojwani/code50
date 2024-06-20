@@ -6,7 +6,7 @@ p = inflect.engine()
 names=[]
 while True:
     try:
-        name = str(input("Name: "))
+        name = str(input("Name: ")).strip().capitalize()
         names.append(name)
     except EOFError:
         break
