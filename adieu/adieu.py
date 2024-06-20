@@ -10,7 +10,7 @@ while True:
     except ValueError:
         break
 
-print(f"/n{names}")
+print(f"\n{names}")
 
 
 
