@@ -1,15 +1,19 @@
 
-from inflect import join
+import inflect
 
 while True:
     try:
         names=[]
         for i in range():
-        names[i]= str(input("Name: "))
+            names[i]= str(input("Name: "))
+            print(names)
 
 
 
-    except
+    except ValueError:
+        exit
+    except EOFError:
+        exit
 
 
 
