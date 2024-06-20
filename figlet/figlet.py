@@ -11,7 +11,7 @@ if len(sys.argv)==1 or len(sys.argv)==3 :
         figlet.setFont(font=f)
 
     elif len(sys.argv)==3 and(sys.argv[1] == "-f" or sys.argv[1]=="--font") and sys.argv[2] in figlet.getFonts():
-            text = str(input("Input :"))
+            text = str(input("Input: "))
             figlet.setFont(font=sys.argv[2])
     else:
             print("Invalid usage")
