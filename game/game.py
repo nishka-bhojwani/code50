@@ -1,3 +1,5 @@
+import random
+
 #asking user for a level
 while True:
 
@@ -10,4 +12,4 @@ while True:
     except ValueError:
         continue
 
-
+Guess = 
