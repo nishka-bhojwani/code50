@@ -13,4 +13,7 @@ while True:
         continue
 
 Guess = random.randrange(0, 100, 1)
-print(Guess)
+while True:
+    try:
+        guess = int(input("Guess: "))
+    
