@@ -23,8 +23,9 @@ while True:
             break
         elif guess<win:
             print("Too small!")
+            break
         elif guess>win:
-            print("Too large")
-        break
+            print("Too large!")
+            break
     except ValueError:
         continue
