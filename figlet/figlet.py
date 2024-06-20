@@ -4,8 +4,13 @@ from random import choice
 
 figlet = Figlet()
 
-if len(sys.argv) in range (1,4) :
+if len(sys.argv)==1 or len(sys.argv)==3 :
     text = str(input("Input :"))
+    if len(sys.argv)==1:
+        f = choice(figlet.getFonts())
+        figlet.setFont(font=f)
+        print(f"Output: {figlet.renderText(text)}")
+
 
 
 
