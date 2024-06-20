@@ -12,8 +12,19 @@ while True:
     except ValueError:
         continue
 
-Guess = random.randrange(0, 100, 1)
+win = random.randrange(0, 100, 1)
 while True:
     try:
         guess = int(input("Guess: "))
-    
+        if guess<=0:
+            continue
+        elif guess==win:
+            print("Just right!")
+            break
+        elif guess<win:
+            print("Too small!")
+        elif guess>win:
+            print("Too large")
+        break
+    except ValueError:
+        continue
