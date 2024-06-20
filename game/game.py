@@ -16,7 +16,7 @@ win = random.randint(1,level) #the number should be within the specified range ,
 while True: #keep asking for guesses incase of invalid input
     try:
         guess = int(input("Guess: "))
-        #conditionals for checking the conditions on guess wrt level 
+        #conditionals for checking the conditions on guess wrt level
         if guess<=0:
             continue
         elif guess==win:
@@ -24,9 +24,9 @@ while True: #keep asking for guesses incase of invalid input
             break
         elif guess<win:
             print("Too small!")
-            break
+            exit
         elif guess>win:
             print("Too large!")
-            break
+            exit
     except ValueError:
         continue
