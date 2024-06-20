@@ -12,10 +12,11 @@ while True:
     except ValueError:
         continue
 
-win = random.randint(1,level) #the number should be within the specified range , i.e. lesser than the level 
-while True:
+win = random.randint(1,level) #the number should be within the specified range , i.e. lesser than the level
+while True: #keep asking for guesses incase of invalid input
     try:
         guess = int(input("Guess: "))
+        #conditionals for checking the conditions on guess wrt level 
         if guess<=0:
             continue
         elif guess==win:
