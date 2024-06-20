@@ -1,17 +1,16 @@
 
 import inflect
-
+names=[]
 while True:
     try:
-        names=[]
         name = str(input("Name: "))
         names.append(name)
     except EOFError:
-        exit
+        break
     except ValueError:
-        exit
+        break
 
-print(names)
+print(f"/n{names}")
 
 
 
