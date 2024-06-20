@@ -10,8 +10,8 @@ while True:
     except ValueError:
         break
 
-
-print(f"\n{names}")
+new_name = inflect.join(names[0:len(names)])
+print(f"\n Adieu, adieu, to {new_name}")
 
 
 
