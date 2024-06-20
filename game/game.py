@@ -12,4 +12,5 @@ while True:
     except ValueError:
         continue
 
-Guess = 
+Guess = random.randrange(0, 100, 1)
+print(Guess)
