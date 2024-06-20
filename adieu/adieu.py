@@ -1,18 +1,17 @@
 
-from inflect import join
+import inflect
 
 while True:
     try:
         names=[]
         name = str(input("Name: "))
+        names = names.append(name)
+    except EOFError:
+        exit
+    except ValueError:
+        exit
 
-        if name not in names:
-
-
-
-    except
-
-
+    print(names)
 
 
 
