@@ -1,5 +1,8 @@
 
 import inflect
+
+p = inflect.engine()
+
 names=[]
 while True:
     try:
@@ -10,8 +13,8 @@ while True:
     except ValueError:
         break
 
-new_name = inflect.join(names[0:len(names)])
-print(f"\n Adieu, adieu, to {new_name}")
+new_name = p.join(names)
+print(f"\nAdieu, adieu, to {new_name}")
 
 
 
