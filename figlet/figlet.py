@@ -1,4 +1,5 @@
 import pyfiglet
 import sys
 
-if len(sys.argv) != 1 or 
+if len(sys.argv) in range(2,4):
+    print("yaya")
