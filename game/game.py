@@ -12,7 +12,7 @@ while True:
     except ValueError:
         continue
 
-win = random.randint(1,level)
+win = random.randint(1,level) #the number should be within the specified range , i.e. lesser than the level 
 while True:
     try:
         guess = int(input("Guess: "))
