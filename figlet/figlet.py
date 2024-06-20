@@ -1,15 +1,22 @@
 from pyfiglet import Figlet
 import sys
-from random import random
+from random import choice
 
 figlet = Figlet()
 
 if len(sys.argv)==1 or len(sys.argv)==3 :
     text = str(input("Input :"))
     if len(sys.argv)==1:
-        f = random(figlet.getFonts())
+        f = choice(figlet.getFonts())
         figlet.setFont(font=f)
-        print(f"Output: {figlet.renderText(text)}")
+
+    elif len(sys.argv)== 3:
+        if (sys.argv[2] == "-f" or sys.argv[2]=="--font") and sys.argv[3]==
+
+
+    figlet.setFont(font=f)
+    print(f"Output: {figlet.renderText(text)}")
+
 
 
 
