@@ -1,11 +1,40 @@
-while True:
+"""while True:
 
     try:
         level = int(input("Level: "))
-        if 4<=level<=0:
-            continue
-        else:
+        if 1<=level<=3:
             break
+        else:
+            continue
     except ValueError:
         continue
-    
+
+"""
+
+import random
+
+
+def main():
+    ...
+
+
+def get_level():
+    while True:
+
+        try:
+            level = int(input("Level: "))
+            if 1<=level<=3:
+                break
+            else:
+                continue
+        except ValueError:
+            pass
+
+
+def generate_integer(level):
+    X = 
+    ...
+
+
+if __name__ == "__main__":
+    main()
