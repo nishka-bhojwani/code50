@@ -17,7 +17,7 @@ import random
 def main():
     level = get_level()
     generate_integer(level)
-    
+
 
 
 
@@ -45,7 +45,8 @@ def generate_integer(level):
         X = random.randint(0, 1000)
         Y = random.randint(0, 1000)
 
-    print(f"{X} + {Y}" + " =")
+
+    print(f"{X} + {Y}" + " ="  )
 
 
 
