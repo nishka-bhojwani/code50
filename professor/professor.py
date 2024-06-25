@@ -48,9 +48,13 @@ def generate_integer(level):
 
     correct_answer = X + Y
     try:
-        answer = 
+        answer = int(input("{X}+{Y} = "))
+        if answer == correct_answer:
+            
+
 
 
 
 if __name__ == "__main__":
     main()
+"
