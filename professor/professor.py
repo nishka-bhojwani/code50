@@ -46,7 +46,9 @@ def generate_integer(level):
         Y = random.randint(0, 1000)
 
 
-    correct_answer = 
+    correct_answer = X + Y
+    try:
+        answer = 
 
 
 
