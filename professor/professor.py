@@ -47,14 +47,20 @@ def generate_integer(level):
 
 
     correct_answer = X + Y
+    counter = 0
     try:
-        answer = int(input("{X}+{Y} = "))
+        answer = int(input(f"{X}+{Y} = "))
         if answer == correct_answer:
-            
+            counter = counter+1
+        else:
+            counter=counter+1
+            print("EEE")
+    except ValueError:
+        pass
+
 
 
 
 
 if __name__ == "__main__":
     main()
-"
