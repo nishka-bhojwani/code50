@@ -44,9 +44,9 @@ def generate_integer(level):
     elif level == 3:
         X = random.randint(0, 1000)
         Y = random.randint(0, 1000)
+        
 
-
-    print(f"{X} + {Y}")
+    print(f"{X} + {Y}" + " =")
 
 
 
