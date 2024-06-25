@@ -26,7 +26,7 @@ def get_level():
         try:
             level = int(input("Level: "))
             if 1<=level<=3:
-                break
+                return level
             else:
                 continue
         except ValueError:
