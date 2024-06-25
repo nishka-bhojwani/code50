@@ -15,7 +15,8 @@ import random
 
 
 def main():
-    generate_level()
+    level = get_level()
+    generate_integer(level)
 
 
 
@@ -33,11 +34,10 @@ def get_level():
 
 
 def generate_integer(level):
-    get_level()
     if level==1:
         X = random.randint(0,10)
         Y = random.randint(0,10)
-    print(X+Y)
+        print(str(X)+str(Y))
 
 
 
