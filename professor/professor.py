@@ -20,6 +20,7 @@ def main():
 
 
 
+
 def get_level():
     while True:
 
@@ -34,10 +35,18 @@ def get_level():
 
 
 def generate_integer(level):
-    if level==1:
-        X = random.randint(0,10)
-        Y = random.randint(0,10)
-        print(str(X)+str(Y))
+    if level == 1:
+        X = random.randint(0, 10)
+        Y = random.randint(0, 10)
+    elif level == 2:
+        X = random.randint(0, 100)
+        Y = random.randint(0, 100)
+    elif level == 3:
+        X = random.randint(0, 1000)
+        Y = random.randint(0, 1000)
+
+
+    print(f"{X} + {Y}")
 
 
 
