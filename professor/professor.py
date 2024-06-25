@@ -48,10 +48,13 @@ def generate_integer(level):
 
     correct_answer = X + Y
     counter = 0
+    correct = 0 
     try:
         answer = int(input(f"{X}+{Y} = "))
         if answer == correct_answer:
             counter = counter+1
+            correct = correct+ 1
+            print(counter)
         else:
             counter=counter+1
             print("EEE")
