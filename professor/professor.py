@@ -46,20 +46,7 @@ def generate_integer(level):
     Y= generate_integer(level)
     return X,Y
 
-
-    try:
-        answer = int(input(f"{X}+{Y} = "))
-        counter = counter +1
-        while counter<10:
-            if answer == correct_answer:
-                print(correct)
-            continue
-        else:
-            print("EEE")
-            correct = correct+0
-    except ValueError:
-        pass
-
+def solve(X,Y):
 
 
 
