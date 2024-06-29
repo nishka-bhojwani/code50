@@ -58,7 +58,10 @@ def solve(X,Y):
         else:
             print("EEE")
             tries+=1
-    
+    except ValueError:
+        print("EEE")
+            tries+=1
+        
 
 
 
