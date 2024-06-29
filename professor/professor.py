@@ -36,19 +36,15 @@ def get_level():
 
 def generate_integer(level):
     if level == 1:
-        X = random.randint(0, 10)
-        Y = random.randint(0, 10)
+        return random.randint(0,9)
     elif level == 2:
-        X = random.randint(0, 100)
-        Y = random.randint(0, 100)
+        return random.randint(0,99)
+
     elif level == 3:
-        X = random.randint(0, 1000)
-        Y = random.randint(0, 1000)
+       return random.randint(0,999)
 
-
-    correct_answer = X + Y
-    counter = 0
-    correct = 0
+    X = generate_integer(level)
+    Y= generate_integer(level)
     try:
         answer = int(input(f"{X}+{Y} = "))
         counter = counter +1
