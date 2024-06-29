@@ -42,9 +42,11 @@ def generate_integer(level):
 
     elif level == 3:
        return random.randint(0,999)
-
     X = generate_integer(level)
     Y= generate_integer(level)
+    return X,Y
+
+
     try:
         answer = int(input(f"{X}+{Y} = "))
         counter = counter +1
