@@ -51,17 +51,20 @@ def solve(X,Y):
      tries  = 0
      while tries <3:
          answer = input(f"{X} + {Y} =" )
-     try:
-        answer1 = int(answer)
-        if answer1 == correct_answer:
-            return True
-        else:
+         try:
+            answer1 = int(answer)
+            if answer1 == correct_answer:
+                return True
+            else:
+                print("EEE")
+            tries+=1
+         except ValueError:
             print("EEE")
             tries+=1
-    except ValueError:
-        print("EEE")
-            tries+=1
-        
+
+            print(correct_answer)
+            
+
 
 
 
