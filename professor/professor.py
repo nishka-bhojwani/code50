@@ -51,12 +51,12 @@ def generate_integer(level):
     correct = 0
     try:
         answer = int(input(f"{X}+{Y} = "))
-        if answer == correct_answer:
-            counter = counter+1
-            print(correct)
+        counter = counter +1
+        while counter<10:
+            if answer == correct_answer:
+                print(correct)
             continue
         else:
-            counter=counter+1
             print("EEE")
             correct = correct+0
     except ValueError:
