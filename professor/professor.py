@@ -47,7 +47,19 @@ def generate_integer(level):
 def solve(X,Y):
      X= generate_integer(get_level())
      Y= generate_integer(get_level())
-     
+     correct_answer = X +Y
+     tries  = 0
+     while tries <3:
+         answer = input(f"{X} + {Y} =" )
+     try:
+        answer1 = int(answer)
+        if answer1 == correct_answer:
+            return True
+        else:
+            print("EEE")
+            tries+=1
+    
+
 
 
 
