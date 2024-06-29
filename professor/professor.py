@@ -42,11 +42,12 @@ def generate_integer(level):
 
     elif level == 3:
        return random.randint(0,999)
-    X = generate_integer(level)
-    Y= generate_integer(level)
-    return X,Y
+
 
 def solve(X,Y):
+     X= generate_integer(get_level())
+     Y= generate_integer(get_level())
+     
 
 
 
