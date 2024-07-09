@@ -61,6 +61,7 @@ def ask_questions(level, num_questions):
                     print("EEE")
                     attempts += 1
             except ValueError:
+                print("EEE")
                 attempts += 1
 
         if attempts == 3: #prints correct answer after 3 attempts
