@@ -35,11 +35,11 @@ def get_level():
 
 def generate_integer(level):
     if level == 1:
-        return random.randint(0, 10), random.randint(0, 10)
+        return random.randint(0, 9), random.randint(0, 9)
     elif level == 2:
-        return random.randint(0, 100), random.randint(0, 100)
+        return random.randint(10, 99), random.randint(10, 99)
     elif level == 3:
-        return random.randint(0, 1000), random.randint(0, 1000)
+        return random.randint(100, 999), random.randint(100, 999)
 
 #keeping count of correct anwers and number of questions answered
 def ask_questions(level, num_questions):
