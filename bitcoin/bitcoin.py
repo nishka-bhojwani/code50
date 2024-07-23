@@ -4,6 +4,7 @@ import sys
 
 try:
     
+
     ...
 except requests.RequestException:
     ...
